@@ -1,12 +1,318 @@
 <!DOCTYPE html>
 <html>
-<head>
-<title>Page Title</title>
-</head>
-<body>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+        <style>
+            * {
+                box-sizing: border-box;
+            }
 
-<h1>This is a Heading</h1>
-<p>This is a paragraph.</p>
+            /* Add a gray background color with some padding */
+            body {
+                font-family: Arial;
+                padding: 20px;
+                background: #f1f1f1;
+            }
 
-</body>
+            /* Header/Blog Title */
+            .header {
+                padding: 30px;
+                font-size: 40px;
+                text-align: center;
+                background: white;
+            }
+
+            /* Create two unequal columns that floats next to each other */
+            /* Left column */
+            .leftcolumn {   
+                float: left;
+                width: 70%;
+            }
+
+            /* Right column */
+            .rightcolumn {
+                float: left;
+                width: 30%;
+                padding-left: 20px;
+            }
+
+            .pic{
+                float: left;
+                width: 25%;
+                padding-left: 20px;
+            }
+            .title{
+                float: left;
+                width: 75%;
+            }
+
+            .popular{
+                float: right;
+                width: 70%;
+            }
+
+            /* Add a card effect for articles */
+            .card {
+                background-color: white;
+                padding: 20px;
+                margin-top: 20px;
+            }
+
+            /* Clear floats after the columns */
+            .row:after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+
+            /* Footer */
+            .footer {
+                padding: 20px;
+                text-align: center;
+                background: #ddd;
+                margin-top: 20px;
+            }
+
+            /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+            @media screen and (max-width: 800px) {
+                .leftcolumn, .rightcolumn {   
+                    width: 100%;
+                    padding: 0;
+                }
+            }
+
+            .by{
+                color: grey;
+            }
+            a {
+                color: black;
+                text-decoration: none;
+            }
+
+            .pagination {
+                display: inline-block;
+            }
+
+            .pagination a {
+                color: black;
+                float: left;
+                padding: 8px 16px;
+                text-decoration: none;
+            }
+
+            .pagination a.active {
+                background-color: blue;
+                color: white;
+            }
+
+            .pagination a:hover:not(.active) {background-color: #ddd;}
+
+            .navbar {
+                overflow: hidden;
+                background-color: #333;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+
+            .navbar a {
+                float: left;
+                font-size: 16px;
+                color: white;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="navbar">
+            <a href="#">Home</a>
+            <a href="#">News</a>
+            <a href="#">Sports</a>
+            <a href="#">Travel</a>
+            <a href="#">Food</a>
+            <a href="#">Tech</a>            
+            <a href="#">Culture</a>
+            <a href="#">Health</a>
+            <a href="#">Arts</a>
+            <a href="#">Weather</a>
+            <a href="#">Entertain</a>
+        </div><br>
+        <div class="header">
+            <h2>Blog Name</h2>
+        </div>
+
+        <div class="row">
+            <div class="leftcolumn">
+                <div class="card">
+                    <div class="row">
+                        <h2 class="leftcolumn">Travel</h2><br><br>
+                        <a href="#" class="rightcolumn">MORE ></a>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <a href="#">
+                            <div class="pic">
+                                <img src="../images/travel.jpg" style="height:100px;">
+                            </div>
+                        </a>
+                        <div class="title">
+                            <a href="#">
+                                <h3>The wildest edge of the Roman Empire</h3>
+                            </a>
+                            <p>Hadrian's Wall may be older, bigger, stronger and better known, but the Unesco-listed Antonine Wall was the real final frontier of the Roman Empire.</p>
+                        </div>
+                        <p class="by">Posted by <strong> Serena Tran</strong> &nbsp; &nbsp;
+                            <i class='fas fa-edit'></i> <em>May 29,2019</em> &nbsp; <i class='far fa-eye'> 1000 Views</i>
+                        </p> 
+                    </div>
+                    <br><br>
+
+                    <div class="row">
+                        <a href="#">
+                            <div class="pic">
+                                <img src="../images/travel2.jpg" style="height:100px;">
+                            </div>
+                        </a>
+                        <div class="title">
+                            <a href="#">
+                                <h3>A castle where people live rent-free</h3>
+                            </a>
+                            <p>For more than 800 years, thousands of families have lived inside this stunning desert fortress in the Indian state of Rajasthan.</p>
+                        </div>
+                        <p class="by">Posted by <strong> Serena Tran</strong> &nbsp; &nbsp;
+                            <i class='fas fa-edit'></i> <em>May 29,2019</em> &nbsp; <i class='far fa-eye'> 1000 Views</i>
+                        </p> 
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="row">
+                        <h2 class="leftcolumn">Technology</h2><br><br>
+                        <a href="#" class="rightcolumn">MORE ></a>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <a href="#">
+                            <div class="pic">
+                                <img src="../images/tech.jpg" style="height:100px;">
+                            </div>
+                        </a>
+                        <div class="title">
+                            <a href="#">
+                                <h3>The Huawei Disaster Reveals Google&apos; s Iron Grip on Android</h3>
+                            </a>
+                            <p>Google's Android is pitched as the open, free-for-everyone alternative to the iPhone. However, to comply with a recent order from the U.S.</p>
+                        </div>
+                        <p class="by">Posted by <strong> Eric Ravenscraft</strong> &nbsp; &nbsp;
+                            <i class='fas fa-edit'></i> <em>May 24,2019</em> &nbsp; <i class='far fa-eye'> 1000 Views</i>
+                        </p> 
+                    </div>
+                    <br><br>
+                </div>
+
+                <div class="card">
+                    <div class="row">
+                        <h2 class="leftcolumn">Food</h2><br><br>
+                        <a href="#" class="rightcolumn">MORE ></a>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <a href="#">
+                            <div class="pic">
+                                <img src="../images/salad.jpg" style="height:100px;">
+                            </div>
+                        </a>
+                        <div class="title">
+                            <a href="#">
+                                <h3>The surprising truth about Caesar salad</h3>
+                            </a>
+                            <p>It was once called the greatest recipe to originate in the Americas in 50 years, but its origins are shrouded in mystery.</p>
+                        </div>
+                        <p class="by">Posted by <strong> L Sasha Gora</strong> &nbsp; &nbsp;
+                            <i class='fas fa-edit'></i> <em>May 22,2019</em> &nbsp; <i class='far fa-eye'> 1000 Views</i>
+                        </p> 
+                    </div>
+                    <br><br>
+                </div>
+
+                <center>
+                    <div class="pagination">
+                        <a href="#">&laquo;</a>
+                        <a href="#">1</a>
+                        <a class="active" href="#">2</a>
+                        <a href="#">3</a>
+                        <a href="#">4</a>
+                        <a href="#">5</a>
+                        <a href="#">6</a>
+                        <a href="#">&raquo;</a>
+                    </div>
+                </center>
+            </div>
+
+            <div class="rightcolumn">
+                <div class="card">
+                    <h3>Popular Post</h3>
+                    <div class="row">
+                        <a href="#">
+                            <img src="../images/travel.jpg" style="height:50px;">
+                            <div class="popular">
+                                <h5 >The wildest edge of the Roman Empire</h5>
+                            </div>
+                        </a>
+                        <br>
+                    </div>
+                    <div class="row">
+                        <a href="#">
+                            <img src="../images/tech.jpg" style="height:50px;">
+                            <div class="popular">
+                                <h5 >The Huawei Disaster Reveals Google&apos; s Iron Grip on Android</h5>
+                            </div>
+                        </a>
+                        <br>
+                    </div>
+                    <div class="row">
+                        <a href="#">
+                            <img src="../images/salad.jpg" style="height:50px;">
+                            <div class="popular">
+                                <h5 >The surprising truth about Caesar salad</h5>
+                            </div>
+                        </a>
+                        <br>
+                    </div>
+                    <div class="row">
+                        <a href="#">
+                            <img src="../images/salad.jpg" style="height:50px;">
+                            <div class="popular">
+                                <h5 >The wildest edge of the Roman Empire</h5>
+                            </div>
+                        </a>
+                        <br>
+                    </div>
+                    <div class="row">
+                        <a href="#">
+                            <img src="../images/salad.jpg" style="height:50px;">
+                            <div class="popular">
+                                <h5 >The wildest edge of the Roman Empire</h5>
+                            </div>
+                        </a>
+                        <br>
+                    </div>
+
+                </div>
+                <div class="card">
+                    <h3>Follow Me</h3>
+                    <p>Some text..</p>
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="footer">
+            <h2>Footer</h2>
+        </div>
+
+    </body>
 </html>
