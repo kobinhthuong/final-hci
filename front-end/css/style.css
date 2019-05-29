@@ -1,0 +1,39 @@
+.container {
+    background-color: azure;
+}
+.container nav {
+    font-size: 14px;
+    font-weight: bold;
+    background-color:#4da6ff;
+}
+.col-12 {
+    padding-left: 25px;
+    margin-top: 30px;
+}
+.col-12 img {
+    height: 300px;
+    width: 730px;
+}
+.col-6 {
+    margin-top: 30px;
+    padding-left: 30px;
+}
+.col-6 img {
+    height: 180px;
+    width: 350px;
+}
+.title {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.summary {
+    color: grey;
+}
+.post-title {
+    font-family: Georgia;
+    font-size: 20px;
+    font-weight: bold;
+}
+.post-title-date, .post-title-author {
+    color: red;
+}
