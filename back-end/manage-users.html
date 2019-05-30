@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+</head>
+
+<body>
+    <header>
+        <title>Manage Users</title>
+    </header>
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h4>Users</h4>
+                <a class="add-new" href="#"><i class="fas fa-user-plus"></i> Add new user</a>
+                <div class="user-table">
+                    <table id="user-t" class="table table-striped">
+                        <caption>List of users</caption>
+                        <thead class="thead-dark">
+                            <tr>
+                                <th scope="col">ID</th>
+                                <th scope="col">Name</th>
+                                <th scope="col">Role</th>
+                                <th scope="col">Posts</th>
+                                <th scope="col">Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr id="1">
+                                <th scope="row">1</th>
+                                <td>Bưởi</td>
+                                <td>admin</td>
+                                <td>2</td>
+                                <td>
+                                    <i class="far fa-trash-alt" class="deleteRow" data-toggle="modal"
+                                        data-target="#exampleModal"></i>
+                                </td>
+                                <!-- Modal -->
+                                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
+                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-body">
+                                                Do you really want to delete this user?
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary"
+                                                    data-dismiss="modal">No</button>
+                                                <button id="delete" type="button" class="btn btn-primary">Yes</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- <td><a onclick="confirmDeleteUser()"><i class="far fa-trash-alt"></i></a></td> -->
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>Đào</td>
+                                <td>editor</td>
+                                <td>1</td>
+                                <td><a href="#"><i class="far fa-trash-alt"></i></a></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td>Táo</td>
+                                <td>editor</td>
+                                <td>4</td>
+                                <td><a href="#"><i class="far fa-trash-alt"></i></a></td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <th scope="col">ID</th>
+                                <th scope="col">Name</th>
+                                <th scope="col">Role</th>
+                                <th scope="col">Posts</th>
+                                <th scope="col">Action</th>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+            </div>
+            <div class="col">
+                <h4 class="role-table">Roles</h4>
+                <a class="add-new" href="#"><i class="fas fa-user-plus"></i> Add new role</a>
+                <div class="role-table">
+                    <table class="table table-striped">
+                        <caption>List of roles</caption>
+                        <thead class="thead-dark">
+                            <tr>
+                                <th scope="col">ID</th>
+                                <th scope="col">Name</th>
+                                <th scope="col">Count</th>
+                                <th scope="col">Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>admin</td>
+                                <td>1</td>
+                                <td><a href="#"><i class="far fa-trash-alt"></i></a></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>editor</td>
+                                <td>2</td>
+                                <td><a href="#"><i class="far fa-trash-alt"></i></a></td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <th scope="col">ID</th>
+                                <th scope="col">Name</th>
+                                <th scope="col">Count</th>
+                                <th scope="col">Action</th>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="js/main.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+</html>
