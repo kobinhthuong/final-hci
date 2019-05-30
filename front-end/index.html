@@ -2,198 +2,96 @@
 <html>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/homeStyle.css">
         <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <style>
-            * {
-                box-sizing: border-box;
-            }
-            /* Add a gray background color with some padding */
-            body {
-                font-family: Arial;
-                padding: 20px;
-                background: #f1f1f1;
-            }
-
-            /* Header/Blog Title */
-            .header {
-                padding: 30px;
-                font-size: 40px;
-                text-align: center;
-                background: white;
-            }
-
-            /* Create two unequal columns that floats next to each other */
-            /* Left column */
-            .leftcolumn {   
-                float: left;
-                width: 70%;
-            }
-
-            /* Right column */
-            .rightcolumn {
-                float: left;
-                width: 30%;
-                padding-left: 20px;
-            }
-
-            .pic{
-                float: left;
-                width: 25%;
-                padding-left: 20px;
-            }
-            .title{
-                float: left;
-                width: 75%;
-            }
-
-            .popular{
-                float: right;
-                width: 70%;
-            }
-
-            /* Add a card effect for articles */
-            .card {
-                background-color: white;
-                padding: 20px;
-                margin-top: 20px;
-            }
-
-            /* Clear floats after the columns */
-            .row:after {
-                content: "";
-                display: table;
-                clear: both;
-            }
-
-            /* Footer */
-            .footer {
-                padding: 20px;
-                text-align: center;
-                background: #ddd;
-                margin-top: 20px;
-            }
-
-            /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
-            @media screen and (max-width: 800px) {
-                .leftcolumn, .rightcolumn {   
-                    width: 100%;
-                    padding: 0;
-                }
-            }
-
-            .by{
-                color: grey;
-            }
-            a {
-                color: black;
-                text-decoration: none;
-            }
-
-            .pagination {
-                display: inline-block;
-            }
-
-            .pagination a {
-                color: black;
-                float: left;
-                padding: 8px 16px;
-                text-decoration: none;
-            }
-
-            .pagination a.active {
-                background-color: blue;
-                color: white;
-            }
-
-            .pagination a:hover:not(.active) {background-color: #ddd;}
-
-            .navbar {
-                overflow: hidden;
-                background-color: #333;
-                font-family: Arial, Helvetica, sans-serif;
-            }
-
-            .navbar a {
-                float: left;
-                font-size: 16px;
-                color: white;
-                text-align: center;
-                padding: 14px 16px;
-                text-decoration: none;
-            }
-
-        </style>
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
     </head>
     <body>
-	    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">HOME <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                         <a class="nav-link" href="#">ABOUT</a>
-                    </li>
-					<li class="nav-item dropdown">
-                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                         WEB
-                         </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">ASP.NET MVC</a>
-                        <a class="dropdown-item" href="#">ASP.NET</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">WCF</a>
-						<a class="dropdown-item" href="#">Web API</a>
-						<a class="dropdown-item" href="#">Javascript</a>
-                    </div>
-                    <li class="nav-item dropdown">
-                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                         MOBILE
-                         </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Something else here</a>
-                    </div>
-                    </li>
-					<li class="nav-item dropdown">
-                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                         ACHITECTURE
-                         </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Something else here</a>
-                    </div>
-                    </li>
-					<li class="nav-item dropdown">
-                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                         TOOL
-                         </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Something else here</a>
-                    </div>
-                    </li>
-                  
-                    </ul>
-                        <form class="form-inline my-2 my-lg-0">
-                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                        </form>
+        <div class="navbar">
+            <ul>
+                <li>
+                    <a class="active" href="#">Home</a>
+                </li> 
+                <li>
+                    <a href="#">News</a>
+                </li>
+                <li>
+                    <a href="#">Sports</a>
+                </li> 
+                <li>
+                    <a href="#">Food</a>
+                </li>
+                <li>
+                    <a href="#">Tech</a>   
+                </li>
+                <li>
+                    <a href="#">Travel</a>
+                </li> 
+                <li>
+                    <a href="#">Culture</a>
+                </li>
+                <li>
+                    <a href="#">Health</a>
+                </li>
+                <li>
+                    <a href="#">Arts</a>
+                </li>
+                <li>
+                    <a href="#">Weather</a>            
+                </li> 
+                <li>
+                    <a href="#">Entertain</a>
+                </li>
+                <li>
+                    <div class="subnav">
+                        <button class="subnavbtn">More <i class="fa fa-caret-down"></i></button>
+                        <div class="subnav-content">
+                            <a href="#">Cutural</a>
+                            <a href="#">Politics</a>
+                            <a href="#">Science</a>
+                            <a href="#">Video</a>
+                        </div>
+                    </div> 
+                </li>
+            </ul>
+
+        </div><br>
+        <div class="card">  
+            <div class="row"> 
+                <div class="column" width="10" height="10">
+                    <a href="#"> 
+                        <img src="../images/trump.jpg">
+                        <h4>Israel to hold fresh election as Netanyahu fails to form coalition</h4>
+                        <em>51 minute ago</em>
+                        </img>
+                    </a>
+                </div>
+                <div class="column" height="20">
+                    <a href="#"> 
+                        <img src="../images/tech.jpg">
+                        <h4>The Huawei Disaster Reveals Google&apos; s Iron Grip on Android</h4> 
+                        <em>6 hour ago</em>
+                        </img>
+                    </a>
+                </div>
+                <div class="column" style="height: 100px">
+                    <a href="#"> 
+                        <img src="../images/muffin.jpg">
+                        <h4>Climate change link to puffin deaths</h4> 
+                        <em>5 hour ago</em>
+                        </img>
+                    </a>
+                </div>
+                <div class="column" style="height: 100px">
+                    <a href="#"> 
+                        <img src="../images/tech.jpg">
+                        <h4>The wildest edge of the Roman Empire</h4> 
+                        <em>May 29, 2019</em>
+                        </img>
+                    </a>
+                </div>               
             </div>
-        </nav>
-        <br>
-        <div class="header">
-            <h2>Blog Name</h2>
         </div>
 
         <div class="row">
@@ -289,7 +187,7 @@
                     </div>
                     <br><br>
                 </div>
-
+                <br>
                 <center>
                     <div class="pagination">
                         <a href="#">&laquo;</a>
@@ -311,7 +209,7 @@
                         <a href="#">
                             <img src="../images/travel.jpg" style="height:50px;">
                             <div class="popular">
-                                <h5 >The wildest edge of the Roman Empire</h5>
+                                <h6 >The wildest edge of the Roman Empire</h6>
                             </div>
                         </a>
                         <br>
@@ -320,7 +218,7 @@
                         <a href="#">
                             <img src="../images/tech.jpg" style="height:50px;">
                             <div class="popular">
-                                <h5 >The Huawei Disaster Reveals Google&apos; s Iron Grip on Android</h5>
+                                <h6 >The Huawei Disaster Reveals Google&apos; s Iron Grip on Android</h6>
                             </div>
                         </a>
                         <br>
@@ -329,7 +227,7 @@
                         <a href="#">
                             <img src="../images/salad.jpg" style="height:50px;">
                             <div class="popular">
-                                <h5 >The surprising truth about Caesar salad</h5>
+                                <h6 >The surprising truth about Caesar salad</h6>
                             </div>
                         </a>
                         <br>
@@ -338,7 +236,7 @@
                         <a href="#">
                             <img src="../images/salad.jpg" style="height:50px;">
                             <div class="popular">
-                                <h5 >The wildest edge of the Roman Empire</h5>
+                                <h6 >The wildest edge of the Roman Empire</h6>
                             </div>
                         </a>
                         <br>
@@ -347,16 +245,32 @@
                         <a href="#">
                             <img src="../images/salad.jpg" style="height:50px;">
                             <div class="popular">
-                                <h5 >The wildest edge of the Roman Empire</h5>
+                                <h6 >The wildest edge of the Roman Empire</h6>
                             </div>
                         </a>
                         <br>
                     </div>
 
                 </div>
+
+                <!-- Labels / tags -->
+                <div class="w3-card w3-margin">
+                    <div class="w3-container w3-padding">
+                        <h4>Tags</h4>
+                    </div>
+                    <div class="w3-container w3-white">
+                        <p><span class="w3-tag w3-black w3-margin-bottom">Travel</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">New York</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">London</span>
+                            <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Cultural</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Music</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">DIOR</span>
+                            <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Ideas</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Baby</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Family</span>
+                            <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">News</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Clothing</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Shopping</span>
+                            <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Sports</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Games</span>
+                        </p>
+                    </div>
+                </div>
+                
                 <div class="card">
-                    <h3>Follow Me</h3>
-                    <p>Some text..</p>
+                    <h3>Follow us</h3>
+                    <p>Some text ...</p>
                 </div>
             </div>
 
@@ -364,27 +278,7 @@
         </div>
 
         <div class="footer">
-            <div class="card-deck">
-                 <div class="card">
-                 <div class="card-body">
-                     <h5 class="card-title">Follow Us</h5>
-                         <img src='../images/facebook.svg' height='40px' width='40px'/>
-						 <img src='../images/youtube.svg'  height='40px' width='40px'/>
-						 <img src='../images/twitter.svg'  height='40px' width='40px'/>
-                 </div>
-                 </div>
-                 <div class="card">
-                     <div class="card-body">
-                         <h5 class="card-title">Contact Us</h5>
-                         <p class="card-text">Email:</p>
-						 <p class="card-text">PhoneNumber:</p>
-						 <p class="card-text">Address:</p>
-                     </div>
-                 </div>
-
- 
-</div>
-
+            <h2>Footer</h2>
         </div>
 
     </body>

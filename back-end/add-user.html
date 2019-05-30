@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+</head>
+
+<body>
+    <header>
+        <title>Add New User</title>
+    </header>
+
+    <div class="container">
+        <h4>Add New User</h4>
+        <div class="form">
+            <form action="manage-users.html">
+                <div class="form-group">
+                    <div class="col-4">
+                        <label>User's name</label>
+                        <input size="50" type="text" class="form-control" placeholder="Enter user's name">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-4">
+                        <label>Role</label>
+                        <select class="custom-select">
+                            <option selected>Choose role...</option>
+                            <option value="admin">Admin</option>
+                            <option value="editor">Editor</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-4 add-button">
+                    <button type="button" class="btn btn-primary">Add</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
