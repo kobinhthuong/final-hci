@@ -1,0 +1,100 @@
+* {
+    box-sizing: border-box;
+}
+
+ Add a gray background color with some padding 
+body {
+    
+    width:500px;
+  margin: auto;
+  border: 3px solid #73AD21;
+}
+.h-b c-c{
+   background-color: #355278 
+   padding: 20px;
+   margin-top: 20px;
+}
+
+.b-tt b-tl{
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+}
+.wrp cnt {
+    background-color: azure;
+}
+.wrp cnt nav {
+    font-size: 14px;
+    font-weight: bold;
+    background-color:#4da6ff;
+}
+.active {
+    background-color: #4CAF50;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  padding: 8px;
+  background-color: #dddddd;
+}
+
+ul b {
+    display: block;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+    
+}
+ul toc_list{
+    
+}
+
+.abc {
+    width: 50px;
+    height: 50px;
+    vertical-align: middle;
+    border-radius: 50%;
+    margin: 0;
+    padding: 0;
+}
+p{
+  display: block;
+  padding: 8px;
+  background-color: #dddddd;  
+}
+img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+/*
+ 
+
+li {
+    float: left;
+    border-right:1px solid #bbb;
+}
+
+li:last-child {
+    border-right: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+*/
+
