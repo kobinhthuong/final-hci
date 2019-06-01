@@ -2,78 +2,61 @@
     box-sizing: border-box;
 }
 
- Add a gray background color with some padding 
-body {
-    
-    width:500px;
-  margin: auto;
-  border: 3px solid #73AD21;
-}
-.h-b c-c{
-   background-color: #355278 
-   padding: 20px;
-   margin-top: 20px;
+.single-post-summary {
+  font-size: 18px;
+  color: grey;
 }
 
-.b-tt b-tl{
-    background-color: white;
-    padding: 20px;
-    margin-top: 20px;
+.content {
+  margin-top: 40px;
 }
-.wrp cnt {
-    background-color: azure;
+
+.same-category {
+margin: 40px;
 }
-.wrp cnt nav {
-    font-size: 14px;
-    font-weight: bold;
-    background-color:#4da6ff;
+
+.title {
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
+
+.post-title {
+  font-family: Georgia;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+
 .active {
     background-color: #4CAF50;
 }
 
 ul {
   list-style-type: none;
-  margin: 0;
-  padding: 0;
   overflow: hidden;
-}
-
-li {
-  float: left;
-}
-
-li a {
-  display: block;
-  padding: 8px;
-  background-color: #dddddd;
 }
 
 ul b {
     display: block;
     list-style-type: none;
-    margin: 0;
-    padding: 0;
     overflow: hidden;
     background-color: white;
     
 }
-ul toc_list{
-    
-}
 
-.abc {
+.author-img {
+    float: left;
     width: 50px;
     height: 50px;
     vertical-align: middle;
-    border-radius: 50%;
     margin: 0;
     padding: 0;
 }
-p{
+
+p {
   display: block;
-  padding: 8px;
-  background-color: #dddddd;  
+  /* padding: 8px; */
+  /* background-color: #dddddd;   */
 }
 img{
   display: block;
@@ -81,6 +64,15 @@ img{
   margin-right: auto;
   width: 50%;
 }
+footer {
+  padding: 20px;
+  text-align: center;
+  background-color:#343a40;
+}
+footer p {
+  color: white;
+}
+
 /*
  
 

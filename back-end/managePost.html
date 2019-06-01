@@ -1,79 +1,93 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Manage Posts</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    </head>
-    <body>
-        <div class="container">
-            <div class="row">
-                <div class="col-2">
-                    <h3>Hello tab menu</h3>
-                </div>
-                <div class="col-10">
-                    <br>
-                    <h4>Manage Post</h4>
-                    <hr>
-                    <button type="button" class="btn btn-primary" href="#"><i class="glyphicon glyphicon-plus"></i></i> Add new post</button><br><br>
-                    <div class="user-table">
-                        <table id="user-t" class="table table-striped">
-                            <thead class="thead-dark">
-                                <tr>
-                                    <th scope="col">ID</th>
-                                    <th scope="col">Title</th>
-                                    <th scope="col">Category</th>
-                                    <th scope="col">Author</th>
-                                    <th scope="col">Date</th>
-                                    <th scope="col">Action</th>
-                                </tr>
-                            </thead>
-                            <tbody>
 
-                                <tr>    
-                                    <th scope="row">1</th>
-                                    <td>The Huawei Disaster Reveals Google&apos; s Iron Grip on Android</td>
-                                    <td>News</td>
-                                    <td>Eric Ravenscraft</td>
-                                    <td>May 24,2019</td>
-                                    <td><div class="row">
-                                            <button type="button" class="btn btn-danger" href="#"><i class="glyphicon glyphicon-trash"></i> </button><br><br>
-                                            <button type="button" class="btn btn-secondary" href="#"><i class="glyphicon glyphicon-pencil"></i></button><br><br>
-                                        </div></td>
-                                </tr>
-                                
-                                 <tr>    
-                                    <th scope="row">2</th>
-                                    <td>A castle where people live rent-free</td>
-                                    <td>Travel</td>
-                                    <td>Serena Tran</td>
-                                    <td>May 29,2019</td>
-                                    <td><div class="row">
-                                            <button type="button" class="btn btn-danger" href="#"><i class="glyphicon glyphicon-trash"></i> </button><br><br>
-                                            <button type="button" class="btn btn-secondary" href="#"><i class="glyphicon glyphicon-pencil"></i></button><br><br>
-                                        </div></td>
-                                </tr>
-                            </tbody>
-                            <thead class="thead-dark">
-                                <tr>
-                                    <th scope="col">ID</th>
-                                    <th scope="col">Title</th>
-                                    <th scope="col">Category</th>
-                                    <th scope="col">Author</th>
-                                    <th scope="col">Date</th>
-                                    <th scope="col">Action</th>
-                                </tr>
-                            </thead>
-                        </table>
-                    </div>
-                </div>
+<head>
+    <title>Manage Posts</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
 
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-2">
+                <h3>Hello tab menu</h3>
             </div>
+            <div class="col-10">
+                <br>
+                <h4>Manage Post</h4>
+                <hr>
+                <button type="button" class="btn btn-primary" href="#"><i class="glyphicon glyphicon-plus"></i></i> Add
+                    new post</button><br><br>
+                <div class="user-table">
+                    <table id="user-t" class="table table-striped">
+                        <thead class="thead-dark">
+                            <tr>
+                                <th scope="col">ID</th>
+                                <th scope="col">Title</th>
+                                <th scope="col">Category</th>
+                                <th scope="col">Author</th>
+                                <th scope="col">Date</th>
+                                <th scope="col">Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>The Huawei Disaster Reveals Google&apos; s Iron Grip on Android</td>
+                                <td>News</td>
+                                <td>Eric Ravenscraft</td>
+                                <td>May 24,2019</td>
+                                <td>
+                                    <div class="row">
+                                        <button type="button" class="btn btn-danger" href="#"><i
+                                                class="glyphicon glyphicon-trash"></i> </button><br><br>
+                                        <button type="button" class="btn btn-secondary" href="#"><i
+                                                class="glyphicon glyphicon-pencil"></i></button><br><br>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>A castle where people live rent-free</td>
+                                <td>Travel</td>
+                                <td>Serena Tran</td>
+                                <td>May 29,2019</td>
+                                <td>
+                                    <div class="row">
+                                        <button type="button" class="btn btn-danger" href="#"><i
+                                                class="glyphicon glyphicon-trash"></i> </button><br><br>
+                                        <button type="button" class="btn btn-secondary" href="#"><i
+                                                class="glyphicon glyphicon-pencil"></i></button><br><br>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                        <thead class="thead-dark">
+                            <tr>
+                                <th scope="col">ID</th>
+                                <th scope="col">Title</th>
+                                <th scope="col">Category</th>
+                                <th scope="col">Author</th>
+                                <th scope="col">Date</th>
+                                <th scope="col">Action</th>
+                            </tr>
+                        </thead>
+                    </table>
+                </div>
+            </div>
+
         </div>
-    </body>
+    </div>
+</body>
+
 </html>
