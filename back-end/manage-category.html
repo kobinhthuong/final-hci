@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+</head>
+
+<body>
+    <header>
+        <title>Manage Categories</title>
+    </header>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-10">
+                <div class="row">
+                    <div class="col-md-4">
+                        <h4>Add new category</h4>
+                        <!-- <a class="add-new" href="#"><i class="fas fa-user-plus"></i> Add new user</a> -->
+                        <form action="">
+                            <div class="form-group">
+                                <h6><small id="emailHelp" class="form-text text-muted">Required fields marked with (*)</small></h6>
+                                <!-- <div class="col-4"> -->
+                                <label>Category's name (*)</label>
+                                <input size="100" type="text" class="form-control" placeholder="Enter category's name">
+                                <!-- </div> -->
+                            </div>
+                            <div class="form-group">
+                                <!-- <div class="col-4"> -->
+                                <label>Parent</label>
+                                <select class="custom-select">
+                                    <option selected>Choose parent...</option>
+                                    <option value="technology">Technology</option>
+                                    <option value="mobile">Mobile</option>
+                                </select>
+                                <!-- </div> -->
+                            </div>
+                            <div class="form-group">
+                                <label>Description</label>
+                                <textarea class="form-control" rows="3" placeholder="Type here..."></textarea>
+                            </div>
+                            <div class="add-button">
+                                <button type="button" class="btn btn-primary">Add</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-md-8">
+                        <h4 class="role-table">Categories</h4>
+                        <!-- <a class="add-new" href="#"><i class="fas fa-user-plus"></i> Add new role</a> -->
+                        <div class="role-table">
+                            <table class="table table-striped">
+                                <caption>List of categories</caption>
+                                <thead class="thead-dark">
+                                    <tr>
+                                        <th scope="col">ID</th>
+                                        <th scope="col">Name</th>
+                                        <th scope="col">Description</th>
+                                        <th scope="col">Parent ID</th>
+                                        <th scope="col">Blogs</th>
+                                        <th scope="col">Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">1</th>
+                                        <td><a class="table-link" href="edit-category.html">Technology</a></td>
+                                        <td>Everything about technology</td>
+                                        <td>-</td>
+                                        <td>1</td>
+                                        <td><a href="#"><i class="far fa-trash-alt"></i></a></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">2</th>
+                                        <td><a class="table-link" href="#">Mobile</a></td>
+                                        <td>Everything about mobile</td>
+                                        <td>-</td>
+                                        <td>2</td>
+                                        <td><a href="#"><i class="far fa-trash-alt"></i></a></td>
+                                    </tr>
+                                </tbody>
+                                <tfoot>
+                                    <tr>
+                                        <th scope="col">ID</th>
+                                        <th scope="col">Name</th>
+                                        <th scope="col">Description</th>
+                                        <th scope="col">Parent ID</th>
+                                        <th scope="col">Count</th>
+                                        <th scope="col">Action</th>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="js/main.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+</html>

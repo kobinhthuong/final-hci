@@ -1,16 +1,24 @@
+/* css for manage-users.html */
 .body {
     background-color: rgb(240, 224, 159);
 }
-.container {
-    padding: 20px;
+.row {
+    margin-top: 20px;
+    /* margin-right: 20px; */
+}
+.container-fluid {
+    /* padding: 20px; */
     background-color: white;
 }
-.container h4, .add-new {
-    padding: 5px;
+.container-fluid h4, .add-new {
+    /* padding: 5px; */
     display: inline;
 }
 a:hover {
     color: white;
+}
+.add-new {
+    padding-left: 10px;
 }
 .add-new:hover {
     color: white;
@@ -22,6 +30,7 @@ a:hover {
     margin-top: 20px;
 }
 .role-table {
+    margin-right: 30px;
     margin-left: 50px;
 }
 .form {
@@ -32,4 +41,13 @@ a:hover {
 }
 .add-button {
     margin-top: 40px;
+}
+.form-group {
+    margin-top: 20px;
+}
+
+/* css for manage-categories.html */
+.table-link:hover {
+    background-color: yellow;
+    text-decoration: none;
 }
