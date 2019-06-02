@@ -1,4 +1,5 @@
-.container {
+/* css for index.html */
+.container, li.list-group-item {
     background-color: azure;
 }
 .container nav {
@@ -10,17 +11,9 @@
     padding-left: 25px;
     margin-top: 30px;
 }
-.col-12 img {
-    height: 300px;
-    width: 730px;
-}
 .col-6 {
-    margin-top: 30px;
+    margin-top: 10px;
     padding-left: 30px;
-}
-.col-6 img {
-    height: 180px;
-    width: 350px;
 }
 .title {
     margin-top: 20px;
@@ -34,6 +27,53 @@
     font-size: 20px;
     font-weight: bold;
 }
+.popular-post-title {
+    font-family: Georgia;
+    font-size: 18px;
+    font-weight: bold;
+}
 .post-title-date, .post-title-author {
     color: red;
+}
+img {
+    height: auto;
+    width: 100%;
+}
+h3 {
+    padding-left: 20px;
+}
+footer {
+    padding: 20px;
+    text-align: center;
+    background-color:#343a40;
+}
+footer p {
+    color: white;
+}
+
+/* css for single-post.html */
+.single-post-summary {
+    font-size: 18px;
+    color: grey;
+}
+.content {
+    margin-top: 40px;
+}
+.same-category {
+  margin: 40px;
+}
+.active {
+    background-color: #4CAF50;
+}
+.author-img {
+    float: left;
+    width: 50px;
+    height: 50px;
+    vertical-align: middle;
+    margin: 0;
+    padding: 0;
+}
+.same-category img {
+    width: 100%;
+    height: auto;
 }

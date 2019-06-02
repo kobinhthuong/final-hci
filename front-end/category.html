@@ -6,11 +6,83 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 
 <body>
     <header>
         <title>Category</title>
+
+        <!-- Navbar Area -->
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">HOME <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            WEB
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">ASP.NET MVC</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">ASP.NET</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">WEB API</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            MOBILE
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Windows Phones</a>
+                        </div>
+                    </li>
+                    <!-- <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                ARCHITECTURE
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">.NET Framework</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">OOP</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Entity Frameword</a>
+                            </div>
+                        </li> -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            TOOL
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Visual Studio</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Team Foundation Server</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Expression Blend</a>
+                        </div>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Type something..."
+                        aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
+        <!-- End Navbar Area -->
+
+        <div class="col-12 jumbotron">
+            <h3 class="display-4">Wellcome To Our Website</h3>
+            <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+        </div>
     </header>
 
     <div class="container">
@@ -25,11 +97,11 @@
 
         <!--Content-->
         <div class="row">
-            <div class="col-8">
+            <!-- Main Content -->
+            <div class="col-12 col-md-8">
                 <div class="row">
                     <div class="col-12">
-                        <a href="#"><img
-                                src="https://cdn-images-1.medium.com/max/1600/1*_W9OCRZD4FkbGURfY3FJSQ.jpeg"></a>
+                        <a href="#"><img src="../images/category1.jpeg"></a>
                         <div class="title">
                             <div class="post-title"><a href="#">Bringing a Classic into the Digital Age with Helvetica
                                     Now</a></div>
@@ -53,22 +125,88 @@
                         </div>
                     </div>
                     <div class="col-6">
-                        <a href="#"><img src="https://cdn-images-1.medium.com/focal/800/240/51/65/1*JWV-ZPVse9M2-9sp74Qrnw.png"></a>
+                        <a href="#"><img src="../images/category2.jpeg"></a>
                         <div class="title">
-                            <div class="post-title"><a href="#">What Makes a Map Good</a></div>
-                            <p class="summary"><small>The most useful maps distort what they depict and leave out tons of possible information</small></p>
+                            <div class="post-title"><a href="#">What Really Happens to AirPods When They Die</a></div>
+                            <p class="summary"><small>Apple finally opens up about their complicated afterlife</small>
+                            </p>
                             <small class="post-title-date">Posted on: <b style="color: black">21/05/2019</b></small>
                             <small class="post-title-author">Published by: <b style="color: black">admin</b></small>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-4">
-                This area for popular articles
+
+            <!-- Popular posts -->
+            <div class="col-12 col-md-4">
+                <h3>Popular Post</h3>
+                <ul class="list-group list-group-flush">
+                    <div class="row">
+                        <div class="col-6 col-md-12">
+                            <li class="list-group-item">
+                                <a href="#"><img src="../images/the-dawn-of-the-reliance-economy.jpg"></a>
+                                <div class="title">
+                                    <a href="#">
+                                        <h5 class="popular-post-title">The Dawn of the Reliance Economy</h5>
+                                    </a>
+                                    <p class="summary"><small>Your attention was never the endgame</small></p>
+                                </div>
+                            </li>
+                        </div>
+                        <div class="col-6 col-md-12">
+                            <li class="list-group-item">
+                                <a href="#"><img src="../images/the-dawn-of-the-reliance-economy.jpg"></a>
+                                <div class="title">
+                                    <a href="#">
+                                        <h5 class="popular-post-title">The Dawn of the Reliance Economy</h5>
+                                    </a>
+                                    <p class="summary"><small>Your attention was never the endgame</small></p>
+                                </div>
+                            </li>
+                        </div>
+                        <div class="col-6 col-md-12">
+                            <li class="list-group-item">
+                                <a href="#"><img src="../images/the-dawn-of-the-reliance-economy.jpg"></a>
+                                <div class="title">
+                                    <a href="#">
+                                        <h5 class="popular-post-title">The Dawn of the Reliance Economy</h5>
+                                    </a>
+                                    <p class="summary"><small>Your attention was never the endgame</small></p>
+                                </div>
+                            </li>
+                        </div>
+                        <div class="col-6 col-md-12">
+                            <li class="list-group-item">
+                                <a href="#"><img src="../images/the-dawn-of-the-reliance-economy.jpg"></a>
+                                <div class="title">
+                                    <a href="#">
+                                        <h5 class="popular-post-title">The Dawn of the Reliance Economy</h5>
+                                    </a>
+                                    <p class="summary"><small>Your attention was never the endgame</small></p>
+                                </div>
+                            </li>
+                        </div>
+                    </div>
+                </ul>
             </div>
+
         </div>
         <!--End Content-->
     </div>
+
+    <!-- Footer Area -->
+    <footer class="blog-footer">
+        <p>© 2019 Five Super Men. All right reserved.</p>
+        <p>Contact: fivesupermen@gmail.com</p>
+        <p>Headquarter: Gam Cau Long Bien - Long Bien - Hanoi - Vietnam</p>
+    </footer>
+    <!-- End Footer Area -->
 </body>
+
+<!-- JS Area -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<!-- End JS Area -->
 
 </html>
