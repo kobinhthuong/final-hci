@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Manage Media</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/mediaStyle.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <div id="content" class="container">
+            <div class="row">
+                <div class="col-2">
+                    <h3>Common part</h3>
+                </div>
+                <div class="col-10">
+                    <h3>Manage Media</h3>
+                    <hr>
+                    <div id="add-button"> Add new <button type="button" class="btn btn-primary" href="#"><i class="fas fa-plus"></i></button><br><br>
+                    </div>
+                    <div class="folders"><h4>Folders</h4>
+                        <div class="row">
+                            <div id="1" class="col-2">
+                                <a href="http://localhost:81/final-hci/back-end/new.html">
+                                <div id="bt-im"> <button type="button"  href="#"><i class="fas fa-folder"></i></button>
+                                </div>
+                                <div class="col-3" id="images">Docs</div>
+                                </a>
+                                <br>
+                                <div>
+                                    <i class="far fa-trash-alt" class="deleteRow" data-toggle="modal"
+                                       data-target="#exampleModal"></i>
+                                </div>
+
+                                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
+                                     aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-body">
+                                                Do you really want to delete this folder?
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary"
+                                                        data-dismiss="modal">No</button>
+                                                <button id="delete" type="button" class="btn btn-primary">Yes</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="2" class="col-4">
+                                <div id="bt-dc"> <button type="button"  href="#"><i class="fas fa-folder"></i></button>
+                                </div>
+                                <div class="col-3" id="docs">Images</div>
+                                <br>
+                                <div>
+                                    <i class="far fa-trash-alt" class="deleteRow" data-toggle="modal"
+                                       data-target="#exampleModal"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+
+                    <div class="files"><h4>Files</h4>
+                        <div class="row">
+                            <div class="col-2">
+                                <button type="button"  href="#"><img src="../images/profile.jpg" alt="Smiley face"></button>
+                                <div class="im">image.jpg</div>
+                            </div>
+                            <div class="col-4">
+                                <div class="c2"><button type="button"  href="#"><i class="fas fa-file-word" style="color:blue"></i></button>
+                                </div>
+                                <div class="doc">xinhdep.doc</div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

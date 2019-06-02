@@ -1,0 +1,53 @@
+.body {
+    background-color: rgb(240, 224, 159);
+}
+.container {
+    width: auto;
+    hight: auto;
+/*    border: 1px solid #333;*/
+    padding: 10px;
+    background-color: white;
+}
+
+#add-button{
+    padding-right: 10px;
+}
+#images {
+    padding-left: 0px;
+    float:left;
+}
+#docs {
+    padding-left: 0px;
+    float:left;
+}
+/*#abt{
+    -right:auto;
+}*/
+.folders {
+    width: 660px;
+    height: 200px;
+    background: white;
+}
+.files {
+    width: 660px;
+    height: 300px;
+    background: white;
+}
+.col-0{
+    float: left;
+}
+.col-10{
+    float: left;
+}
+.c2{
+    color: #fff;
+    font-size: 1.5em;
+}
+img{
+    width: 40px; 
+    height: 31px;
+}
+/*i{
+    width: 40px;
+    hight: 40px;
+}*/

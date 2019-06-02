@@ -1,18 +1,19 @@
 * {
     box-sizing: border-box;
 }
+.ttfm4{font-family:'Montserrat';font-size:1.6em;line-height:1.6em;color:}.ttfm6{font-family:'Montserrat';font-size:1.6em;line-height:1.6em;color:}.ttfm7{font-family:'Montserrat';font-size:1.6em;line-height:1.6em;color:}
 
- Add a gray background color with some padding 
+/*Add a gray background color with some padding*/ 
 body {
-    
+
     width:500px;
-  margin: auto;
-  border: 3px solid #73AD21;
+    margin: auto;
+    border: 3px solid #73AD21;
 }
 .h-b c-c{
-   background-color: #355278 
-   padding: 20px;
-   margin-top: 20px;
+    background-color: #355278 
+        padding: 20px;
+    margin-top: 20px;
 }
 
 .b-tt b-tl{
@@ -33,20 +34,20 @@ body {
 }
 
 ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
 }
 
 li {
-  float: left;
+    float: left;
 }
 
 li a {
-  display: block;
-  padding: 8px;
-  background-color: #dddddd;
+    display: block;
+    padding: 8px;
+    background-color: #dddddd;
 }
 
 ul b {
@@ -56,10 +57,10 @@ ul b {
     padding: 0;
     overflow: hidden;
     background-color: white;
-    
+
 }
 ul toc_list{
-    
+
 }
 
 .abc {
@@ -71,16 +72,17 @@ ul toc_list{
     padding: 0;
 }
 p{
-  display: block;
-  padding: 8px;
-  background-color: #dddddd;  
+    display: block;
+    padding: 8px;
+    background-color: #dddddd;  
 }
 img{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
 }
+
 /*
  
 
