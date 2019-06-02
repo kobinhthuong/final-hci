@@ -13,6 +13,7 @@
 .container-fluid h4, .add-new {
     /* padding: 5px; */
     display: inline;
+    font-weight: bold;
 }
 a:hover {
     color: white;
@@ -50,4 +51,10 @@ a:hover {
 .table-link:hover {
     background-color: yellow;
     text-decoration: none;
+}
+.title {
+    font-weight: bold;
+}
+.form-group label {
+    font-weight: bold;
 }
