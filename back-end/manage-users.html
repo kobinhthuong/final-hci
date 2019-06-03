@@ -20,79 +20,54 @@
         <div class="row">
             <div class="col-2"></div>
             <div class="col-10">
-                <div class="col-5">
+                <div>
                     <h4>Users</h4>
-                    <a class="add-new" href="#"><i class="fas fa-user-plus"></i> Add new user</a>
-                    <div class="user-table">
-                        <table id="user-t" class="table table-striped">
-                            <caption>List of users</caption>
-                            <thead class="thead-dark">
-                                <tr>
-                                    <th scope="col">ID</th>
-                                    <th scope="col">Name</th>
-                                    <th scope="col">Role</th>
-                                    <th scope="col">Posts</th>
-                                    <th scope="col">Action</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr id="1">
-                                    <th scope="row">1</th>
-                                    <td>Bưởi</td>
-                                    <td>admin</td>
-                                    <td>2</td>
-                                    <td>
-                                        <i class="far fa-trash-alt" class="deleteRow" data-toggle="modal"
-                                            data-target="#exampleModal"></i>
-                                    </td>
-                                    <!-- Modal -->
-                                    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
-                                        aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                        <div class="modal-dialog" role="document">
-                                            <div class="modal-content">
-                                                <div class="modal-body">
-                                                    Do you really want to delete this user?
-                                                </div>
-                                                <div class="modal-footer">
-                                                    <button type="button" class="btn btn-secondary"
-                                                        data-dismiss="modal">No</button>
-                                                    <button id="delete" type="button"
-                                                        class="btn btn-primary">Yes</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+					<table style="width:100%;">
+						<tr>
+							<td style="width:30%;">
+								<form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+									<div>
+										<label>ID*</label><label class="validation-error hide" id="IDValidationError">This field is required.</label>
+										<input type="text" name="ID" id="ID">
+									</div>
+									<div>
+										<label>Name</label>
+										<input type="text" name="Name" id="Name">
+									</div>
+									<div>
+										<label>Role</label>
+										<input type="text" name="Role" id="Role">
+									</div>
+									<div>
+										<label>Post</label>
+										<input type="text" name="Post" id="Post">
+									</div>
+									<div  class="form-action-buttons">
+										<input type="submit" value="Add">
+									</div>
+								</form>
+							</td>
+							<td>
+								<table class="list" id="employeeList">
+									<thead>
+										<tr>
+											<th>ID</th>
+											<th>Name</th>
+											<th>Role</th>
+											<th>Post</th>
+											<th>Action</th>
+										</tr>
+									</thead>
+									<tbody>
 
-                                    <!-- <td><a onclick="confirmDeleteUser()"><i class="far fa-trash-alt"></i></a></td> -->
-                                </tr>
-                                <tr>
-                                    <th scope="row">2</th>
-                                    <td>Đào</td>
-                                    <td>editor</td>
-                                    <td>1</td>
-                                    <td><a href="#"><i class="far fa-trash-alt"></i></a></td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">3</th>
-                                    <td>Táo</td>
-                                    <td>editor</td>
-                                    <td>4</td>
-                                    <td><a href="#"><i class="far fa-trash-alt"></i></a></td>
-                                </tr>
-                            </tbody>
-                            <tfoot>
-                                <tr>
-                                    <th scope="col">ID</th>
-                                    <th scope="col">Name</th>
-                                    <th scope="col">Role</th>
-                                    <th scope="col">Posts</th>
-                                    <th scope="col">Action</th>
-                                </tr>
-                            </tfoot>
-                        </table>
-                    </div>
+									</tbody>
+								</table>
+							</td>
+						</tr>
+					</table>
+                
                 </div>
-                <div class="col-5">
+				<div>
                     <h4 class="role-table">Roles</h4>
                     <a class="add-new" href="#"><i class="fas fa-user-plus"></i> Add new role</a>
                     <div class="role-table">
@@ -131,16 +106,11 @@
                         </table>
                     </div>
                 </div>
-
-
-
             </div>
         </div>
     </div>
+	<script src="script.js"></script>
 </body>
-<script src="js/main.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
 
 </html>
