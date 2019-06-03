@@ -13,6 +13,7 @@
 .container-fluid h4, .add-new {
     /* padding: 5px; */
     display: inline;
+    font-weight: bold;
 }
 a:hover {
     color: white;
@@ -51,6 +52,7 @@ a:hover {
     background-color: yellow;
     text-decoration: none;
 }
+<<<<<<< HEAD
 /*truong*/
 body > table{
     width: 80%;
@@ -111,4 +113,11 @@ label.validation-error{
 
 .hide{
     display:none;
+=======
+.title {
+    font-weight: bold;
+}
+.form-group label {
+    font-weight: bold;
+>>>>>>> 327e6cd45dd1605c27483f170399cfa76c7efff2
 }
