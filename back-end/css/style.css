@@ -52,7 +52,7 @@ a:hover {
     background-color: yellow;
     text-decoration: none;
 }
-<<<<<<< HEAD
+
 /*truong*/
 body > table{
     width: 80%;
@@ -74,7 +74,7 @@ tr:nth-child(even),table.list thead>tr {
     background-color: #dddddd;
 }
 
-input[type=text], input[type=number] {
+/* input[type=text], input[type=number] {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -93,7 +93,7 @@ input[type=submit]{
     border: none;
     border-radius: 4px;
     cursor: pointer;
-}
+} */
 
 form div.form-action-buttons{
     text-align: right;
@@ -113,11 +113,11 @@ label.validation-error{
 
 .hide{
     display:none;
-=======
+}
+
 .title {
     font-weight: bold;
 }
 .form-group label {
     font-weight: bold;
->>>>>>> 327e6cd45dd1605c27483f170399cfa76c7efff2
 }

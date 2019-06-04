@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap2-toggle.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <title>Add New Role</title>
+    </header>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-10">
+                <div class="row">
+                    <div class="col-md-8">
+                        <h4>Add role</h4>
+                        <form action="">
+                            <h6><small id="emailHelp" class="form-text text-muted">Required fields marked with
+                                    (*)</small></h6>
+                            <!-- <div class="row">
+                                <div class="col-md-6"> -->
+                            <div class="form-group">
+                                <!-- <div class="col-4"> -->
+                                <label>Role's name (*)</label>
+                                <input size="100" type="text" class="form-control" placeholder="Enter role's name">
+                                <!-- </div> -->
+                            </div>
+                            <!-- </div> -->
+                            <!-- <div class="col-md-6"> -->
+                            <div class="form-group">
+                                <input id="toggle-one" checked type="checkbox">
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox" data-toggle="toggle">
+                                        Option one is enabled
+                                    </label>
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox" data-toggle="toggle">
+                                        Option one is enabled
+                                    </label>
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox" data-toggle="toggle">
+                                        Option one is enabled
+                                    </label>
+                                </div>
+                            </div>
+                            <!-- </div> -->
+                    </div>
+                    <div class="form-group">
+                        <label>Description</label>
+                        <textarea class="form-control" rows="3" placeholder="Type here..."></textarea>
+                    </div>
+                    <div class="add-button">
+                        <button type="button" class="btn btn-primary"
+                            onclick="window.location.href='manage-category.html'">Update</button>
+                    </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</body>
+
+<script>
+    $(function () {
+        $('#toggle-one').bootstrapToggle();
+    })
+</script>
+
+
+<script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap2-toggle.min.js"></script>
+<!-- <script src="js/main.js"></script> -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+</html>

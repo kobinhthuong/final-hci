@@ -13,7 +13,7 @@
 
 <body>
     <header>
-        <title>Edit Category</title>
+        <title>Edit User</title>
     </header>
 
     <div class="container-fluid">
@@ -22,38 +22,46 @@
             <div class="col-md-10">
                 <div class="row">
                     <div class="col-md-8">
-                        <h4>Edit category</h4>
+                        <h4>Edit user</h4>
                         <form action="">
                             <h6><small id="emailHelp" class="form-text text-muted">Required fields marked with
                                     (*)</small></h6>
                             <div class="row">
-                                <div class="col-md-6">
+                                    <div class="col-md-1">
+                                            <div class="form-group">
+                                                <!-- <div class="col-4"> -->
+                                                <label>ID</label>
+                                                <input size="100" type="text" class="form-control" value="1" disabled>
+                                                <!-- </div> -->
+                                            </div>
+                                        </div>
+                                <div class="col-md-5">
                                     <div class="form-group">
                                         <!-- <div class="col-4"> -->
-                                        <label>Category's name (*)</label>
-                                        <input size="100" type="text" class="form-control" value="Technology">
+                                        <label>User's name (*)</label>
+                                        <input size="100" type="text" class="form-control" value="admin1">
                                         <!-- </div> -->
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <!-- <div class="col-4"> -->
-                                        <label>Parent</label>
+                                        <label>Role</label>
                                         <select class="custom-select">
-                                            <option aria-setsize="50" selected>Choose parent...</option>
-                                            <option value="technology">Technology</option>
-                                            <option value="mobile">Mobile</option>
+                                            <option aria-setsize="50">Choose role...</option>
+                                            <option value="technology" selected>Admin</option>
+                                            <option value="mobile">Editor</option>
                                         </select>
                                         <!-- </div> -->
                                     </div>
                                 </div>
                             </div>
-                            <div class="form-group">
+                            <!-- <div class="form-group">
                                 <label>Description</label>
                                 <textarea class="form-control" rows="3" placeholder="Type here..."></textarea>
-                            </div>
+                            </div> -->
                             <div class="add-button">
-                                <button type="button" class="btn btn-primary" onclick="window.location.href='manage-category.html'">Update</button>
+                                <button type="button" class="btn btn-primary" onclick="window.location.href='manage-users.html'">Update</button>
                             </div>
                         </form>
                     </div>
@@ -63,9 +71,9 @@
     </div>
     </div>
 </body>
-<script src="js/main.js"></script>
+<!-- <script src="js/main.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script> -->
 
 </html>
