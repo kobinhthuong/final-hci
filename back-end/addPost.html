@@ -12,18 +12,9 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js"></script>
+        <script>tinymce.init({selector: 'textarea'});</script>
     </head>
-    <style>
-        .footer {
-            position: relative;
-            left: 0;
-            bottom: 0;
-            width: 100%;
-            background-color: black;
-            color: white;
-            text-align: center;
-        }
-    </style>
     <body>
         <div class="container">
             <div class="row">
@@ -45,7 +36,10 @@
 
                                 <div class="form-group">
                                     <label for="exampleFormControlTextarea1">The content of post</label>
-                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="20"></textarea>
+                                    <!--                                    
+                                    <textarea class="form-control" id="exampleFormControlTextarea1" ></textarea>-->
+                                    <textarea rows="20">Next, use our Get Started docs to setup Tiny!</textarea>
+
                                 </div>
                             </form>
                         </div>
@@ -111,29 +105,16 @@
                                     <input type="checkbox" name="Technology" value="Technology" checked> Technology<br>
                                 </div>
                                 <div class="card-footer text-muted">
-                                    <input type="text" id="myInput" placeholder="Search for ..">
-
+                                    <div class="col-3">
+                                        <input type="text" id="myInput" placeholder="Search for ..">
+                                    </div>
                                 </div>
                             </div><br>
                         </div>
                     </div>
-                    <div class="row">
-
-                    </div>
                 </div>
-
-            </div>
-            <div class="row">
-
-            </div>
+            </div>         
         </div>
-        <!-- Footer Area -->
-        <footer class="footer">
-            <p>© 2019 Five Super Men. All right reserved.</p>
-            <p>Contact: fivesupermen@gmail.com</p>
-            <p>Headquarter: Gam Cau Long Bien - Long Bien - Hanoi - Vietnam</p>
-        </footer>
-        <!-- End Footer Area -->
     </body>
 
 </html>
