@@ -1,0 +1,28 @@
+.row .left, .row .right {
+    margin-top: 25px;
+    margin-bottom: 20px;
+    padding-right: 30px;
+}
+#see-more {
+    text-decoration: none;
+}
+th.date-publish {
+    width: 125px;
+}
+td.date-publish {
+    width: 125px;
+}
+#limited-access {
+    top: 50%; left: 50%; position: fixed;
+    margin-top: -50px;
+    margin-left: -100px;
+}
+
+footer {
+    padding: 20px;
+    text-align: center;
+    background-color:#343a40;
+}
+footer p {
+    color: white;
+}
