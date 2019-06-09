@@ -32,7 +32,7 @@ function insertNewRecord(data) {
     cell4 = newRow.insertCell(3);
     cell4.innerHTML = data.Post;
     cell4 = newRow.insertCell(4);
-    cell4.innerHTML = `<a onClick="onEdit(this)"><i class="fas fa-edit"></i>Edit</a>
+    cell4.innerHTML = `<a onClick="onEdit(this)">Edit</a>
                        <a onClick="onDelete(this)">Delete</a>`;
 }
 
@@ -58,11 +58,7 @@ function updateRecord(formData) {
     selectedRow.cells[3].innerHTML = formData.Post;
 }
 
-function onDelete(
-
-
-
-) {
+function onDelete(td) {
     if (confirm('Are you sure to delete this record ?')) {
         row = td.parentElement.parentElement;
         document.getElementById("employeeList").deleteRow(row.rowIndex);

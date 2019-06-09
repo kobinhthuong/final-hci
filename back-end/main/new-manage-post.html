@@ -479,8 +479,7 @@
                         <button
                             class="right-side-toggle waves-effect waves-light btn-info btn-circle btn-sm float-right ml-2"><i
                                 class="ti-settings text-white"></i></button>
-                        <button onclick="window.location.href='create-post.html'" class="btn float-right hidden-sm-down btn-success"><i class="mdi mdi-plus-circle"></i>
-                            Create</button>
+
                         <div class="dropdown float-right mr-2 hidden-sm-down">
                             <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> January 2019
@@ -501,162 +500,75 @@
                     <div class="col-12">
                         <div class="card">
                             <div class="card-body">
-                                <h4 class="card-title">Manage users</h4>
+                                
                                 <!-- <h6 class="card-subtitle">Export data to Copy, CSV, Excel, PDF & Print</h6> -->
-                                <div class="table-responsive m-t-40">
-                                    <table id="example23"
-                                        class="display nowrap table table-hover table-striped table-bordered"
-                                        cellspacing="0" width="100%">
-                                        <thead>
-                                            <tr>
-                                                <th>ID</th>
-                                                <th>Title</th>
-                                                <th>Category</th>
-                                                <th>Author</th>
-                                                <th>Date</th>
-                                                <th colspan="2">Action</th>
-                                            </tr>
-                                        </thead>
-                                        <tfoot>
-                                            <tr>
-                                                <th>ID</th>
-                                                <th>Title</th>
-                                                <th>Category</th>
-                                                <th>Author</th>
-                                                <th>Date</th>
-                                                <th colspan="2">Action</th>
-                                            </tr>
-                                        </tfoot>
-                                        <tbody>
-                                            <tr>
-                                                <td>1</td>
-                                                <td>Huawei Disaster Reveals Google' s Iron Grip on Android</td>
-                                                <td>Technology</td>
-                                                <td>admin1</td>
-                                                <td>May 24,2019</td>
-                                                <td><a href="edit-post.html"><i class="fas fa-edit"></i> Edit</a></td>
-                                                <td><i class="fas fa-trash-alt"></i> Delete</td>
-                                            </tr>
-                                            <tr>
-                                                <td>2</td>
-                                                <td>Huawei Disaster Reveals Google' s Iron Grip on Android</td>
-                                                <td>Technology</td>
-                                                <td>admin1</td>
-                                                <td>May 24,2019</td>
-                                                <td><a href="edit-post.html"><i class="fas fa-edit"></i> Edit</a></td>
-                                                <td><i class="fas fa-trash-alt"></i> Delete</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
+                                <div id="wrapper">
+									<table align='center' cellspacing=2 cellpadding=5 id="data_table"  class="table table-hover">
+									<tr>
+									<th>Title</th>
+									<th>Category</th>
+									<th>Author</th>
+									<th>Date</th>
+									<th colspan="2">Action</th>
+									</tr>
+									<tr id="row1">
+									<td id="title_row1">Name1</td>
+									<td id="category_row1">Android</td>
+									<td id="author_row1">Loan</td>
+									<td id="date_row1">MAY 20 2019</td>
+									<td>
+									<input type="button" id="edit_button1" value="Edit" class="edit" onclick="edit_row('1')">
+									<input type="button" id="save_button1" value="Save" class="save" onclick="save_row('1')">
+									<input type="button" value="Delete" class="delete" onclick="delete_row('1')">
+									</td>
+									</tr>
+
+									<tr id="row2">
+									<td id="title_row2">Name2</td>
+									<td id="category_row2">Ios</td>
+									<td id="author_row2">Thanh</td>
+									<td id="date_row2">MAY 20 2019</td>
+									<td>
+									<input type="button" id="edit_button2" value="Edit" class="edit" onclick="edit_row('2')">
+									<input type="button" id="save_button2" value="Save" class="save" onclick="save_row('2')">
+									<input type="button" value="Delete" class="delete" onclick="delete_row('2')">
+									</td>
+									</tr>
+
+									<tr id="row3">
+									<td id="title_row3">Name3</td>
+									<td id="category_row3">PHO</td>
+									<td id="author_row3">Hien</td>
+									<td id="date_row3">MAY 20 2019</td>
+									<td>
+									<input type="button" id="edit_button3" value="Edit" class="edit" onclick="edit_row('3')" >
+									<input type="button" id="save_button3" value="Save" class="save" onclick="save_row('3')" >
+									<input type="button" value="Delete" class="delete" onclick="delete_row('3')" >
+									</td>
+									</tr>
+
+									<tr>
+									<td><input type="text" id="new_title"></td>
+									<td><input type="text" id="new_category"></td>
+									<td><input type="text" id="new_author"></td>
+									<td><input type="text" id="new_date"></td>
+									<td><input type="button" class="add" onclick="add_row();" value="Create"></td>
+									</tr>
+
+									</table>
                                 </div>
                             </div>
                         </div>
                     </div>
+                </div>    
                 </div>
-                <!-- ============================================================== -->
-                <!-- End PAge Content -->
-                <!-- ============================================================== -->
-                <!-- ============================================================== -->
-                <!-- Right sidebar -->
-                <!-- ============================================================== -->
-                <!-- .right-sidebar -->
-                <div class="right-sidebar">
-                    <div class="slimscrollright">
-                        <div class="rpanel-title"> Service Panel <span><i class="ti-close right-side-toggle"></i></span>
-                        </div>
-                        <div class="r-panel-body">
-                            <ul id="themecolors" class="mt-3">
-                                <li><b>With Light sidebar</b></li>
-                                <li><a href="javascript:void(0)" data-theme="default" class="default-theme">1</a></li>
-                                <li><a href="javascript:void(0)" data-theme="green" class="green-theme">2</a></li>
-                                <li><a href="javascript:void(0)" data-theme="red" class="red-theme">3</a></li>
-                                <li><a href="javascript:void(0)" data-theme="blue" class="blue-theme working">4</a></li>
-                                <li><a href="javascript:void(0)" data-theme="purple" class="purple-theme">5</a></li>
-                                <li><a href="javascript:void(0)" data-theme="megna" class="megna-theme">6</a></li>
-                                <li class="d-block mt-4"><b>With Dark sidebar</b></li>
-                                <li><a href="javascript:void(0)" data-theme="default-dark"
-                                        class="default-dark-theme">7</a></li>
-                                <li><a href="javascript:void(0)" data-theme="green-dark" class="green-dark-theme">8</a>
-                                </li>
-                                <li><a href="javascript:void(0)" data-theme="red-dark" class="red-dark-theme">9</a></li>
-                                <li><a href="javascript:void(0)" data-theme="blue-dark" class="blue-dark-theme">10</a>
-                                </li>
-                                <li><a href="javascript:void(0)" data-theme="purple-dark"
-                                        class="purple-dark-theme">11</a></li>
-                                <li><a href="javascript:void(0)" data-theme="megna-dark"
-                                        class="megna-dark-theme ">12</a></li>
-                            </ul>
-                            <ul class="mt-3 chatonline">
-                                <li><b>Chat option</b></li>
-                                <li>
-                                    <a href="javascript:void(0)"><img src="../assets/images/users/1.jpg" alt="user-img"
-                                            class="img-circle"> <span>Varun Dhavan <small
-                                                class="text-success">online</small></span></a>
-                                </li>
-                                <li>
-                                    <a href="javascript:void(0)"><img src="../assets/images/users/2.jpg" alt="user-img"
-                                            class="img-circle"> <span>Genelia Deshmukh <small
-                                                class="text-warning">Away</small></span></a>
-                                </li>
-                                <li>
-                                    <a href="javascript:void(0)"><img src="../assets/images/users/3.jpg" alt="user-img"
-                                            class="img-circle"> <span>Ritesh Deshmukh <small
-                                                class="text-danger">Busy</small></span></a>
-                                </li>
-                                <li>
-                                    <a href="javascript:void(0)"><img src="../assets/images/users/4.jpg" alt="user-img"
-                                            class="img-circle"> <span>Arijit Sinh <small
-                                                class="text-muted">Offline</small></span></a>
-                                </li>
-                                <li>
-                                    <a href="javascript:void(0)"><img src="../assets/images/users/5.jpg" alt="user-img"
-                                            class="img-circle"> <span>Govinda Star <small
-                                                class="text-success">online</small></span></a>
-                                </li>
-                                <li>
-                                    <a href="javascript:void(0)"><img src="../assets/images/users/6.jpg" alt="user-img"
-                                            class="img-circle"> <span>John Abraham<small
-                                                class="text-success">online</small></span></a>
-                                </li>
-                                <li>
-                                    <a href="javascript:void(0)"><img src="../assets/images/users/7.jpg" alt="user-img"
-                                            class="img-circle"> <span>Hritik Roshan<small
-                                                class="text-success">online</small></span></a>
-                                </li>
-                                <li>
-                                    <a href="javascript:void(0)"><img src="../assets/images/users/8.jpg" alt="user-img"
-                                            class="img-circle"> <span>Pwandeep rajan <small
-                                                class="text-success">online</small></span></a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <!-- ============================================================== -->
-                <!-- End Right sidebar -->
-                <!-- ============================================================== -->
+
             </div>
-            <!-- ============================================================== -->
-            <!-- End Container fluid  -->
-            <!-- ============================================================== -->
-            <!-- ============================================================== -->
-            <!-- footer -->
-            <!-- ============================================================== -->
-            <footer class="footer"> © 2019 Monster Admin by wrappixel.com </footer>
-            <!-- ============================================================== -->
-            <!-- End footer -->
-            <!-- ============================================================== -->
+
         </div>
-        <!-- ============================================================== -->
-        <!-- End Page wrapper  -->
-        <!-- ============================================================== -->
+
     </div>
-    <!-- ============================================================== -->
-    <!-- End Wrapper -->
-    <!-- ============================================================== -->
-    <!-- ============================================================== -->
-    <!-- All Jquery -->
-    <!-- ============================================================== -->
+
     <script data-cfasync="false"
         src="../../../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
     <script src="../assets/plugins/jquery/jquery.min.js"></script>
@@ -684,54 +596,14 @@
     <script src="../../../../../cdn.datatables.net/buttons/1.2.2/js/buttons.html5.min.js"></script>
     <script src="../../../../../cdn.datatables.net/buttons/1.2.2/js/buttons.print.min.js"></script>
     <!-- end - This is for export functionality only -->
-    <script>
-        $(function () {
-            $('#myTable').DataTable();
-            $(document).ready(function () {
-                var table = $('#example').DataTable({
-                    "columnDefs": [{
-                        "visible": false,
-                        "targets": 2
-                    }],
-                    "order": [
-                        [2, 'asc']
-                    ],
-                    "displayLength": 25,
-                    "drawCallback": function (settings) {
-                        var api = this.api();
-                        var rows = api.rows({
-                            page: 'current'
-                        }).nodes();
-                        var last = null;
-                        api.column(2, {
-                            page: 'current'
-                        }).data().each(function (group, i) {
-                            if (last !== group) {
-                                $(rows).eq(i).before('<tr class="group"><td colspan="5">' + group + '</td></tr>');
-                                last = group;
-                            }
-                        });
-                    }
-                });
-                // Order by the grouping
-                $('#example tbody').on('click', 'tr.group', function () {
-                    var currentOrder = table.order()[0];
-                    if (currentOrder[0] === 2 && currentOrder[1] === 'asc') {
-                        table.order([2, 'desc']).draw();
-                    } else {
-                        table.order([2, 'asc']).draw();
-                    }
-                });
-            });
-        });
-        $('#example23').DataTable({
-            dom: 'Bfrtip',
-            buttons: [
-                'copy', 'csv', 'excel', 'pdf', 'print'
-            ]
-        });
-        $('.buttons-copy, .buttons-csv, .buttons-print, .buttons-pdf, .buttons-excel').addClass('btn btn-primary mr-1');
+    <script language="javascript">
+        document.getElementById("content").style.display = 'none';
+        document.getElementById("create").onclick = function () {
+            document.getElementById("content").style.display = 'block';
+        };
     </script>
+	<script src="js/script.js"></script>
+	<script src="js/table_script.js"></script>
     <!-- ============================================================== -->
     <!-- Style switcher -->
     <!-- ============================================================== -->
