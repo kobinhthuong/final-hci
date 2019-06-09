@@ -352,8 +352,8 @@
                     <div class="col-12">
                         <div class="card">
                             <div class="card-body">
-                                <form class="mt-4">
-                                    <div class="form-group">
+                                <form class="mt-4" action="manage-role.html">
+                                    <div class="form-group" >
                                         <label for="validationCustom01">Role's name</label>
                                         <input type="text" class="form-control" id="validationCustom01"
                                             placeholder="Enter name" required>
@@ -396,6 +396,14 @@
                         </div>
                     </div>
                 </div>
+								<script>
+								    var a =document.getElementsById("validationCustom01").value;
+									if(a!=''){
+									alert('Edit successfully!');
+									window.location.href = 'manage-role.html';
+									}else{
+									alert('lack 0f information!');}
+								</script>
                 <!-- row -->
 
                 <!-- ============================================================== -->
