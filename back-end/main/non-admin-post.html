@@ -9,7 +9,7 @@
         <meta name="author" content="">
         <!-- Favicon icon -->
         <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/favicon.png">
-        <title>Non-admin: Post</title>
+        <title>Editor: Post</title>
         <!-- Bootstrap Core CSS -->
         <link href="../assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="../assets/plugins/datatables/media/css/dataTables.bootstrap4.css">
@@ -268,34 +268,33 @@
                     <nav class="sidebar-nav">
                         <ul id="sidebarnav">
                             <li>
-                                <a class="has-arrow" href="non-admin.html" aria-expanded="false"><i
-                                        class="mdi mdi-gauge"></i><span class="hide-menu">Dashboard <span
-                                            class="label label-rounded label-success">5</span></span></a>
+                                <a href="non-admin.html" aria-expanded="false"><i
+                                        class="mdi mdi-gauge"></i><span class="hide-menu">Dashboard</a>
                             </li>
                             <li>
-                                <a class="has-arrow " href="non-admin-post.html" aria-expanded="false"><i
+                                <a href="non-admin-post.html" aria-expanded="false"><i
                                         class="mdi mdi-file-document-box"></i><span class="hide-menu">Post</span></a>
                             </li>
                             <li>
-                                <a class="has-arrow " href="#" aria-expanded="false"><i
+                                <a href="limited-access.html" aria-expanded="false"><i
                                         class="mdi mdi-account"></i><span class="hide-menu">User</span></a>
                             </li>
                             <li>
-                                <a class="has-arrow" href="#" aria-expanded="false"><i
-                                        class="mdi mdi-folder-multiple-image"></i><span class="hide-menu">Media</span></a>
-                                <ul aria-expanded="false" class="collapse">
-                                    <li><a href="#"><i class="mdi mdi-file"></i> File</a></li>
-                                    <li><a href="#"><i class="mdi mdi-image"></i> Image</a></li>
-
-                                </ul>
+                                <a href="limited-access.html" aria-expanded="false"><i
+                                        class="mdi mdi-account-settings-variant"></i><span class="hide-menu"> Role</span></a>
                             </li>
-
                             <li>
                                 <a class="has-arrow" href="#" aria-expanded="false"><i
-                                        class="mdi mdi-tag-multiple"></i><span class="hide-menu">Category</span></a>
-
+                                        class="mdi mdi-folder-multiple-image"></i><span class="hide-menu"> Media</span></a>
+                                <ul aria-expanded="false" class="collapse">
+                                    <li><a href="non-admin-media.html"><i class="mdi mdi-file"></i> File</a></li>
+                                    <li><a href="non-admin-media.html"><i class="mdi mdi-image"></i> Image</a></li>
+                                </ul>
                             </li>
-
+                            <li>
+                                <a href="non-admin-category.html" aria-expanded="false"><i
+                                        class="mdi mdi-tag-multiple"></i><span class="hide-menu"> Category</span></a>
+                            </li>
                         </ul>
                     </nav>
                     <!-- End Sidebar navigation -->
@@ -388,19 +387,33 @@
                                                     <td>1</td>
                                                     <td>Huawei Disaster Reveals Google' s Iron Grip on Android</td>
                                                     <td>Technology</td>
-                                                    <td>editor1</td>
+                                                    <td>Admin1</td>
                                                     <td>May 24,2019</td>
-                                                    <td>Edit</td>
-                                                    <td>Delete</td>
+                                                    <td><i class="fas fa-edit"></i>Edit</td>
+                                                    <td><i class="fas fa-trash-alt"></i>Delete</td>
                                                 </tr>
                                                 <tr>
                                                     <td>2</td>
                                                     <td>Huawei Disaster Reveals Google' s Iron Grip on Android</td>
                                                     <td>Technology</td>
-                                                    <td>editor2</td>
+                                                    <td>Admin2</td>
                                                     <td>May 24,2019</td>
-                                                    <td>Edit</td>
-                                                    <td>Delete</td>
+                                                    <td><i class="fas fa-edit"></i>Edit</td>
+                                                    <td><i class="fas fa-trash-alt"></i> Delete</td>
+                                                </tr>
+                                                <tr id="row1">
+                                                    <td>3</td>
+                                                    <td>What Really Happens to AirPods When They Die</td>
+                                                    <td>Design</td>
+                                                    <td>Editor</td>
+                                                    <td>May 28, 2019</td>
+                                                    <td>
+                                                        <a href="non-adminEdit-post.html"><i class="fas fa-edit"></i> Edit</a>
+                                                    </td>
+                                                    <td>
+                                                        <a href="#" onclick="delete_row('1')"><i
+                                                                class="fas fa-trash-alt"></i> Delete</a>
+                                                    </td>
                                                 </tr>
                                             </tbody>
                                         </table>
