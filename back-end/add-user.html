@@ -23,25 +23,39 @@
                 <div class="form-group">
                     <div class="col-4">
                         <label>User's name</label>
-                        <input size="50" type="text" class="form-control" placeholder="Enter user's name">
+                        <input size="50" type="text" class="form-control" placeholder="Enter user's name" id="name">
                     </div>
                 </div>
                 <div class="form-group">
                     <div class="col-4">
                         <label>Role</label>
-                        <select class="custom-select">
-                            <option selected>Choose role...</option>
-                            <option value="admin">Admin</option>
-                            <option value="editor">Editor</option>
+                        <select class="custom-select" name="choice" class="required">
+                            <option value="admin" >Admin</option>
+                            <option value="editor" >Editor</option>
                         </select>
                     </div>
                 </div>
                 <div class="col-4 add-button">
-                    <button type="button" class="btn btn-primary">Add</button>
+                    <button type="button" class="btn btn-primary" onclick="validateForm()">Add</button>
                 </div>
             </form>
         </div>
     </div>
+	<script>
+	    function validateForm()
+			{
+				var name = document.getElementById('name').value;
+				var role = document.getElementById('role').value;
+
+				if (name == ''){
+					alert('Enter your username');
+				}else{
+					alert('Add successfull');
+					return true;
+				}
+				return false;
+			}
+	</script>
 </body>
 
 </html>

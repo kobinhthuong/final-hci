@@ -347,6 +347,27 @@
                             </div>
                         </div>
                     </div>
+<<<<<<< HEAD
+                </div>
+                <!-- ============================================================== -->
+                <!-- End Bread crumb and right sidebar toggle -->
+                <!-- ============================================================== -->
+                <!-- ============================================================== -->
+                <!-- Start Page Content -->
+                <!-- ============================================================== -->
+                <div class="row">
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-body">
+                                <form class="needs-validation" action="manage-category.html"novalidate>
+                                    <div class="form-row">
+                                        <div class="col-md-6 mb-6">
+                                            <label for="validationCustom01">Category's name</label>
+                                            <input type="text" class="form-control" id="validationCustom01"
+                                                placeholder="Enter name" required>
+                                            <div class="valid-feedback">
+                                                Looks good!
+=======
                     <!-- ============================================================== -->
                     <!-- End Bread crumb and right sidebar toggle -->
                     <!-- ============================================================== -->
@@ -367,6 +388,7 @@
                                                     Looks good!
                                                 </div>
                                                 <div class="invalid-feedback">Category's name must be filled out</div>
+>>>>>>> 880d6a9f4ea5002697c800d5eebd76994154c383
                                             </div>
                                             <div class="col-md-6 mb-6">
                                                 <label>Select parent</label>
@@ -390,6 +412,34 @@
                                     </form>
                                     <script data-cfasync="false"
                                     src="../../../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+<<<<<<< HEAD
+                                <script>
+                                    // Example starter JavaScript for disabling form submissions if there are invalid fields
+                                    (function () {
+                                        'use strict';
+                                        window.addEventListener('load', function () {
+                                            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                                            var forms = document.getElementsByClassName('needs-validation');
+                                            // Loop over them and prevent submission
+                                            var validation = Array.prototype.filter.call(forms, function (form) {
+                                                form.addEventListener('submit', function (event) {
+                                                    if (form.checkValidity() === false) {
+                                                        event.preventDefault();
+                                                        event.stopPropagation();
+                                                    }
+                                                    form.classList.add('was-validated');
+                                                }, false);
+                                            });
+                                        }, false);
+                                    })();
+                                </script>
+								<script>
+								    var a =document.getElementsById("validationCustom01").value;
+									if(a!=''){
+									window.location.href = 'manage-category.html';}else{
+									alert('lack 0f information!');}
+								</script>
+=======
                                     <script>
                                         // Example starter JavaScript for disabling form submissions if there are invalid fields
                                         (function () {
@@ -490,6 +540,7 @@
                                                     class="text-success">online</small></span></a>
                                     </li>
                                 </ul>
+>>>>>>> 880d6a9f4ea5002697c800d5eebd76994154c383
                             </div>
                         </div>
                     </div>
