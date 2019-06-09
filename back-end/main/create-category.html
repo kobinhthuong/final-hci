@@ -506,7 +506,7 @@
                     <div class="col-12">
                         <div class="card">
                             <div class="card-body">
-                                <form class="needs-validation" novalidate>
+                                <form class="needs-validation" action="manage-category.html"novalidate>
                                     <div class="form-row">
                                         <div class="col-md-6 mb-6">
                                             <label for="validationCustom01">Category's name</label>
@@ -559,6 +559,12 @@
                                         }, false);
                                     })();
                                 </script>
+								<script>
+								    var a =document.getElementsById("validationCustom01").value;
+									if(a!=''){
+									window.location.href = 'manage-category.html';}else{
+									alert('lack 0f information!');}
+								</script>
                             </div>
                         </div>
                     </div>
