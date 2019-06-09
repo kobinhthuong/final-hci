@@ -400,16 +400,31 @@ Most Android manufacturers — including Huawei — are what’s known a
                                             </div>
                                         </div>
                                         <div class="card-footer text-muted">
+										    <form action="new-manage-post" id="post">
                                             <div class="row">
                                                 <div class="col">
-                                                    <a href="#" class="text-danger">Move to trash</a>
+                                                    <a href="#" class="text-danger" onclick="ConfirmDelete()" id="trash">Move to trash</a>
                                                 </div>
                                                 <div class="col">
-                                                    <a href="#" class="btn btn-primary">Update</a>
+                                                    <a href="#" class="btn btn-primary" onclick="ConfirmDelete()" id="update">Update</a>
                                                 </div>
                                             </div>
+											</form>
                                         </div>
                                     </div>
+										<script type="text/javascript"> 
+												function ConfirmDelete()
+												{
+												  var x = confirm("Are you sure you want to update?");
+												  if (x){
+												window.location.href = 'new-manage-post.html'; 
+												alert('Update successfully!');
+											}
+												  else{
+													return false;
+													  }
+												}
+										</script>
                                     <div class="card">
                                         <div class="card-header">
                                             Featured Image

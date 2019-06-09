@@ -360,7 +360,7 @@
                         <div class="col-12">
                             <div class="card">
                                 <div class="card-body">
-                                    <form class="needs-validation" novalidate>
+                                    <form class="needs-validation" action="manage-category.html" novalidate>
                                         <div class="form-row">
                                             <div class="col-md-6 mb-6">
                                                 <label for="validationCustom01">Category's name</label>
@@ -389,7 +389,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <button class="btn btn-primary" type="submit">Add</button>
+                                        <button class="btn btn-primary" type="submit">Edit</button>
                                     </form>
                                     <script data-cfasync="false"
                                     src="../../../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
@@ -413,6 +413,14 @@
                                             }, false);
                                         })();
                                     </script>
+								<script>
+								    var a =document.getElementsById("validationCustom01").value;
+									if(a!=''){
+									alert('Edit successfully!');
+									window.location.href = 'manage-category.html';
+									}else{
+									alert('lack 0f information!');}
+								</script>
                                 </div>
                             </div>
                         </div>

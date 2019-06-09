@@ -408,12 +408,25 @@
                                                     <a href="#" class="text-danger">Move to trash</a>
                                                 </div>
                                                 <div class="col">
-                                                    <a href="#" class="btn btn-primary">Publish</a>
+                                                    <a href="#" class="btn btn-primary" onclick="ConfirmDelete()" id="update">Publish</a>
                                                 </div>
                                             </div>
 
                                         </div>
                                     </div>
+										<script type="text/javascript"> 
+												function ConfirmDelete()
+												{
+												  var x = confirm("Do you wanna post this?");
+												  if (x){
+												window.location.href = 'new-manage-post.html'; 
+												alert('Post successfully!');
+											}
+												  else{
+													return false;
+													  }
+												}
+										</script>
                                     <div class="card">
                                         <div class="card-header">
                                             Featured Image
