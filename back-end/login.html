@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  
   <title>Login Form</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -16,7 +17,7 @@
 
 <div class="container" style="align:center; width:500px; margin-top:100px;">
   <h2 style="text-align:center;">Login</h2>
-  <form action="/action_page.php" class="needs-validation" novalidate>
+  <form action="admin.html" class="needs-validation" novalidate>
   <div class="form-group">
     <label for="uname">Username:</label>
     <input type="text" class="form-control" id="uname" placeholder="Enter username" name="uname" required>
@@ -35,7 +36,7 @@
       <div class="invalid-feedback">Check this checkbox to continue.</div>
     </label>
   </div>
-  <button type="submit" class="btn btn-primary">Login</button>
+  <button type="submit" class="btn btn-primary" onclick="validateForm()">Login</button>
 </form>
 
 <script>
@@ -55,6 +56,20 @@
     });
   }, false);
 })();
+</script>
+<script type="text/javascript"> 
+
+    function validateForm()
+{
+        var username = document.getElementById('uname').value;
+    var password = document.getElementById('pwd').value;
+    if (username == 'admin' && password == 'admin')
+	    { window.location.href = 'admin.html';
+		}else{
+		alert('wrong username or password!');
+		}
+          
+}
 </script>
 </div>
 

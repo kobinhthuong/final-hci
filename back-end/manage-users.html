@@ -25,7 +25,9 @@
 					<table style="width:100%;">
 						<tr>
 							<td style="width:30%;">
-								<form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+							    <input type="button" id="btn1" value="hide"/>
+                                <input type="button" id="btn2" value="Add User"/>
+								<form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off" id="content">
 									<div>
 										<label>ID*</label><label class="validation-error hide" id="IDValidationError">This field is required.</label>
 										<input type="text" name="ID" id="ID">
@@ -110,6 +112,19 @@
         </div>
     </div>
 	<script src="script.js"></script>
+	<script language="javascript">
+
+
+                document.getElementById("content").style.display = 'none';
+            
+			document.getElementById("btn1").onclick = function () {
+                document.getElementById("content").style.display = 'none';
+            };
+            document.getElementById("btn2").onclick = function () {
+                document.getElementById("content").style.display = 'block';
+            };
+
+        </script>
 </body>
 
 
