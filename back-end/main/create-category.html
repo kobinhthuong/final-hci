@@ -496,22 +496,18 @@
                         </div>
                     </div>
                 </div>
-                <!-- ============================================================== -->
-                <!-- End Bread crumb and right sidebar toggle -->
-                <!-- ============================================================== -->
-                <!-- ============================================================== -->
-                <!-- Start Page Content -->
+              
                 <!-- ============================================================== -->
                 <div class="row">
                     <div class="col-12">
                         <div class="card">
                             <div class="card-body">
-                                <form class="needs-validation" action="manage-category.html"novalidate>
+                                <form class="needs-validation" novalidate>
                                     <div class="form-row">
                                         <div class="col-md-6 mb-6">
                                             <label for="validationCustom01">Category's name</label>
                                             <input type="text" class="form-control" id="validationCustom01"
-                                                placeholder="Enter name" required>
+                                                   placeholder="Enter name" required>
                                             <div class="valid-feedback">
                                                 Looks good!
                                             </div>
@@ -531,14 +527,19 @@
                                             <label>Description (optional)</label>
                                             <div class="form-group">
                                                 <textarea class="form-control" id="exampleTextarea" rows="2"
+<<<<<<< HEAD
+                                                          placeholder="Describe the category"></textarea>
+=======
                                                     placeholder="Describe the category"></textarea>
+>>>>>>> 202390ed3d017ae89f5e24e37982389847f10e4a
                                             </div>
                                         </div>
                                     </div>
                                     <button class="btn btn-primary" type="submit">Add</button>
                                 </form>
                                 <script data-cfasync="false"
-                                    src="../../../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+<<<<<<< HEAD
+                                src="../../../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
                                 <script>
                                     // Example starter JavaScript for disabling form submissions if there are invalid fields
                                     (function () {
@@ -559,12 +560,46 @@
                                         }, false);
                                     })();
                                 </script>
+                                <script>
+                                    var a = document.getElementsById("validationCustom01").value;
+                                    if (a != '') {
+                                        window.location.href = 'manage-category.html';
+                                    } else {
+                                        alert('lack 0f information!');
+                                    }
+                                </script>
+=======
+                                    src="../../../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+>>>>>>> 202390ed3d017ae89f5e24e37982389847f10e4a
+                                <script>
+                                    // Example starter JavaScript for disabling form submissions if there are invalid fields
+                                    (function () {
+                                        'use strict';
+                                        window.addEventListener('load', function () {
+                                            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                                            var forms = document.getElementsByClassName('needs-validation');
+                                            // Loop over them and prevent submission
+                                            var validation = Array.prototype.filter.call(forms, function (form) {
+                                                form.addEventListener('submit', function (event) {
+                                                    if (form.checkValidity() === false) {
+                                                        event.preventDefault();
+                                                        event.stopPropagation();
+                                                    }
+                                                    form.classList.add('was-validated');
+                                                }, false);
+                                            });
+                                        }, false);
+                                    })();
+                                </script>
+<<<<<<< HEAD
+=======
 								<script>
 								    var a =document.getElementsById("validationCustom01").value;
 									if(a!=''){
 									window.location.href = 'manage-category.html';}else{
 									alert('lack 0f information!');}
 								</script>
+>>>>>>> 202390ed3d017ae89f5e24e37982389847f10e4a
                             </div>
                         </div>
                     </div>
@@ -591,57 +626,99 @@
                                 <li><a href="javascript:void(0)" data-theme="megna" class="megna-theme">6</a></li>
                                 <li class="d-block m-t-30"><b>With Dark sidebar</b></li>
                                 <li><a href="javascript:void(0)" data-theme="default-dark"
+<<<<<<< HEAD
+                                       class="default-dark-theme">7</a></li>
+=======
                                         class="default-dark-theme">7</a></li>
+>>>>>>> 202390ed3d017ae89f5e24e37982389847f10e4a
                                 <li><a href="javascript:void(0)" data-theme="green-dark" class="green-dark-theme">8</a>
                                 </li>
                                 <li><a href="javascript:void(0)" data-theme="red-dark" class="red-dark-theme">9</a></li>
                                 <li><a href="javascript:void(0)" data-theme="blue-dark" class="blue-dark-theme">10</a>
                                 </li>
                                 <li><a href="javascript:void(0)" data-theme="purple-dark"
+<<<<<<< HEAD
+                                       class="purple-dark-theme">11</a></li>
+                                <li><a href="javascript:void(0)" data-theme="megna-dark"
+                                       class="megna-dark-theme ">12</a></li>
+=======
                                         class="purple-dark-theme">11</a></li>
                                 <li><a href="javascript:void(0)" data-theme="megna-dark"
                                         class="megna-dark-theme ">12</a></li>
+>>>>>>> 202390ed3d017ae89f5e24e37982389847f10e4a
                             </ul>
                             <ul class="m-t-20 chatonline">
                                 <li><b>Chat option</b></li>
                                 <li>
                                     <a href="javascript:void(0)"><img src="../assets/images/users/1.jpg" alt="user-img"
+<<<<<<< HEAD
+                                                                      class="img-circle"> <span>Varun Dhavan <small
+=======
                                             class="img-circle"> <span>Varun Dhavan <small
+>>>>>>> 202390ed3d017ae89f5e24e37982389847f10e4a
                                                 class="text-success">online</small></span></a>
                                 </li>
                                 <li>
                                     <a href="javascript:void(0)"><img src="../assets/images/users/2.jpg" alt="user-img"
+<<<<<<< HEAD
+                                                                      class="img-circle"> <span>Genelia Deshmukh <small
+=======
                                             class="img-circle"> <span>Genelia Deshmukh <small
+>>>>>>> 202390ed3d017ae89f5e24e37982389847f10e4a
                                                 class="text-warning">Away</small></span></a>
                                 </li>
                                 <li>
                                     <a href="javascript:void(0)"><img src="../assets/images/users/3.jpg" alt="user-img"
+<<<<<<< HEAD
+                                                                      class="img-circle"> <span>Ritesh Deshmukh <small
+=======
                                             class="img-circle"> <span>Ritesh Deshmukh <small
+>>>>>>> 202390ed3d017ae89f5e24e37982389847f10e4a
                                                 class="text-danger">Busy</small></span></a>
                                 </li>
                                 <li>
                                     <a href="javascript:void(0)"><img src="../assets/images/users/4.jpg" alt="user-img"
+<<<<<<< HEAD
+                                                                      class="img-circle"> <span>Arijit Sinh <small
+=======
                                             class="img-circle"> <span>Arijit Sinh <small
+>>>>>>> 202390ed3d017ae89f5e24e37982389847f10e4a
                                                 class="text-muted">Offline</small></span></a>
                                 </li>
                                 <li>
                                     <a href="javascript:void(0)"><img src="../assets/images/users/5.jpg" alt="user-img"
+<<<<<<< HEAD
+                                                                      class="img-circle"> <span>Govinda Star <small
+=======
                                             class="img-circle"> <span>Govinda Star <small
+>>>>>>> 202390ed3d017ae89f5e24e37982389847f10e4a
                                                 class="text-success">online</small></span></a>
                                 </li>
                                 <li>
                                     <a href="javascript:void(0)"><img src="../assets/images/users/6.jpg" alt="user-img"
+<<<<<<< HEAD
+                                                                      class="img-circle"> <span>John Abraham<small
+=======
                                             class="img-circle"> <span>John Abraham<small
+>>>>>>> 202390ed3d017ae89f5e24e37982389847f10e4a
                                                 class="text-success">online</small></span></a>
                                 </li>
                                 <li>
                                     <a href="javascript:void(0)"><img src="../assets/images/users/7.jpg" alt="user-img"
+<<<<<<< HEAD
+                                                                      class="img-circle"> <span>Hritik Roshan<small
+=======
                                             class="img-circle"> <span>Hritik Roshan<small
+>>>>>>> 202390ed3d017ae89f5e24e37982389847f10e4a
                                                 class="text-success">online</small></span></a>
                                 </li>
                                 <li>
                                     <a href="javascript:void(0)"><img src="../assets/images/users/8.jpg" alt="user-img"
+<<<<<<< HEAD
+                                                                      class="img-circle"> <span>Pwandeep rajan <small
+=======
                                             class="img-circle"> <span>Pwandeep rajan <small
+>>>>>>> 202390ed3d017ae89f5e24e37982389847f10e4a
                                                 class="text-success">online</small></span></a>
                                 </li>
                             </ul>
@@ -698,6 +775,26 @@
     <!-- ============================================================== -->
     <script src="../assets/plugins/styleswitcher/jQuery.style.switcher.js"></script>
     <script>
+<<<<<<< HEAD
+                                    // Example starter JavaScript for disabling form submissions if there are invalid fields
+                                    (function () {
+                                        'use strict';
+                                        window.addEventListener('load', function () {
+                                            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                                            var forms = document.getElementsByClassName('needs-validation');
+                                            // Loop over them and prevent submission
+                                            var validation = Array.prototype.filter.call(forms, function (form) {
+                                                form.addEventListener('submit', function (event) {
+                                                    if (form.checkValidity() === false) {
+                                                        event.preventDefault();
+                                                        event.stopPropagation();
+                                                    }
+                                                    form.classList.add('was-validated');
+                                                }, false);
+                                            });
+                                        }, false);
+                                    })();
+=======
         // Example starter JavaScript for disabling form submissions if there are invalid fields
         (function () {
             'use strict';
@@ -716,6 +813,7 @@
                 });
             }, false);
         })();
+>>>>>>> 202390ed3d017ae89f5e24e37982389847f10e4a
     </script>
 </body>
 
