@@ -2,7 +2,7 @@
 <html lang="en">
 
 
-<!-- Mirrored from www.wrappixel.com/demos/admin-templates/monster-admin/main/pages-gallery.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 11 Feb 2019 11:37:02 GMT -->
+<!-- Mirrored from www.wrappixel.com/demos/admin-templates/monster-admin/main/table-data-table.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 11 Feb 2019 11:36:41 GMT -->
 
 <head>
     <meta charset="utf-8">
@@ -16,8 +16,7 @@
     <title>Monster Admin Template - The Most Complete & Trusted Bootstrap 4 Admin Template</title>
     <!-- Bootstrap Core CSS -->
     <link href="../assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Popup CSS -->
-    <link href="../assets/plugins/Magnific-Popup-master/dist/magnific-popup.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../assets/plugins/datatables/media/css/dataTables.bootstrap4.css">
     <!-- Custom CSS -->
     <link href="css/style.css" rel="stylesheet">
     <!-- You can change the theme colors from here -->
@@ -51,7 +50,7 @@
                 <!-- Logo -->
                 <!-- ============================================================== -->
                 <div class="navbar-header">
-                    <a class="navbar-brand" href="index.html">
+                    <a class="navbar-brand" href="new-index.html">
                         <!-- Logo icon --><b>
                             <!--You can put here icon as well // <i class="wi wi-sunset"></i> //-->
                             <!-- Dark Logo icon -->
@@ -368,7 +367,7 @@
                                                 <p class="text-muted"><a
                                                         href="https://www.wrappixel.com/cdn-cgi/l/email-protection"
                                                         class="__cf_email__"
-                                                        data-cfemail="7b0d1a090e153b1c161a121755181416">[email&#160;protected]</a>
+                                                        data-cfemail="ed9b8c9f9883ad8a808c8481c38e8280">[email&#160;protected]</a>
                                                 </p><a href="profile.html"
                                                     class="btn btn-rounded btn-danger btn-sm">View Profile</a>
                                             </div>
@@ -432,7 +431,7 @@
                             <a class="has-arrow" href="new-manage-media.html" aria-expanded="false"><i
                                     class="mdi mdi-folder-multiple-image"></i><span class="hide-menu">Media</span></a>
                             <ul aria-expanded="false" class="collapse">
-                                <li><a href="manage-file.html"><i class="mdi mdi-file"></i> File</a></li>
+                                <li><a href="new-manage-media.html"><i class="mdi mdi-file"></i> File</a></li>
                                 <li><a href="new-manage-media.html"><i class="mdi mdi-image"></i> Image</a></li>
 
                             </ul>
@@ -471,23 +470,25 @@
             <!-- Container fluid  -->
             <!-- ============================================================== -->
             <div class="container-fluid">
+                <h6><i class="fas fa-exclamation-triangle"></i><i>You are on editor role, there may be some actions limited</i></h6>
                 <!-- ============================================================== -->
                 <!-- Bread crumb and right sidebar toggle -->
                 <!-- ============================================================== -->
                 <div class="row page-titles">
                     <div class="col-md-6 col-8 align-self-center">
-                        <h3 class="text-themecolor mb-0 mt-0">Manage images</h3>
+                        <h3 class="text-themecolor mb-0 mt-0">Manage posts</h3>
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item"><a href="javascript:void(0)">Home</a></li>
-                            <li class="breadcrumb-item active">Images</li>
+                            <li class="breadcrumb-item active">Post table</li>
                         </ol>
                     </div>
                     <div class="col-md-6 col-4 align-self-center">
                         <button
                             class="right-side-toggle waves-effect waves-light btn-info btn-circle btn-sm float-right ml-2"><i
                                 class="ti-settings text-white"></i></button>
-                        <button onclick="window.location.href='upload-file.html'" class="btn float-right hidden-sm-down btn-success"><i class="mdi mdi-plus-circle"></i>
-                            Upload</button>
+                        <button onclick="window.location.href='create-post.html'"
+                            class="btn float-right hidden-sm-down btn-success"><i class="mdi mdi-plus-circle"></i>
+                            Create</button>
                         <div class="dropdown float-right mr-2 hidden-sm-down">
                             <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> January 2019
@@ -504,183 +505,75 @@
                 <!-- ============================================================== -->
                 <!-- Start Page Content -->
                 <!-- ============================================================== -->
-                <div class="row el-element-overlay">
-                    <div class="col-md-12">
-                        <h4 class="card-title">Album</h4>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
+                <div class="row">
+                    <div class="col-12">
                         <div class="card">
-                            <div class="el-card-item">
-                                <div class="el-card-avatar el-overlay-1"> <img src="../assets/images/big/img1.jpg"
-                                        alt="user" />
-                                    <div class="el-overlay">
-                                        <ul class="el-info">
-                                            <li><a class="btn default btn-outline image-popup-vertical-fit"
-                                                    href="../assets/images/big/img1.jpg"><i
-                                                        class="icon-magnifier"></i></a></li>
-                                            <li><a class="btn default btn-outline" href="javascript:void(0);"><i
-                                                        class="icon-link"></i></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="el-card-content">
-                                    <h3 class="box-title">img1</h3> <small><i class="fas fa-trash-alt"></i> Delete</td>
-                                        </small>
-                                    <br />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <div class="card">
-                            <div class="el-card-item">
-                                <div class="el-card-avatar el-overlay-1"> <img src="../assets/images/big/img2.jpg"
-                                        alt="user" />
-                                    <div class="el-overlay">
-                                        <ul class="el-info">
-                                            <li><a class="btn default btn-outline image-popup-vertical-fit"
-                                                    href="../assets/images/users/1.jpg"><i
-                                                        class="icon-magnifier"></i></a></li>
-                                            <li><a class="btn default btn-outline" href="javascript:void(0);"><i
-                                                        class="icon-link"></i></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="el-card-content">
-                                    <h3 class="box-title">img2</h3> <small><i class="fas fa-trash-alt"></i> Delete</small>
-                                    <br />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <div class="card">
-                            <div class="el-card-item">
-                                <div class="el-card-avatar el-overlay-1"> <img src="../assets/images/big/img3.jpg"
-                                        alt="user" />
-                                    <div class="el-overlay">
-                                        <ul class="el-info">
-                                            <li><a class="btn default btn-outline image-popup-vertical-fit"
-                                                    href="../assets/images/users/1.jpg"><i
-                                                        class="icon-magnifier"></i></a></li>
-                                            <li><a class="btn default btn-outline" href="javascript:void(0);"><i
-                                                        class="icon-link"></i></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="el-card-content">
-                                    <h3 class="box-title">img3</h3> <small><i class="fas fa-trash-alt"></i> Delete</small>
-                                    <br />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <div class="card">
-                            <div class="el-card-item">
-                                <div class="el-card-avatar el-overlay-1"> <img src="../assets/images/big/img4.jpg"
-                                        alt="user" />
-                                    <div class="el-overlay">
-                                        <ul class="el-info">
-                                            <li><a class="btn default btn-outline image-popup-vertical-fit"
-                                                    href="../assets/images/users/1.jpg"><i
-                                                        class="icon-magnifier"></i></a></li>
-                                            <li><a class="btn default btn-outline" href="javascript:void(0);"><i
-                                                        class="icon-link"></i></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="el-card-content">
-                                    <h3 class="box-title">img4</h3> <small><i class="fas fa-trash-alt"></i> Delete</small>
-                                    <br />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <div class="card">
-                            <div class="el-card-item">
-                                <div class="el-card-avatar el-overlay-1"> <img src="../assets/images/big/img3.jpg"
-                                        alt="user" />
-                                    <div class="el-overlay">
-                                        <ul class="el-info">
-                                            <li><a class="btn default btn-outline image-popup-vertical-fit"
-                                                    href="../assets/images/users/1.jpg"><i
-                                                        class="icon-magnifier"></i></a></li>
-                                            <li><a class="btn default btn-outline" href="javascript:void(0);"><i
-                                                        class="icon-link"></i></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="el-card-content">
-                                    <h3 class="box-title">img5</h3> <small><i class="fas fa-trash-alt"></i> Delete</small>
-                                    <br />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <div class="card">
-                            <div class="el-card-item">
-                                <div class="el-card-avatar el-overlay-1"> <img src="../assets/images/big/img5.jpg"
-                                        alt="user" />
-                                    <div class="el-overlay">
-                                        <ul class="el-info">
-                                            <li><a class="btn default btn-outline image-popup-vertical-fit"
-                                                    href="../assets/images/users/1.jpg"><i
-                                                        class="icon-magnifier"></i></a></li>
-                                            <li><a class="btn default btn-outline" href="javascript:void(0);"><i
-                                                        class="icon-link"></i></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="el-card-content">
-                                    <h3 class="box-title">img6</h3> <small><i class="fas fa-trash-alt"></i> Delete</small>
-                                    <br />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <div class="card">
-                            <div class="el-card-item">
-                                <div class="el-card-avatar el-overlay-1"> <img src="../assets/images/big/img6.jpg"
-                                        alt="user" />
-                                    <div class="el-overlay">
-                                        <ul class="el-info">
-                                            <li><a class="btn default btn-outline image-popup-vertical-fit"
-                                                    href="../assets/images/users/1.jpg"><i
-                                                        class="icon-magnifier"></i></a></li>
-                                            <li><a class="btn default btn-outline" href="javascript:void(0);"><i
-                                                        class="icon-link"></i></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="el-card-content">
-                                    <h3 class="box-title">img7</h3> <small><i class="fas fa-trash-alt"></i> Delete</small>
-                                    <br />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <div class="card">
-                            <div class="el-card-item">
-                                <div class="el-card-avatar el-overlay-1"> <img src="../assets/images/big/img1.jpg"
-                                        alt="user" />
-                                    <div class="el-overlay">
-                                        <ul class="el-info">
-                                            <li><a class="btn default btn-outline image-popup-vertical-fit"
-                                                    href="../assets/images/users/1.jpg"><i
-                                                        class="icon-magnifier"></i></a></li>
-                                            <li><a class="btn default btn-outline" href="javascript:void(0);"><i
-                                                        class="icon-link"></i></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="el-card-content">
-                                    <h3 class="box-title">img8</h3> <small><i class="fas fa-trash-alt"></i> Delete</small>
-                                    <br />
+                            <div class="card-body">
+                                <h4 class="card-title">Manage users</h4>
+                                <!-- <h6 class="card-subtitle">Export data to Copy, CSV, Excel, PDF & Print</h6> -->
+                                <div class="table-responsive m-t-40">
+                                    <table id="example23"
+                                        class="display nowrap table table-hover table-striped table-bordered"
+                                        cellspacing="0" width="100%">
+                                        <thead>
+                                            <tr>
+                                                <th>ID</th>
+                                                <th>Title</th>
+                                                <th>Category</th>
+                                                <th>Author</th>
+                                                <th>Date</th>
+                                                <th colspan="2">Action</th>
+                                            </tr>
+                                        </thead>
+                                        <tfoot>
+                                            <tr>
+                                                <th>ID</th>
+                                                <th>Title</th>
+                                                <th>Category</th>
+                                                <th>Author</th>
+                                                <th>Date</th>
+                                                <th colspan="2">Action</th>
+                                            </tr>
+                                        </tfoot>
+                                        <tbody>
+                                            <tr>
+                                                <td>4</td>
+                                                <td>Huawei Disaster Reveals Google' s Iron Grip on Android</td>
+                                                <td>Technology</td>
+                                                <td>admin1</td>
+                                                <td>May 29, 2019</td>
+                                                <td><a class="disabled" href="edit-post.html"><i class="fas fa-edit"></i> Edit</a></td>
+                                                <td><i class="fas fa-trash-alt"></i> Delete</td>
+                                            </tr>
+                                            <tr>
+                                                <td>3</td>
+                                                <td>What Really Happens to AirPods When They Die</td>
+                                                <td>Design</td>
+                                                <td>admin1</td>
+                                                <td>May 28, 2019</td>
+                                                <td><a disabled="true" href="edit-post.html"><i class="fas fa-edit"></i> Edit</a></td>
+                                                <td><i class="fas fa-trash-alt"></i> Delete</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td>The wildest edge of the Roman Empire</td>
+                                                <td>Travel</td>
+                                                <td>editor1</td>
+                                                <td>May 27, 2019</td>
+                                                <td><a href="edit-post.html"><i class="fas fa-edit"></i> Edit</a></td>
+                                                <td><i class="fas fa-trash-alt"></i> Delete</td>
+                                            </tr>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>A castle where people live rent-free</td>
+                                                <td>Travel</td>
+                                                <td>editor1</td>
+                                                <td>May 26, 2019</td>
+                                                <td><a href="edit-post.html"><i class="fas fa-edit"></i> Edit</a></td>
+                                                <td><i class="fas fa-trash-alt"></i> Delete</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
                                 </div>
                             </div>
                         </div>
@@ -806,9 +699,65 @@
     <script src="../assets/plugins/sticky-kit-master/dist/sticky-kit.min.js"></script>
     <!--Custom JavaScript -->
     <script src="js/custom.min.js"></script>
-    <!-- Magnific popup JavaScript -->
-    <script src="../assets/plugins/Magnific-Popup-master/dist/jquery.magnific-popup.min.js"></script>
-    <script src="../assets/plugins/Magnific-Popup-master/dist/jquery.magnific-popup-init.js"></script>
+    <!-- This is data table -->
+    <script src="../assets/plugins/datatables/datatables.min.js"></script>
+    <!-- start - This is for export functionality only -->
+    <script src="../../../../../cdn.datatables.net/buttons/1.2.2/js/dataTables.buttons.min.js"></script>
+    <script src="../../../../../cdn.datatables.net/buttons/1.2.2/js/buttons.flash.min.js"></script>
+    <script src="../../../../../cdnjs.cloudflare.com/ajax/libs/jszip/2.5.0/jszip.min.js"></script>
+    <script src="../../../../../cdn.rawgit.com/bpampuch/pdfmake/0.1.18/build/pdfmake.min.js"></script>
+    <script src="../../../../../cdn.rawgit.com/bpampuch/pdfmake/0.1.18/build/vfs_fonts.js"></script>
+    <script src="../../../../../cdn.datatables.net/buttons/1.2.2/js/buttons.html5.min.js"></script>
+    <script src="../../../../../cdn.datatables.net/buttons/1.2.2/js/buttons.print.min.js"></script>
+    <!-- end - This is for export functionality only -->
+    <script>
+        $(function () {
+            $('#myTable').DataTable();
+            $(document).ready(function () {
+                var table = $('#example').DataTable({
+                    "columnDefs": [{
+                        "visible": false,
+                        "targets": 2
+                    }],
+                    "order": [
+                        [2, 'asc']
+                    ],
+                    "displayLength": 25,
+                    "drawCallback": function (settings) {
+                        var api = this.api();
+                        var rows = api.rows({
+                            page: 'current'
+                        }).nodes();
+                        var last = null;
+                        api.column(2, {
+                            page: 'current'
+                        }).data().each(function (group, i) {
+                            if (last !== group) {
+                                $(rows).eq(i).before('<tr class="group"><td colspan="5">' + group + '</td></tr>');
+                                last = group;
+                            }
+                        });
+                    }
+                });
+                // Order by the grouping
+                $('#example tbody').on('click', 'tr.group', function () {
+                    var currentOrder = table.order()[0];
+                    if (currentOrder[0] === 2 && currentOrder[1] === 'asc') {
+                        table.order([2, 'desc']).draw();
+                    } else {
+                        table.order([2, 'asc']).draw();
+                    }
+                });
+            });
+        });
+        $('#example23').DataTable({
+            dom: 'Bfrtip',
+            buttons: [
+                'copy', 'csv', 'excel', 'pdf', 'print'
+            ]
+        });
+        $('.buttons-copy, .buttons-csv, .buttons-print, .buttons-pdf, .buttons-excel').addClass('btn btn-primary mr-1');
+    </script>
     <!-- ============================================================== -->
     <!-- Style switcher -->
     <!-- ============================================================== -->
@@ -816,6 +765,6 @@
 </body>
 
 
-<!-- Mirrored from www.wrappixel.com/demos/admin-templates/monster-admin/main/pages-gallery.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 11 Feb 2019 11:37:03 GMT -->
+<!-- Mirrored from www.wrappixel.com/demos/admin-templates/monster-admin/main/table-data-table.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 11 Feb 2019 11:36:48 GMT -->
 
 </html>
