@@ -14,60 +14,26 @@
 <body>
     <header>
         <title>A single post</title>
-        <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
 
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">HOME <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="index.html">HOME <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">ABOUT</a>
+                        <a class="nav-link" href="category.html">Technology</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="category.html">Design</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="category.html">Travel</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            WEB
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">ASP.NET MVC</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">ASP.NET</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">WEB API</a>
-                        </div>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            MOBILE
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">Windows Phones</a>
-
-                        </div>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            ARCHITECTURE
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">.NET Framework</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">OOP</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Entity Frameword</a>
-                        </div>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            TOOL
+                            More
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item" href="#">Visual Studio</a>
@@ -79,24 +45,28 @@
                     </li>
                 </ul>
                 <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Email" aria-label="Search">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Password" aria-label="Search">
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Login</button>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"><i class="fa fa-search"></i></span>
+                        </div>
+                        <input type="text" class="form-control" placeholder="Search ..">
+                    </div> &nbsp;
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Sign in</button>&nbsp;
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Sign up</button>
                 </form>
-            </div>
         </nav>
-
-        <div class="jumbotron">
-            <h3 class="display-4">Wellcome To Our Website</h3>
-            <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-        </div>
     </header>
 
     <div class="container">
         <!-- Main content -->
         <div class="row">
-            <div class="col-md-8">
+            <div class="row">
+                <div class="col-md">
+                    <img style="width: 1000px; height: 500px;" src="../images/space1.png" alt="space">
+                </div>
+            </div>
 
+            <div class="col-md-8">
                 <!--Breadcrumb-->
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb">
@@ -108,6 +78,7 @@
                     </ol>
                 </nav>
                 <!--End Breadcrumb--->
+
                 <div class="col-md">
                     <h1 class="entry-title">3 Greatest Technologies of Twenty-first Century</h1>
                     <p class="single-post-summary">Here ten incredible technologies that are defining what twenty-first
@@ -135,71 +106,87 @@
                             field today!</p>
                         <div class='thrivecb note'>
                             <p>This is the overall picture of Space Technology at present!<p>
-                            <p><img class="size-full wp-image-12106 aligncenter" src="../images/space1.png"></p>
-                            <div id="toc_container" class="no_bullets">
-                                <ul class="toc_list">
-                                    <li><a href="#Cassini-Huygens Probe">1. Cassini-Huygens Probe </a></li>
-                                    <li><a href="#Mars Reconnaissance Orbiter">2. Mars Reconnaissance Orbiter</a>
-                                    </li>
-                                    <li><a href="#Hubble Space Telescope">3. Hubble Space Telescope</a></li>
-                                </ul>
-                            </div>
-                            <h3><span id="Cassini-Huygens Probe"><strong><span style="color: #1175ab;">1.
-                                            Cassini-Huygens
-                                            Probe </span></strong></span></h3>
-                            <p><strong>The Cassini-Huygens</strong> mission is a joint effort between NASA and ESA.
-                                NASA's Cassini probe arrived at Saturn in 2004, and dropped ESA's Huygens probe into
-                                the
-                                atmosphere of Saturn's mysterious moon, Titan, which has a thick atmosphere and
-                                weather that
-                                is surprisingly similar to Earth's
-                                Scientists are still poring over data from the Titan mission, and Cassini's many
-                                on-board
-                                instruments continue to provide us with data on Saturn, as well as its magnetosphere
-                                and its
-                                icy, watery moon Enceladus
-                                Have you seen a gorgeous picture of Saturn lately? That's thanks to Cassini.</p>
-                            <p><img class="aligncenter wp-image-9709" src="../images/spc.jpg"></p>
-                            <h3><span id="Mars Reconnaissance Orbiter"><strong><span style="color: #1175ab;">2. Mars
-                                            Reconnaissance Orbiter</span></strong></span></h3>
-                            <p>Launched in 2005 by NASA, <strong> the Mars Reconnaissance Orbiter</strong> currently
-                                orbiting Mars, studying the history of water on the planet.
-                                It's analyzing geographical features like canyons that might have been created by
-                                water, as
-                                well as using a spectrometer to analyze the chemical composition of the Martian
-                                surface.
-                                Its HiRISE camera can spy objects as "small as a dinner table," according to NASA,
-                                and it
-                                has even captured images of the three Martian rovers that are currently rolling (or
-                                parked)
-                                on the Martian regolith.
-                                Many of the discoveries about Martian water history and weather are due to the MRO,
-                                as are
-                                any number of breathtaking shots of the planet's surface.
-                                Above, a picture that the MRO snapped of a rarely-seen Martian avalanche.</p>
-                            <p><img class="wp-image-12092 aligncenter" src="../images/peo.jpg"></p>
-                            <h3><span id="Hubble Space Telescope"><strong><span style="color: #1175ab;">3. Hubble
-                                            Space
-                                            Telescope</span></strong></span></h3>
-                            <p>Launched into orbit in 1990,<strong> the Hubble</strong>truly is one of the greatest
-                                space
-                                instruments in the history of humanity.
-                                And it has been updated significantly in the twenty-first century.
-                                Powered by sunlight, equipped with multiple instruments and cameras for capturing
-                                images of
-                                deep space, the Hubble has shown us images of the universe that would have been
-                                impossible
-                                for Earth-based telescopes.
-                                Using Hubble, we've discovered dark energy, figured out the identities of quasars,
-                                gotten a
-                                more accurate date for the origin of the universe, and spotted countless galaxies at
-                                every
-                                stage of their life cycles.
-                                NASA estimates that over 10,000 scientific papers have been written based on data
-                                gathered
-                                by Hubble.</p>
+                                    <p><img class="size-full wp-image-12106 aligncenter" src="../images/space1.png"></p>
+                                    <div id="toc_container" class="no_bullets">
+                                        <ul class="toc_list">
+                                            <li><a href="#Cassini-Huygens Probe">1. Cassini-Huygens Probe </a></li>
+                                            <li><a href="#Mars Reconnaissance Orbiter">2. Mars Reconnaissance
+                                                    Orbiter</a>
+                                            </li>
+                                            <li><a href="#Hubble Space Telescope">3. Hubble Space Telescope</a></li>
+                                        </ul>
+                                    </div>
+                                    <h3><span id="Cassini-Huygens Probe"><strong><span style="color: #1175ab;">1.
+                                                    Cassini-Huygens
+                                                    Probe </span></strong></span></h3>
+                                    <p><strong>The Cassini-Huygens</strong> mission is a joint effort between NASA and
+                                        ESA.
+                                        NASA's Cassini probe arrived at Saturn in 2004, and dropped ESA's Huygens probe
+                                        into
+                                        the
+                                        atmosphere of Saturn's mysterious moon, Titan, which has a thick atmosphere and
+                                        weather that
+                                        is surprisingly similar to Earth's
+                                        Scientists are still poring over data from the Titan mission, and Cassini's many
+                                        on-board
+                                        instruments continue to provide us with data on Saturn, as well as its
+                                        magnetosphere
+                                        and its
+                                        icy, watery moon Enceladus
+                                        Have you seen a gorgeous picture of Saturn lately? That's thanks to Cassini.</p>
+                                    <p><img class="aligncenter wp-image-9709" src="../images/spc.jpg"></p>
+                                    <h3><span id="Mars Reconnaissance Orbiter"><strong><span style="color: #1175ab;">2.
+                                                    Mars
+                                                    Reconnaissance Orbiter</span></strong></span></h3>
+                                    <p>Launched in 2005 by NASA, <strong> the Mars Reconnaissance Orbiter</strong>
+                                        currently
+                                        orbiting Mars, studying the history of water on the planet.
+                                        It's analyzing geographical features like canyons that might have been created
+                                        by
+                                        water, as
+                                        well as using a spectrometer to analyze the chemical composition of the Martian
+                                        surface.
+                                        Its HiRISE camera can spy objects as "small as a dinner table," according to
+                                        NASA,
+                                        and it
+                                        has even captured images of the three Martian rovers that are currently rolling
+                                        (or
+                                        parked)
+                                        on the Martian regolith.
+                                        Many of the discoveries about Martian water history and weather are due to the
+                                        MRO,
+                                        as are
+                                        any number of breathtaking shots of the planet's surface.
+                                        Above, a picture that the MRO snapped of a rarely-seen Martian avalanche.</p>
+                                    <p><img class="wp-image-12092 aligncenter" src="../images/peo.jpg"></p>
+                                    <h3><span id="Hubble Space Telescope"><strong><span style="color: #1175ab;">3.
+                                                    Hubble
+                                                    Space
+                                                    Telescope</span></strong></span></h3>
+                                    <p>Launched into orbit in 1990,<strong> the Hubble</strong>truly is one of the
+                                        greatest
+                                        space
+                                        instruments in the history of humanity.
+                                        And it has been updated significantly in the twenty-first century.
+                                        Powered by sunlight, equipped with multiple instruments and cameras for
+                                        capturing
+                                        images of
+                                        deep space, the Hubble has shown us images of the universe that would have been
+                                        impossible
+                                        for Earth-based telescopes.
+                                        Using Hubble, we've discovered dark energy, figured out the identities of
+                                        quasars,
+                                        gotten a
+                                        more accurate date for the origin of the universe, and spotted countless
+                                        galaxies at
+                                        every
+                                        stage of their life cycles.
+                                        NASA estimates that over 10,000 scientific papers have been written based on
+                                        data
+                                        gathered
+                                        by Hubble.</p>
 
-                            <p><img class="aligncenter wp-image-12093" src="../images/pri.jpg"></p>
+                                    <p><img class="aligncenter wp-image-12093" src="../images/pri.jpg"></p>
                         </div>
                     </div>
                 </div>

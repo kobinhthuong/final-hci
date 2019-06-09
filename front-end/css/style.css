@@ -1,15 +1,18 @@
 /* css for index.html */
 .container, li.list-group-item {
-    background-color: azure;
+    /* background-color: azure; */
 }
 .container nav {
     font-size: 14px;
     font-weight: bold;
     background-color:#4da6ff;
 }
+/* .row {
+    padding-top: 20px;
+} */
 .col-12 {
     padding-left: 25px;
-    margin-top: 30px;
+    margin-top: 20px;
 }
 .col-6 {
     margin-top: 10px;
@@ -43,6 +46,7 @@ h3 {
     padding-left: 20px;
 }
 footer {
+    margin-top: 150px;
     padding: 20px;
     text-align: center;
     background-color:#343a40;
@@ -54,6 +58,7 @@ footer p {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .category {
+    margin-top: 0px;
     margin-bottom: 20px;
 }
 hr {
@@ -61,7 +66,15 @@ hr {
 }
 .see-more {
     margin: 0px;
+    color: #4d94ff;
 }
+.see-more a:hover {
+    text-decoration: none;
+}
+#slider {
+    height: 400px;
+}
+
 
 /* css for single-post.html */
 .single-post-summary {
@@ -74,9 +87,9 @@ hr {
 .same-category {
   margin: 40px;
 }
-.active {
+/* .active {
     background-color: #4CAF50;
-}
+} */
 .author-img {
     float: left;
     width: 50px;

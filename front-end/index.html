@@ -5,10 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
-        integrity="sha384lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css'
@@ -21,21 +17,20 @@
 <body>
     <div class="container-fluid">
         <header>
-            <br>
             <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item active">
-                            <a class="nav-link" href="#">HOME <span class="sr-only">(current)</span></a>
+                            <a class="nav-link" href="index.html">HOME <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">News</a>
+                            <a class="nav-link" href="category.html">Technology</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Technology</a>
+                            <a class="nav-link" href="category.html">Design</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">News</a>
+                            <a class="nav-link" href="category.html">Travel</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
@@ -116,7 +111,7 @@
                             <div class="card bg-dark text-white">
                                 <a href="">
                                     <img src="../images/travel.jpg" class="card-img" alt="...">
-                                    <p class="card-title">The wildest edge of the Roman Empire<p>
+                                    <p class="card-title"><a href="single-post.html">The wildest edge of the Roman Empire</a><p>
                                 </a>
                             </div>
                         </div>
@@ -164,41 +159,43 @@
             <div class="row">
                 <!-- Main Content -->
                 <div class="col-12 col-md-8">
-                    <h2 class="big-title">News</h2>
-                    <div class="row category">
-                        <div class="col-6">
-                            <a href="#"><img
-                                    src="https://cdn-images-1.medium.com/max/800/1*dxoArLWrCKqhapxyUnlvPQ.jpeg"></a>
-                            <div class="title">
-                                <div class="post-title"><a href="#">The Huawei Disaster Reveals Google’s Iron Grip on
-                                        Android</a></div>
-                                <p class="summary"><small>Open source isn’t as open as you think</small></p>
-                                <small class="post-title-date">Posted on: <b style="color: black">23/05/2019</b></small>
-                                <small class="post-title-author">Published by: <b style="color: black">admin</b></small>
-                            </div>
-                        </div>
-                        <div class="col-6">
-                            <a href="#"><img src="../images/category2.jpeg"></a>
-                            <div class="title">
-                                <div class="post-title"><a href="#">What Really Happens to AirPods When They Die</a>
-                                </div>
-                                <p class="summary"><small>Apple finally opens up about their complicated
-                                        afterlife</small>
-                                </p>
-                                <small class="post-title-date">Posted on: <b style="color: black">21/05/2019</b></small>
-                                <small class="post-title-author">Published by: <b style="color: black">admin</b></small>
-                            </div>
-                        </div>
-                        <div class="col-12 see-more"><small>See more</small></div>
-                    </div>
-                    <hr style="border-color: #4d94ff;">
                     <h2 class="big-title">Technology</h2>
                     <div class="row category">
                         <div class="col-6">
-                            <a href="#"><img
+                            <a href="single-post.html"><img
                                     src="https://cdn-images-1.medium.com/max/800/1*dxoArLWrCKqhapxyUnlvPQ.jpeg"></a>
                             <div class="title">
-                                <div class="post-title"><a href="#">The Huawei Disaster Reveals Google’s Iron Grip on
+                                <div class="post-title"><a href="single-post.html">The Huawei Disaster Reveals Google’s Iron Grip on
+                                        Android</a></div>
+                                <p class="summary"><small>Open source isn’t as open as you think</small></p>
+                                <small class="post-title-date">Posted on: <b style="color: black">23/05/2019</b></small>
+                                <small class="post-title-author">Published by: <b style="color: black">admin</b></small>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <a href="single-post.html"><img src="../images/category2.jpeg"></a>
+                            <div class="title">
+                                <div class="post-title"><a href="single-post.html">What Really Happens to AirPods When They Die</a>
+                                </div>
+                                <p class="summary"><small>Apple finally opens up about their complicated
+                                        afterlife</small>
+                                </p>
+                                <small class="post-title-date">Posted on: <b style="color: black">21/05/2019</b></small>
+                                <small class="post-title-author">Published by: <b style="color: black">admin</b></small>
+                            </div>
+                        </div>
+                        <div class="col-12 see-more">
+                            <h6><a href="category.html"><i class="fas fa-angle-double-right"></i> See more</a></h6>
+                        </div>
+                    </div>
+                    <hr style="border-color: #4d94ff;">
+                    <h2 class="big-title">Design</h2>
+                    <div class="row category">
+                        <div class="col-6">
+                            <a href="single-post.html"><img
+                                    src="https://cdn-images-1.medium.com/max/800/1*dxoArLWrCKqhapxyUnlvPQ.jpeg"></a>
+                            <div class="title">
+                                <div class="post-title"><a href="single-post.html">The Huawei Disaster Reveals Google’s Iron Grip on
                                         Android</a></div>
                                 <p class="summary"><small>Open source isn’t as open as you think</small></p>
                                 <small class="post-title-date">Posted on: <b style="color: black">23/05/2019</b></small>
@@ -217,9 +214,11 @@
                                 <small class="post-title-author">Published by: <b style="color: black">admin</b></small>
                             </div>
                         </div>
-                        <div class="col-12 see-more"><small>See more</small></div>
+                        <div class="col-12 see-more">
+                            <h6><a href="category.html"><i class="fas fa-angle-double-right"></i> See more</a></h6>
+                        </div>
                     </div>
-                    
+
                     <hr style="border-color: #4d94ff;">
 
                     <h2 class="big-title">Travel</h2>
@@ -247,15 +246,18 @@
                                 <small class="post-title-author">Published by: <b style="color: black">admin</b></small>
                             </div>
                         </div>
-                        <div class="col-12 see-more"><small>See more</small></div>
+                        <div class="col-12 see-more">
+                            <h6><a href="category.html"><i class="fas fa-angle-double-right"></i> See more</a></h6>
+                        </div>
                     </div>
                     <hr style="border-color: #4d94ff;">
-                    <nav aria-label="Page navigation example">
+                    <nav aria-label="Page navigation example" style="background-color: white;">
                         <ul class="pagination justify-content-center">
                             <li class="page-item disabled">
                                 <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
                             </li>
-                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item active"><a class="page-link" href="#">1<span
+                                class="sr-only">(current)</span></a></li>
                             <li class="page-item"><a class="page-link" href="#">2</a></li>
                             <li class="page-item"><a class="page-link" href="#">3</a></li>
                             <li class="page-item">
@@ -267,7 +269,7 @@
 
                 <!-- Popular posts -->
                 <div class="col-12 col-md-4">
-                    <h3>Popular Post</h3>
+                    <h3 class="big-title">Popular Post</h3>
                     <ul class="list-group list-group-flush">
                         <div class="row">
                             <div class="col-6 col-md-12">
