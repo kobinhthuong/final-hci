@@ -58,7 +58,11 @@ function updateRecord(formData) {
     selectedRow.cells[3].innerHTML = formData.Post;
 }
 
-function onDelete() {
+function onDelete(
+
+
+
+) {
     if (confirm('Are you sure to delete this record ?')) {
         row = td.parentElement.parentElement;
         document.getElementById("employeeList").deleteRow(row.rowIndex);
