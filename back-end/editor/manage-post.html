@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <title>Manage Posts</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+              integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+              integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-2">
+                    <h3>Hello tab menu</h3>
+                </div>
+                <div class="col-10">
+                    <br>
+                    <h4>Manage Post</h4>
+                    <hr>
+
+                    <a href="addPost.html"><button type="button" class="btn btn-primary"><i class="glyphicon glyphicon-plus"></i></i> Add
+                            new post</button><br></a><br>
+                    <div class="row">
+                        <div class="col-9">
+                            <div class="form-group">    
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="row">
+                                            <label for="exampleFormControlSelect1">Filter by</label>
+                                            <div class="col-5">
+                                                <select class="form-control" id="exampleFormControlSelect1">
+                                                    <option>Travel</option>
+                                                    <option>News</option>
+                                                    <option>Technology</option>
+                                                    <option>Food</option>
+                                                    <option>Love</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="row">
+                                            <label for="exampleFormControlSelect1">Show</label>
+                                            <div class="col-4">
+                                                <select class="form-control" id="exampleFormControlSelect1">
+                                                    <option>5</option>
+                                                    <option>10</option>
+                                                    <option>15</option>
+                                                    <option>20</option>
+                                                    <option>25</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for ..">
+                        </div>
+                    </div>
+                    <div class="user-table">
+                        <div class="col">
+                            <table id="myTable" class="table table-striped">
+                                <thead class="thead-dark">
+                                    <tr>
+                                        <th scope="col">Title</th>
+                                        <th scope="col">Category</th>
+                                        <th scope="col">Author</th>
+                                        <th scope="col">Date</th>
+                                        <th scope="col">Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="myUL">
+                                    <tr>
+                                        <td>The Huawei Disaster Reveals Google&apos; s Iron Grip on Android</td>
+                                        <td>News</td>
+                                        <td>Eric Ravenscraft</td>
+                                        <td>May 24,2019</td>
+                                        <td>
+                                            <div class="row">
+                                                <button type="button" class="btn btn-danger" ><i
+                                                        class="glyphicon glyphicon-trash" style="width: 10px; height: 10px"></i> </button>&nbsp;
+                                                <a href="editPost.html">
+                                                    <button type="button" class="btn btn-secondary" href=""><i
+                                                            class="glyphicon glyphicon-pencil" style="width: 10px; height: 25px"></i></button></a><br><br>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>A castle where people live rent-free</td>
+                                        <td>Travel</td>
+                                        <td>Serena Tran</td>
+                                        <td>May 29,2019</td>
+                                        <td>
+                                            <div class="row">
+                                                <button type="button" class="btn btn-danger" href="#"><i
+                                                        class="glyphicon glyphicon-trash" style="width: 10px; height: 10px"></i> </button>&nbsp;
+                                                <a href="editPost.html"><button type="button" class="btn btn-secondary" href="#"><i
+                                                            class="glyphicon glyphicon-pencil" style="width: 10px; height: 25px"></i></button></a><br><br>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                                <thead class="thead-dark">
+                                    <tr>
+                                        <th scope="col">Title</th>
+                                        <th scope="col">Category</th>
+                                        <th scope="col">Author</th>
+                                        <th scope="col">Date</th>
+                                        <th scope="col">Action</th>
+                                    </tr>
+                                </thead>
+                            </table>
+                            <center>
+                                <nav aria-label="Page navigation example">
+                                    <ul class="pagination justify-content-center">
+                                        <li class="page-item">
+                                            <a class="page-link" href="#" aria-label="Previous">
+                                                <span aria-hidden="true">&laquo;</span>
+                                            </a>
+                                        </li>
+                                        <li class="page-item active" ><a class="page-link" href="#">1</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                        <li class="page-item">
+                                            <a class="page-link" href="#" aria-label="Next">
+                                                <span aria-hidden="true">&raquo;</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </center>
+                        </div>
+                    </div>
+
+                    <script>
+                        function myFunction() {
+                            var input, filter, table, tr, td, i, n, txtValue;
+                            input = document.getElementById("myInput");
+                            filter = input.value.toUpperCase();
+                            table = document.getElementById("myTable");
+                            tr = table.getElementsByTagName("tr");
+                            n = 0;
+                            for (i = 0; i < tr.length; i++) {
+                                td = tr[i].getElementsByTagName("td")[n];
+                                if (td) {
+                                    txtValue = td.textContent || td.innerText;
+                                    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                                        tr[i].style.display = "";
+                                    } else {
+                                        tr[i].style.display = "none";
+                                    }
+                                    n++;
+                                }
+                            }
+                        }
+                    </script>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>
+<!-- JS Area -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<!-- End JS Area -->

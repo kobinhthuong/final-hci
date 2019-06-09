@@ -50,6 +50,18 @@ footer {
 footer p {
     color: white;
 }
+.big-title {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.category {
+    margin-bottom: 20px;
+}
+hr {
+    border-color: #4d94ff;
+}
+.see-more {
+    margin: 0px;
+}
 
 /* css for single-post.html */
 .single-post-summary {

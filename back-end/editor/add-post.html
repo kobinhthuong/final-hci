@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html>
+
     <head>
-        <title>Edit Post</title>
+        <title>Add New Post</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -21,30 +22,24 @@
                     <h3>Hello tab menu</h3>
                 </div>
                 <div class="col-10">
-                    <div class="row">
-                        <div class="col-4">
-                            <h3>Edit Post</h3> 
-                        </div>
-                        <div class="col-4"><br>
-                            <a href="addPost.html"><button type="button" class="btn btn-primary"><i class="glyphicon glyphicon-plus"></i></i> Add
-                                    new post</button></a>
-                        </div>
-                    </div>
-                    <hr>
+                    <h3>Add New Post</h3><hr>  
                     <div class="row">
                         <div class="col-8">
+
                             <form>
                                 <div class="form-group">
-                                    <input type="title" class="form-control" id="exampleFormControlInput1" placeholder="The Huawei Disaster Reveals Google's Iron Grip on Android">
+                                    <input type="title" class="form-control" id="exampleFormControlInput1" placeholder="Title for this post.">
                                 </div>
                                 <div class="form-group">
-                                    <input type="headline" class="form-control" id="exampleFormControlInput1" value="As the government prepares to decide who will build the UK's next generation telecoms network, Panorama investigates one of the world's most important and controversial companies.">
+                                    <input type="headline" class="form-control" id="exampleFormControlInput1" placeholder="Headline for this post.">
                                 </div>
 
                                 <div class="form-group">
-                                    <textarea rows="20">
-                                        
-                                    </textarea>
+                                    <label for="exampleFormControlTextarea1">The content of post</label>
+                                    <!--                                    
+                                    <textarea class="form-control" id="exampleFormControlTextarea1" ></textarea>-->
+                                    <textarea rows="20">Next, use our Get Started docs to setup Tiny!</textarea>
+
                                 </div>
                             </form>
                         </div>
@@ -56,9 +51,10 @@
                                 <div class="card-body">
                                     <div class="row">
                                         <div class="col">
+                                            <button type="button" class="btn btn-light">Save draft</button>
                                         </div>
                                         <div class="col">
-                                            <button type="button" class="btn btn-light">Preview changes</button>
+                                            <button type="button" class="btn btn-light">Preview</button>
                                         </div>
                                     </div><br>
                                     <div class="custom-control custom-switch">
@@ -71,11 +67,14 @@
                                     <div class="row">
                                         <div class="col">
                                             <a href="#" class="text-danger">Move to trash</a>
+
                                         </div>
                                         <div class="col">
-                                            <a href="#" class="btn btn-primary">Update</a>
+                                            <a href="#" class="btn btn-primary">Publish</a>
+
                                         </div>
                                     </div>
+
                                 </div>
                             </div><br>
                             <div class="card">
@@ -101,18 +100,20 @@
                                     </ul>
                                 </div>
                                 <div class="card-body">
-                                    <input type="checkbox" name="News" value="News" checked> News<br>
-                                    <input type="checkbox" name="none" value="none" > Uncategorized<br>
+                                    <input type="checkbox" name="News" value="News"> News<br>
+                                    <input type="checkbox" name="Travel" value="Travel"> Travel<br>
+                                    <input type="checkbox" name="Technology" value="Technology" checked> Technology<br>
                                 </div>
                                 <div class="card-footer text-muted">
-                                    <a href="addPost.html"><button type="button" class="btn btn-primary"><i class="glyphicon glyphicon-plus"></i></i> Add
-                                            new category</button></a>
+                                    <div class="col-3">
+                                        <input type="text" id="myInput" placeholder="Search for ..">
+                                    </div>
                                 </div>
                             </div><br>
                         </div>
                     </div>
                 </div>
-            </div>
+            </div>         
         </div>
     </body>
 

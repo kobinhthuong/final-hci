@@ -1,7 +1,14 @@
+body {
+    /* background-color: #f9fafb; */
+}
+.col-md-6 {
+    /* background-color: #f8f9fa; */
+}
 .row .left, .row .right {
     margin-top: 25px;
     margin-bottom: 20px;
     padding-right: 30px;
+    background-color: #f8f9fa;
 }
 #see-more {
     text-decoration: none;
