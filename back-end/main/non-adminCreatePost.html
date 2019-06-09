@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -9,7 +10,7 @@
         <meta name="author" content="">
         <!-- Favicon icon -->
         <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/favicon.png">
-        <title>Admin - Roles</title>
+        <title>Editor: Create Post</title>
         <!-- Bootstrap Core CSS -->
         <link href="../assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="../assets/plugins/datatables/media/css/dataTables.bootstrap4.css">
@@ -23,6 +24,8 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+        <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js"></script>
+        <script>tinymce.init({selector: 'textarea'});</script>
     </head>
 
     <body class="fix-header card-no-border">
@@ -46,7 +49,7 @@
                     <!-- Logo -->
                     <!-- ============================================================== -->
                     <div class="navbar-header">
-                        <a class="navbar-brand" href="new-index.html">
+                        <a class="navbar-brand" href="non-admin.html">
                             <!-- Logo icon --><b>
                                 <!--You can put here icon as well // <i class="wi wi-sunset"></i> //-->
                                 <!-- Dark Logo icon -->
@@ -180,8 +183,8 @@
                                                     <input type="email" class="form-control" id="exampleInputEmail1"
                                                            placeholder="Enter email"> </div>
                                                 <div class="form-group">
-                                                    <textarea class="form-control" id="exampleTextarea" rows="3"
-                                                              placeholder="Message"></textarea>
+                                                    <input class="form-control" id="exampleTextarea" rows="3"
+                                                              placeholder="Message">
                                                 </div>
                                                 <button type="submit" class="btn btn-info">Submit</button>
                                             </form>
@@ -232,7 +235,7 @@
                                                     <p class="text-muted"><a
                                                             href="https://www.wrappixel.com/cdn-cgi/l/email-protection"
                                                             class="__cf_email__"
-                                                            data-cfemail="ed9b8c9f9883ad8a808c8481c38e8280">[admin@gmail.com]</a>
+                                                            data-cfemail="ed9b8c9f9883ad8a808c8481c38e8280">[editor@gmail.com]</a>
                                                     </p><a href="profile.html"
                                                            class="btn btn-rounded btn-danger btn-sm">View Profile</a>
                                                 </div>
@@ -262,39 +265,40 @@
                 <!-- Sidebar scroll-->
                 <div class="scroll-sidebar">
                     <!-- User profile -->
-    
+
                     <!-- End User profile text-->
                     <!-- Sidebar navigation-->
                     <nav class="sidebar-nav">
                         <ul id="sidebarnav">
                             <li>
-                                <a href="new-index.html" aria-expanded="false"><i class="mdi mdi-gauge"></i><span
-                                        class="hide-menu">Dashboard</a>
+                                <a class="has-arrow" href="non-admin.html" aria-expanded="false"><i
+                                        class="mdi mdi-gauge"></i><span class="hide-menu">Dashboard <span
+                                            class="label label-rounded label-success">5</span></span></a>
                             </li>
                             <li>
-                                <a href="new-manage-post.html" aria-expanded="false"><i
+                                <a class="has-arrow " href="non-admin-post.html" aria-expanded="false"><i
                                         class="mdi mdi-file-document-box"></i><span class="hide-menu">Post</span></a>
                             </li>
                             <li>
-                                <a href="new-manage-user.html" aria-expanded="false"><i class="mdi mdi-account"></i><span
-                                        class="hide-menu">User</span></a>
+                                <a class="has-arrow " href="#" aria-expanded="false"><i
+                                        class="mdi mdi-account"></i><span class="hide-menu">User</span></a>
                             </li>
                             <li>
-                                <a href="manage-role.html" aria-expanded="false"><i
-                                        class="mdi mdi-account-settings-variant"></i><span class="hide-menu">Role</span></a>
-                            </li>
-                            <li>
-                                <a class="has-arrow" href="new-manage-media.html" aria-expanded="false"><i
+                                <a class="has-arrow" href="#" aria-expanded="false"><i
                                         class="mdi mdi-folder-multiple-image"></i><span class="hide-menu">Media</span></a>
                                 <ul aria-expanded="false" class="collapse">
-                                    <li><a href="new-manage-media.html"><i class="mdi mdi-file"></i> File</a></li>
-                                    <li><a href="new-manage-media.html"><i class="mdi mdi-image"></i> Image</a></li>
+                                    <li><a href="#"><i class="mdi mdi-file"></i> File</a></li>
+                                    <li><a href="#"><i class="mdi mdi-image"></i> Image</a></li>
+
                                 </ul>
                             </li>
+
                             <li>
-                                <a href="manage-category.html" aria-expanded="false"><i
+                                <a class="has-arrow" href="#" aria-expanded="false"><i
                                         class="mdi mdi-tag-multiple"></i><span class="hide-menu">Category</span></a>
+
                             </li>
+
                         </ul>
                     </nav>
                     <!-- End Sidebar navigation -->
@@ -327,15 +331,14 @@
                     <!-- ============================================================== -->
                     <div class="row page-titles">
                         <div class="col-md-6 col-8 align-self-center">
-                            <h3 class="text-themecolor mb-0 mt-0">Manage roles</h3>
+                            <h3 class="text-themecolor mb-0 mt-0">Create post</h3>
                             <ol class="breadcrumb">
-                                <li class="breadcrumb-item"><a href="new-index.html">Home</a></li>
-                                <li class="breadcrumb-item active">Role table</li>
+                                <li class="breadcrumb-item"><a href="non-admin.html">Home</a></li>
+                                <li class="breadcrumb-item"><a href="non-admin-post.html">Post</a></li>
+                                <li class="breadcrumb-item active">Create post</li>
                             </ol>
                         </div>
                         <div class="col-md-6 col-4 align-self-center">
-                            <button onclick="window.location.href = 'create-user.html'" class="btn float-right hidden-sm-down btn-success"><i class="mdi mdi-plus-circle"></i>
-                                Create</button>
                             <div class="dropdown float-right mr-2 hidden-sm-down">
                                 <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
                                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> January 2019
@@ -343,6 +346,108 @@
                                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton"> <a class="dropdown-item"
                                                                                                     href="#">February 2019</a> <a class="dropdown-item" href="#">March 2019</a> <a
                                                                                                     class="dropdown-item" href="#">April 2019</a> </div>
+                            </div>
+                        </div><br>
+                        <div class="col-md-12 align-self-center"><br>
+                            <div class="row">
+                                <div class="col-md-8">
+
+                                    <form>
+                                        <div class="form-group">
+                                            <input type="title" class="form-control" id="exampleFormControlInput1" placeholder="Title for this post.">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="headline" class="form-control" id="exampleFormControlInput1" placeholder="Headline for this post.">
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="exampleFormControlTextarea1">The content of post</label>
+                                            <!--                                    
+                                            <textarea class="form-control" id="exampleFormControlTextarea1" ></textarea>-->
+                                            <textarea rows="25">The content of this post</textarea>
+
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="card">
+                                        <div class="card-header">
+                                            Publish
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="row">
+                                                <div class="col">
+                                                    <button type="button" class="btn btn-light">Save draft</button>
+                                                </div>
+                                                <div class="col">
+                                                    <button type="button" class="btn btn-light">Preview</button>
+                                                </div>
+                                            </div><br>
+                                            <div class="row">
+                                                <div class="col">
+                                                    <p>Visibility</p>
+                                                </div>
+                                                <div class="col">
+                                                    <select class="custom-select" id="inputGroupSelect01" style="width: 200px">
+                                                        <option selected>Choose...</option>
+                                                        <option value="1">Public</option>
+                                                        <option value="2">Private</option>
+                                                        <option value="3">Only me</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col"></div>
+                                            </div><br>
+                                            <div class="custom-control custom-switch">
+                                                <input type="checkbox" class="custom-control-input" id="customSwitch1">
+                                                <label class="custom-control-label" for="customSwitch1"><strong>SEO</strong> check</label>               
+                                            </div>
+                                        </div>
+                                        <div class="card-footer text-muted">
+                                            <div class="row">
+                                                <div class="col">
+                                                    <a href="#" class="text-danger">Move to trash</a>
+                                                </div>
+                                                <div class="col">
+                                                    <a href="#" class="btn btn-primary">Publish</a>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-header">
+                                            Featured Image
+                                        </div>
+                                        <div class="card-body">
+                                            <a href="#" class="text-info">Set featured image</a>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-header">
+
+                                            Categories<br>
+
+                                            <ul class="nav nav-tabs card-header-tabs">
+                                                <li class="nav-item">
+                                                    <a class="nav-link active" href="#">All Categories</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link" href="#">Most Used</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="card-body">
+                                            <input type="checkbox" name="News" value="News"> News<br>
+                                            <input type="checkbox" name="Travel" value="Travel"> Travel<br>
+                                            <input type="checkbox" name="Technology" value="Technology" checked> Technology<br>
+                                        </div>
+                                        <div class="card-footer text-muted">
+                                            <div class="col-3">
+                                                <input type="text" id="myInput" placeholder="Search for ..">
+                                            </div>
+                                        </div>
+                                    </div><br>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -352,52 +457,7 @@
                     <!-- ============================================================== -->
                     <!-- Start Page Content -->
                     <!-- ============================================================== -->
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="card">
-                                <div class="card-body">
-                                    <div class="table-responsive m-t-40">
-                                        <table id="example23"
-                                               class="display nowrap table table-hover table-striped table-bordered"
-                                               cellspacing="0" width="100%">
-                                            <thead>
-                                                <tr>
-                                                    <th>ID</th>
-                                                    <th>Name</th>
-                                                    <th>Quantity</th>
-                                                    <th colspan="2">Action</th>
-                                                </tr>
-                                            </thead>
-                                            <tfoot>
-                                                <tr>
-                                                    <th>ID</th>
-                                                    <th>Name</th>
-                                                    <th>Quantity</th>
-                                                    <th colspan="2">Action</th>
-                                                </tr>
-                                            </tfoot>
-                                            <tbody>
-                                                <tr>
-                                                    <td>1</td>
-                                                    <td>admin</td>
-                                                    <td>1</td>
-                                                    <td><a href="edit-user.html"><i class="fas fa-edit"></i> Edit</a></td>
-                                                    <td><i class="fas fa-trash-alt"></i> Delete</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>2</td>
-                                                    <td>editor</td>
-                                                    <td>2</td>
-                                                    <td><a href="edit-user.html"><i class="fas fa-edit"></i> Edit</a></td>
-                                                    <td><i class="fas fa-trash-alt"></i> Delete</td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+
                     <!-- ============================================================== -->
                     <!-- End PAge Content -->
                     <!-- ============================================================== -->
@@ -530,52 +590,52 @@
         <script src="../../../../../cdn.datatables.net/buttons/1.2.2/js/buttons.print.min.js"></script>
         <!-- end - This is for export functionality only -->
         <script>
-                                $(function () {
-                                    $('#myTable').DataTable();
-                                    $(document).ready(function () {
-                                        var table = $('#example').DataTable({
-                                            "columnDefs": [{
-                                                    "visible": false,
-                                                    "targets": 2
-                                                }],
-                                            "order": [
-                                                [2, 'asc']
-                                            ],
-                                            "displayLength": 25,
-                                            "drawCallback": function (settings) {
-                                                var api = this.api();
-                                                var rows = api.rows({
-                                                    page: 'current'
-                                                }).nodes();
-                                                var last = null;
-                                                api.column(2, {
-                                                    page: 'current'
-                                                }).data().each(function (group, i) {
-                                                    if (last !== group) {
-                                                        $(rows).eq(i).before('<tr class="group"><td colspan="5">' + group + '</td></tr>');
-                                                        last = group;
-                                                    }
-                                                });
-                                            }
-                                        });
-                                        // Order by the grouping
-                                        $('#example tbody').on('click', 'tr.group', function () {
-                                            var currentOrder = table.order()[0];
-                                            if (currentOrder[0] === 2 && currentOrder[1] === 'asc') {
-                                                table.order([2, 'desc']).draw();
-                                            } else {
-                                                table.order([2, 'asc']).draw();
-                                            }
-                                        });
-                                    });
-                                });
-                                $('#example23').DataTable({
-                                    dom: 'Bfrtip',
-                                    buttons: [
-                                        'copy', 'csv', 'excel', 'pdf', 'print'
-                                    ]
-                                });
-                                $('.buttons-copy, .buttons-csv, .buttons-print, .buttons-pdf, .buttons-excel').addClass('btn btn-primary mr-1');
+            $(function () {
+                $('#myTable').DataTable();
+                $(document).ready(function () {
+                    var table = $('#example').DataTable({
+                        "columnDefs": [{
+                                "visible": false,
+                                "targets": 2
+                            }],
+                        "order": [
+                            [2, 'asc']
+                        ],
+                        "displayLength": 25,
+                        "drawCallback": function (settings) {
+                            var api = this.api();
+                            var rows = api.rows({
+                                page: 'current'
+                            }).nodes();
+                            var last = null;
+                            api.column(2, {
+                                page: 'current'
+                            }).data().each(function (group, i) {
+                                if (last !== group) {
+                                    $(rows).eq(i).before('<tr class="group"><td colspan="5">' + group + '</td></tr>');
+                                    last = group;
+                                }
+                            });
+                        }
+                    });
+                    // Order by the grouping
+                    $('#example tbody').on('click', 'tr.group', function () {
+                        var currentOrder = table.order()[0];
+                        if (currentOrder[0] === 2 && currentOrder[1] === 'asc') {
+                            table.order([2, 'desc']).draw();
+                        } else {
+                            table.order([2, 'asc']).draw();
+                        }
+                    });
+                });
+            });
+            $('#example23').DataTable({
+                dom: 'Bfrtip',
+                buttons: [
+                    'copy', 'csv', 'excel', 'pdf', 'print'
+                ]
+            });
+            $('.buttons-copy, .buttons-csv, .buttons-print, .buttons-pdf, .buttons-excel').addClass('btn btn-primary mr-1');
         </script>
         <!-- ============================================================== -->
         <!-- Style switcher -->
