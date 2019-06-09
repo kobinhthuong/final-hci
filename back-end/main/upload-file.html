@@ -2,7 +2,7 @@
 <html lang="en">
 
 
-<!-- Mirrored from www.wrappixel.com/demos/admin-templates/monster-admin/main/pages-gallery.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 11 Feb 2019 11:37:02 GMT -->
+<!-- Mirrored from www.wrappixel.com/demos/admin-templates/monster-admin/main/form-upload.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 11 Feb 2019 11:36:28 GMT -->
 
 <head>
     <meta charset="utf-8">
@@ -16,8 +16,7 @@
     <title>Monster Admin Template - The Most Complete & Trusted Bootstrap 4 Admin Template</title>
     <!-- Bootstrap Core CSS -->
     <link href="../assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Popup CSS -->
-    <link href="../assets/plugins/Magnific-Popup-master/dist/magnific-popup.css" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/plugins/dropify/dist/css/dropify.min.css">
     <!-- Custom CSS -->
     <link href="css/style.css" rel="stylesheet">
     <!-- You can change the theme colors from here -->
@@ -52,7 +51,8 @@
                 <!-- ============================================================== -->
                 <div class="navbar-header">
                     <a class="navbar-brand" href="index.html">
-                        <!-- Logo icon --><b>
+                        <!-- Logo icon -->
+                        <b>
                             <!--You can put here icon as well // <i class="wi wi-sunset"></i> //-->
                             <!-- Dark Logo icon -->
                             <img src="../assets/images/logo-icon.png" alt="homepage" class="dark-logo" />
@@ -60,7 +60,8 @@
                             <img src="../assets/images/logo-light-icon.png" alt="homepage" class="light-logo" />
                         </b>
                         <!--End Logo icon -->
-                        <!-- Logo text --><span>
+                        <!-- Logo text -->
+                        <span>
                             <!-- dark Logo text -->
                             <img src="../assets/images/logo-text.png" alt="homepage" class="dark-logo" />
                             <!-- Light Logo text -->
@@ -368,7 +369,7 @@
                                                 <p class="text-muted"><a
                                                         href="https://www.wrappixel.com/cdn-cgi/l/email-protection"
                                                         class="__cf_email__"
-                                                        data-cfemail="7b0d1a090e153b1c161a121755181416">[email&#160;protected]</a>
+                                                        data-cfemail="15637467607b557278747c793b767a78">[email&#160;protected]</a>
                                                 </p><a href="profile.html"
                                                     class="btn btn-rounded btn-danger btn-sm">View Profile</a>
                                             </div>
@@ -432,7 +433,7 @@
                             <a class="has-arrow" href="new-manage-media.html" aria-expanded="false"><i
                                     class="mdi mdi-folder-multiple-image"></i><span class="hide-menu">Media</span></a>
                             <ul aria-expanded="false" class="collapse">
-                                <li><a href="manage-file.html"><i class="mdi mdi-file"></i> File</a></li>
+                                <li><a href="new-manage-media.html"><i class="mdi mdi-file"></i> File</a></li>
                                 <li><a href="new-manage-media.html"><i class="mdi mdi-image"></i> Image</a></li>
 
                             </ul>
@@ -476,18 +477,16 @@
                 <!-- ============================================================== -->
                 <div class="row page-titles">
                     <div class="col-md-6 col-8 align-self-center">
-                        <h3 class="text-themecolor mb-0 mt-0">Manage images</h3>
+                        <h3 class="text-themecolor mb-0 mt-0">Upload file</h3>
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item"><a href="javascript:void(0)">Home</a></li>
-                            <li class="breadcrumb-item active">Images</li>
+                            <li class="breadcrumb-item active">Upload</li>
                         </ol>
                     </div>
                     <div class="col-md-6 col-4 align-self-center">
                         <button
                             class="right-side-toggle waves-effect waves-light btn-info btn-circle btn-sm float-right ml-2"><i
                                 class="ti-settings text-white"></i></button>
-                        <button onclick="window.location.href='upload-file.html'" class="btn float-right hidden-sm-down btn-success"><i class="mdi mdi-plus-circle"></i>
-                            Upload</button>
                         <div class="dropdown float-right mr-2 hidden-sm-down">
                             <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> January 2019
@@ -504,184 +503,14 @@
                 <!-- ============================================================== -->
                 <!-- Start Page Content -->
                 <!-- ============================================================== -->
-                <div class="row el-element-overlay">
-                    <div class="col-md-12">
-                        <h4 class="card-title">Album</h4>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12">
                         <div class="card">
-                            <div class="el-card-item">
-                                <div class="el-card-avatar el-overlay-1"> <img src="../assets/images/big/img1.jpg"
-                                        alt="user" />
-                                    <div class="el-overlay">
-                                        <ul class="el-info">
-                                            <li><a class="btn default btn-outline image-popup-vertical-fit"
-                                                    href="../assets/images/big/img1.jpg"><i
-                                                        class="icon-magnifier"></i></a></li>
-                                            <li><a class="btn default btn-outline" href="javascript:void(0);"><i
-                                                        class="icon-link"></i></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="el-card-content">
-                                    <h3 class="box-title">img1</h3> <small><i class="fas fa-trash-alt"></i> Delete</td>
-                                        </small>
-                                    <br />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <div class="card">
-                            <div class="el-card-item">
-                                <div class="el-card-avatar el-overlay-1"> <img src="../assets/images/big/img2.jpg"
-                                        alt="user" />
-                                    <div class="el-overlay">
-                                        <ul class="el-info">
-                                            <li><a class="btn default btn-outline image-popup-vertical-fit"
-                                                    href="../assets/images/users/1.jpg"><i
-                                                        class="icon-magnifier"></i></a></li>
-                                            <li><a class="btn default btn-outline" href="javascript:void(0);"><i
-                                                        class="icon-link"></i></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="el-card-content">
-                                    <h3 class="box-title">img2</h3> <small><i class="fas fa-trash-alt"></i> Delete</small>
-                                    <br />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <div class="card">
-                            <div class="el-card-item">
-                                <div class="el-card-avatar el-overlay-1"> <img src="../assets/images/big/img3.jpg"
-                                        alt="user" />
-                                    <div class="el-overlay">
-                                        <ul class="el-info">
-                                            <li><a class="btn default btn-outline image-popup-vertical-fit"
-                                                    href="../assets/images/users/1.jpg"><i
-                                                        class="icon-magnifier"></i></a></li>
-                                            <li><a class="btn default btn-outline" href="javascript:void(0);"><i
-                                                        class="icon-link"></i></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="el-card-content">
-                                    <h3 class="box-title">img3</h3> <small><i class="fas fa-trash-alt"></i> Delete</small>
-                                    <br />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <div class="card">
-                            <div class="el-card-item">
-                                <div class="el-card-avatar el-overlay-1"> <img src="../assets/images/big/img4.jpg"
-                                        alt="user" />
-                                    <div class="el-overlay">
-                                        <ul class="el-info">
-                                            <li><a class="btn default btn-outline image-popup-vertical-fit"
-                                                    href="../assets/images/users/1.jpg"><i
-                                                        class="icon-magnifier"></i></a></li>
-                                            <li><a class="btn default btn-outline" href="javascript:void(0);"><i
-                                                        class="icon-link"></i></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="el-card-content">
-                                    <h3 class="box-title">img4</h3> <small><i class="fas fa-trash-alt"></i> Delete</small>
-                                    <br />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <div class="card">
-                            <div class="el-card-item">
-                                <div class="el-card-avatar el-overlay-1"> <img src="../assets/images/big/img3.jpg"
-                                        alt="user" />
-                                    <div class="el-overlay">
-                                        <ul class="el-info">
-                                            <li><a class="btn default btn-outline image-popup-vertical-fit"
-                                                    href="../assets/images/users/1.jpg"><i
-                                                        class="icon-magnifier"></i></a></li>
-                                            <li><a class="btn default btn-outline" href="javascript:void(0);"><i
-                                                        class="icon-link"></i></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="el-card-content">
-                                    <h3 class="box-title">img5</h3> <small><i class="fas fa-trash-alt"></i> Delete</small>
-                                    <br />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <div class="card">
-                            <div class="el-card-item">
-                                <div class="el-card-avatar el-overlay-1"> <img src="../assets/images/big/img5.jpg"
-                                        alt="user" />
-                                    <div class="el-overlay">
-                                        <ul class="el-info">
-                                            <li><a class="btn default btn-outline image-popup-vertical-fit"
-                                                    href="../assets/images/users/1.jpg"><i
-                                                        class="icon-magnifier"></i></a></li>
-                                            <li><a class="btn default btn-outline" href="javascript:void(0);"><i
-                                                        class="icon-link"></i></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="el-card-content">
-                                    <h3 class="box-title">img6</h3> <small><i class="fas fa-trash-alt"></i> Delete</small>
-                                    <br />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <div class="card">
-                            <div class="el-card-item">
-                                <div class="el-card-avatar el-overlay-1"> <img src="../assets/images/big/img6.jpg"
-                                        alt="user" />
-                                    <div class="el-overlay">
-                                        <ul class="el-info">
-                                            <li><a class="btn default btn-outline image-popup-vertical-fit"
-                                                    href="../assets/images/users/1.jpg"><i
-                                                        class="icon-magnifier"></i></a></li>
-                                            <li><a class="btn default btn-outline" href="javascript:void(0);"><i
-                                                        class="icon-link"></i></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="el-card-content">
-                                    <h3 class="box-title">img7</h3> <small><i class="fas fa-trash-alt"></i> Delete</small>
-                                    <br />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <div class="card">
-                            <div class="el-card-item">
-                                <div class="el-card-avatar el-overlay-1"> <img src="../assets/images/big/img1.jpg"
-                                        alt="user" />
-                                    <div class="el-overlay">
-                                        <ul class="el-info">
-                                            <li><a class="btn default btn-outline image-popup-vertical-fit"
-                                                    href="../assets/images/users/1.jpg"><i
-                                                        class="icon-magnifier"></i></a></li>
-                                            <li><a class="btn default btn-outline" href="javascript:void(0);"><i
-                                                        class="icon-link"></i></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="el-card-content">
-                                    <h3 class="box-title">img8</h3> <small><i class="fas fa-trash-alt"></i> Delete</small>
-                                    <br />
-                                </div>
+                            <div class="card-body">
+                                <h4 class="card-title">File Upload</h4>
+                                <label for="input-file-now">The size must not exceed 8MB</label>
+                                <input type="file" id="input-file-now" class="dropify" />
+                                <input onclick="window.location.href='new-manage-media.html'" style="margin-top: 20px;" class="btn btn-primary" type="submit" value="Upload" />
                             </div>
                         </div>
                     </div>
@@ -775,7 +604,9 @@
             <!-- ============================================================== -->
             <!-- footer -->
             <!-- ============================================================== -->
-            <footer class="footer"> © 2019 Monster Admin by wrappixel.com </footer>
+            <footer class="footer">
+                © 2019 Monster Admin by wrappixel.com
+            </footer>
             <!-- ============================================================== -->
             <!-- End footer -->
             <!-- ============================================================== -->
@@ -806,9 +637,53 @@
     <script src="../assets/plugins/sticky-kit-master/dist/sticky-kit.min.js"></script>
     <!--Custom JavaScript -->
     <script src="js/custom.min.js"></script>
-    <!-- Magnific popup JavaScript -->
-    <script src="../assets/plugins/Magnific-Popup-master/dist/jquery.magnific-popup.min.js"></script>
-    <script src="../assets/plugins/Magnific-Popup-master/dist/jquery.magnific-popup-init.js"></script>
+    <!-- ============================================================== -->
+    <!-- Plugins for this page -->
+    <!-- ============================================================== -->
+    <!-- jQuery file upload -->
+    <script src="../assets/plugins/dropify/dist/js/dropify.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            // Basic
+            $('.dropify').dropify();
+
+            // Translated
+            $('.dropify-fr').dropify({
+                messages: {
+                    default: 'Glissez-déposez un fichier ici ou cliquez',
+                    replace: 'Glissez-déposez un fichier ou cliquez pour remplacer',
+                    remove: 'Supprimer',
+                    error: 'Désolé, le fichier trop volumineux'
+                }
+            });
+
+            // Used events
+            var drEvent = $('#input-file-events').dropify();
+
+            drEvent.on('dropify.beforeClear', function (event, element) {
+                return confirm("Do you really want to delete \"" + element.file.name + "\" ?");
+            });
+
+            drEvent.on('dropify.afterClear', function (event, element) {
+                alert('File deleted');
+            });
+
+            drEvent.on('dropify.errors', function (event, element) {
+                console.log('Has Errors');
+            });
+
+            var drDestroy = $('#input-file-to-destroy').dropify();
+            drDestroy = drDestroy.data('dropify')
+            $('#toggleDropify').on('click', function (e) {
+                e.preventDefault();
+                if (drDestroy.isDropified()) {
+                    drDestroy.destroy();
+                } else {
+                    drDestroy.init();
+                }
+            })
+        });
+    </script>
     <!-- ============================================================== -->
     <!-- Style switcher -->
     <!-- ============================================================== -->
@@ -816,6 +691,6 @@
 </body>
 
 
-<!-- Mirrored from www.wrappixel.com/demos/admin-templates/monster-admin/main/pages-gallery.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 11 Feb 2019 11:37:03 GMT -->
+<!-- Mirrored from www.wrappixel.com/demos/admin-templates/monster-admin/main/form-upload.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 11 Feb 2019 11:36:30 GMT -->
 
 </html>
