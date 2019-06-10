@@ -1,559 +1,552 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <!-- Tell the browser to be responsive to screen width -->
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="">
-        <meta name="author" content="">
-        <!-- Favicon icon -->
-        <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/favicon.png">
-        <title>Admin - Media</title>
-        <!-- Bootstrap Core CSS -->
-        <link href="../assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-        <!-- Popup CSS -->
-        <link href="../assets/plugins/Magnific-Popup-master/dist/magnific-popup.css" rel="stylesheet">
-        <!-- Custom CSS -->
-        <link href="css/style.css" rel="stylesheet">
-        <!-- You can change the theme colors from here -->
-        <link href="css/colors/blue.css" id="theme" rel="stylesheet">
-        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-        <!--[if lt IE 9]>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/favicon.png">
+    <title>Admin - Media</title>
+    <!-- Bootstrap Core CSS -->
+    <link href="../assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Popup CSS -->
+    <link href="../assets/plugins/Magnific-Popup-master/dist/magnific-popup.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="css/style.css" rel="stylesheet">
+    <!-- You can change the theme colors from here -->
+    <link href="css/colors/blue.css" id="theme" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-    </head>
+</head>
 
-    <body class="fix-header card-no-border">
-        <!-- ============================================================== -->
-        <!-- Preloader - style you can find in spinners.css -->
-        <!-- ============================================================== -->
-        <div class="preloader">
-            <svg class="circular" viewBox="25 25 50 50">
+<body class="fix-header card-no-border">
+    <!-- ============================================================== -->
+    <!-- Preloader - style you can find in spinners.css -->
+    <!-- ============================================================== -->
+    <div class="preloader">
+        <svg class="circular" viewBox="25 25 50 50">
             <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10" /> </svg>
-        </div>
+    </div>
+    <!-- ============================================================== -->
+    <!-- Main wrapper - style you can find in pages.scss -->
+    <!-- ============================================================== -->
+    <div id="main-wrapper">
         <!-- ============================================================== -->
-        <!-- Main wrapper - style you can find in pages.scss -->
+        <!-- Topbar header - style you can find in pages.scss -->
         <!-- ============================================================== -->
-        <div id="main-wrapper">
-            <!-- ============================================================== -->
-            <!-- Topbar header - style you can find in pages.scss -->
-            <!-- ============================================================== -->
-            <header class="topbar">
-                <nav class="navbar top-navbar navbar-expand-md navbar-light">
+        <header class="topbar">
+            <nav class="navbar top-navbar navbar-expand-md navbar-light">
+                <!-- ============================================================== -->
+                <!-- Logo -->
+                <!-- ============================================================== -->
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="new-index.html">
+                        <!-- Logo icon --><b>
+                            <!--You can put here icon as well // <i class="wi wi-sunset"></i> //-->
+                            <!-- Dark Logo icon -->
+                            <img src="../assets/images/logo-icon.png" alt="homepage" class="dark-logo" />
+                            <!-- Light Logo icon -->
+                            <img src="../assets/images/logo-light-icon.png" alt="homepage" class="light-logo" />
+                        </b>
+                        <!--End Logo icon -->
+                        <!-- Logo text --><span>
+                            <!-- dark Logo text -->
+                            <img src="../assets/images/logo-text.png" alt="homepage" class="dark-logo" />
+                            <!-- Light Logo text -->
+                            <img src="../assets/images/logo-light-text.png" class="light-logo" alt="homepage" /></span>
+                    </a>
+                </div>
+                <!-- ============================================================== -->
+                <!-- End Logo -->
+                <!-- ============================================================== -->
+                <div class="navbar-collapse">
                     <!-- ============================================================== -->
-                    <!-- Logo -->
+                    <!-- toggle and nav items -->
                     <!-- ============================================================== -->
-                    <div class="navbar-header">
-                        <a class="navbar-brand" href="new-index.html">
-                            <!-- Logo icon --><b>
-                                <!--You can put here icon as well // <i class="wi wi-sunset"></i> //-->
-                                <!-- Dark Logo icon -->
-                                <img src="../assets/images/logo-icon.png" alt="homepage" class="dark-logo" />
-                                <!-- Light Logo icon -->
-                                <img src="../assets/images/logo-light-icon.png" alt="homepage" class="light-logo" />
-                            </b>
-                            <!--End Logo icon -->
-                            <!-- Logo text --><span>
-                                <!-- dark Logo text -->
-                                <img src="../assets/images/logo-text.png" alt="homepage" class="dark-logo" />
-                                <!-- Light Logo text -->
-                                <img src="../assets/images/logo-light-text.png" class="light-logo" alt="homepage" /></span>
-                        </a>
-                    </div>
+                    <ul class="navbar-nav mr-auto mt-md-0 ">
+                        <!-- This is  -->
+                        <li class="nav-item"> <a
+                                class="nav-link nav-toggler hidden-md-up text-muted waves-effect waves-dark"
+                                href="javascript:void(0)"><i class="ti-menu"></i></a> </li>
+                        <li class="nav-item"> <a
+                                class="nav-link sidebartoggler hidden-sm-down text-muted waves-effect waves-dark"
+                                href="javascript:void(0)"><i class="icon-arrow-left-circle"></i></a> </li>
+                    </ul>
                     <!-- ============================================================== -->
-                    <!-- End Logo -->
+                    <!-- User profile and search -->
                     <!-- ============================================================== -->
-                    <div class="navbar-collapse">
-                        <!-- ============================================================== -->
-                        <!-- toggle and nav items -->
-                        <!-- ============================================================== -->
-                        <ul class="navbar-nav mr-auto mt-md-0 ">
-                            <!-- This is  -->
-                            <li class="nav-item"> <a
-                                    class="nav-link nav-toggler hidden-md-up text-muted waves-effect waves-dark"
-                                    href="javascript:void(0)"><i class="ti-menu"></i></a> </li>
-                            <li class="nav-item"> <a
-                                    class="nav-link sidebartoggler hidden-sm-down text-muted waves-effect waves-dark"
-                                    href="javascript:void(0)"><i class="icon-arrow-left-circle"></i></a> </li>
-                        </ul>
-                        <!-- ============================================================== -->
-                        <!-- User profile and search -->
-                        <!-- ============================================================== -->
-                        <ul class="navbar-nav my-lg-0">
-                            <li class="nav-item hidden-sm-down">
-                                <form class="app-search">
-                                    <input type="text" class="form-control" placeholder="Search for..."> <a
-                                        class="srh-btn"><i class="ti-search"></i></a> </form>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle text-muted waves-effect waves-dark" href="#"
-                                   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img
-                                        src="../assets/images/users/1.jpg" alt="user" class="profile-pic" /></a>
-                                <div class="dropdown-menu dropdown-menu-right animated flipInY">
-                                    <ul class="dropdown-user">
-                                        <li>
-                                            <div class="dw-user-box">
-                                                <div class="u-img"><img src="../assets/images/users/1.jpg" alt="user"></div>
-                                                <div class="u-text">
-                                                    <h4>Steave Jobs</h4>
-                                                    <p class="text-muted"><a
-                                                            href="https://www.wrappixel.com/cdn-cgi/l/email-protection"
-                                                            class="__cf_email__"
-                                                            data-cfemail="7b0d1a090e153b1c161a121755181416">[admin@gmail.com]</a>
-                                                    </p><a href="profile.html"
-                                                           class="btn btn-rounded btn-danger btn-sm">View Profile</a>
-                                                </div>
+                    <ul class="navbar-nav my-lg-0">
+                        <li class="nav-item hidden-sm-down">
+                            <form class="app-search">
+                                <input type="text" class="form-control" placeholder="Search for..."> <a
+                                    class="srh-btn"><i class="ti-search"></i></a> </form>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-muted waves-effect waves-dark" href="#"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img
+                                    src="../assets/images/users/1.jpg" alt="user" class="profile-pic" /></a>
+                            <div class="dropdown-menu dropdown-menu-right animated flipInY">
+                                <ul class="dropdown-user">
+                                    <li>
+                                        <div class="dw-user-box">
+                                            <div class="u-img"><img src="../assets/images/users/1.jpg" alt="user"></div>
+                                            <div class="u-text">
+                                                <h4>admin1</h4>
                                             </div>
-                                        </li>
-                                        <li role="separator" class="divider"></li>
-                                        <li><a href="#"><i class="fa fa-power-off"></i> Logout</a></li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle text-muted waves-effect waves-dark" href="#"
-                                   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i
-                                        class="flag-icon flag-icon-us"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                </nav>
-            </header>
-            <!-- ============================================================== -->
-            <!-- End Topbar header -->
-            <!-- ============================================================== -->
-            <!-- ============================================================== -->
-            <!-- Left Sidebar - style you can find in sidebar.scss  -->
-            <!-- ============================================================== -->
-            <aside class="left-sidebar">
-                <!-- Sidebar scroll-->
-                <div class="scroll-sidebar">
-                    <!-- User profile -->
-
-                    <!-- End User profile text-->
-                    <!-- Sidebar navigation-->
-                    <nav class="sidebar-nav">
-                        <ul id="sidebarnav">
-                            <li>
-                                <a class="has-arrow" href="new-index.html" aria-expanded="false"><i
-                                        class="mdi mdi-gauge"></i><span class="hide-menu">Dashboard <span
-                                            class="label label-rounded label-success">5</span></span></a>
-                            </li>
-                            <li>
-                                <a class="has-arrow " href="new-manage-post.html" aria-expanded="false"><i
-                                        class="mdi mdi-file-document-box"></i><span class="hide-menu">Post</span></a>
-                            </li>
-                            <li>
-                                <a class="has-arrow " href="new-manage-user.html" aria-expanded="false"><i
-                                        class="mdi mdi-account"></i><span class="hide-menu">User</span></a>
-                            </li>
-                            <li>
-                                <a class="has-arrow" href="new-manage-media.html" aria-expanded="false"><i
-                                        class="mdi mdi-folder-multiple-image"></i><span class="hide-menu">Media</span></a>
-                                <ul aria-expanded="false" class="collapse">
-                                    <li><a href="manage-file.html"><i class="mdi mdi-file"></i> File</a></li>
-                                    <li><a href="new-manage-media.html"><i class="mdi mdi-image"></i> Image</a></li>
-
+                                        </div>
+                                    </li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="login.html"><i class="fa fa-power-off"></i> Logout</a></li>
                                 </ul>
-                            </li>
-
-                            <li>
-                                <a class="has-arrow" href="manage-category.html" aria-expanded="false"><i
-                                        class="mdi mdi-tag-multiple"></i><span class="hide-menu">Category</span></a>
-                            </li>
-                        </ul>
-                    </nav>
-                    <!-- End Sidebar navigation -->
-                </div>
-                <!-- End Sidebar scroll-->
-                <!-- Bottom points-->
-                <div class="sidebar-footer">
-                    <!-- item-->
-                    <a href="#" class="link" data-toggle="tooltip" title="Settings"><i class="ti-settings"></i></a>
-                    <!-- item-->
-                    <a href="#" class="link" data-toggle="tooltip" title="Email"><i class="mdi mdi-gmail"></i></a>
-                    <!-- item-->
-                    <a href="#" class="link" data-toggle="tooltip" title="Logout"><i class="mdi mdi-power"></i></a>
-                </div>
-                <!-- End Bottom points-->
-            </aside>
-            <!-- ============================================================== -->
-            <!-- End Left Sidebar - style you can find in sidebar.scss  -->
-            <!-- ============================================================== -->
-            <!-- ============================================================== -->
-            <!-- Page wrapper  -->
-            <!-- ============================================================== -->
-            <div class="page-wrapper">
-                <!-- ============================================================== -->
-                <!-- Container fluid  -->
-                <!-- ============================================================== -->
-                <div class="container-fluid">
-                    <!-- ============================================================== -->
-                    <!-- Bread crumb and right sidebar toggle -->
-                    <!-- ============================================================== -->
-                    <div class="row page-titles">
-                        <div class="col-md-6 col-8 align-self-center">
-                            <h3 class="text-themecolor mb-0 mt-0">Manage images</h3>
-                            <ol class="breadcrumb">
-                                <li class="breadcrumb-item"><a href="new-index.html">Home</a></li>
-                                <li class="breadcrumb-item active">Images</li>
-                            </ol>
-                        </div>
-                        <div class="col-md-6 col-4 align-self-center">
-                            <button onclick="window.location.href = 'upload-file.html'" class="btn float-right hidden-sm-down btn-success"><i class="mdi mdi-plus-circle"></i>
-                                Upload</button>
-                            <div class="dropdown float-right mr-2 hidden-sm-down">
-                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
-                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> January 2019
-                                </button>
-                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton"> <a class="dropdown-item"
-                                                                                                    href="#">February 2019</a> <a class="dropdown-item" href="#">March 2019</a> <a
-                                                                                                    class="dropdown-item" href="#">April 2019</a> </div>
                             </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <!-- ============================================================== -->
+        <!-- End Topbar header -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- Left Sidebar - style you can find in sidebar.scss  -->
+        <!-- ============================================================== -->
+        <aside class="left-sidebar">
+            <!-- Sidebar scroll-->
+            <div class="scroll-sidebar">
+                <!-- User profile -->
+
+                <!-- End User profile text-->
+                <!-- Sidebar navigation-->
+                <nav class="sidebar-nav">
+                    <ul id="sidebarnav">
+                        <li>
+                            <a href="new-index.html" aria-expanded="false"><i class="mdi mdi-gauge"></i><span
+                                    class="hide-menu">Dashboard</a>
+                        </li>
+                        <li>
+                            <a href="new-manage-post.html" aria-expanded="false"><i
+                                    class="mdi mdi-file-document-box"></i><span class="hide-menu">Post</span></a>
+                        </li>
+                        <li>
+                            <a href="new-manage-user.html" aria-expanded="false"><i class="mdi mdi-account"></i><span
+                                    class="hide-menu">User</span></a>
+                        </li>
+                        <li>
+                            <a href="manage-role.html" aria-expanded="false"><i
+                                    class="mdi mdi-account-settings-variant"></i><span class="hide-menu">Role</span></a>
+                        </li>
+                        <li>
+                            <a class="has-arrow" href="new-manage-media.html" aria-expanded="false"><i
+                                    class="mdi mdi-folder-multiple-image"></i><span class="hide-menu">Media</span></a>
+                            <ul aria-expanded="false" class="collapse">
+                                <li><a href="manage-file.html"><i class="mdi mdi-file"></i> File</a></li>
+                                <li><a href="new-manage-media.html"><i class="mdi mdi-image"></i> Image</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="manage-category.html" aria-expanded="false"><i
+                                    class="mdi mdi-tag-multiple"></i><span class="hide-menu">Category</span></a>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- End Sidebar navigation -->
+            </div>
+            <!-- End Sidebar scroll-->
+            <!-- Bottom points-->
+            <div class="sidebar-footer">
+                <!-- item-->
+                <a href="#" class="link" data-toggle="tooltip" title="Settings"><i class="ti-settings"></i></a>
+                <!-- item-->
+                <a href="#" class="link" data-toggle="tooltip" title="Email"><i class="mdi mdi-gmail"></i></a>
+                <!-- item-->
+                <a href="#" class="link" data-toggle="tooltip" title="Logout"><i class="mdi mdi-power"></i></a>
+            </div>
+            <!-- End Bottom points-->
+        </aside>
+        <!-- ============================================================== -->
+        <!-- End Left Sidebar - style you can find in sidebar.scss  -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- Page wrapper  -->
+        <!-- ============================================================== -->
+        <div class="page-wrapper">
+            <!-- ============================================================== -->
+            <!-- Container fluid  -->
+            <!-- ============================================================== -->
+            <div class="container-fluid">
+                <!-- ============================================================== -->
+                <!-- Bread crumb and right sidebar toggle -->
+                <!-- ============================================================== -->
+                <div class="row page-titles">
+                    <div class="col-md-6 col-8 align-self-center">
+                        <h3 class="text-themecolor mb-0 mt-0">Manage images</h3>
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="new-index.html">Home</a></li>
+                            <li class="breadcrumb-item active">Images</li>
+                        </ol>
+                    </div>
+                    <div class="col-md-6 col-4 align-self-center">
+                        <button onclick="window.location.href = 'upload-file.html'"
+                            class="btn float-right hidden-sm-down btn-success"><i class="mdi mdi-plus-circle"></i>
+                            Upload</button>
+                        <div class="dropdown float-right mr-2 hidden-sm-down">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> January 2019
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton"> <a class="dropdown-item"
+                                    href="#">February 2019</a> <a class="dropdown-item" href="#">March 2019</a> <a
+                                    class="dropdown-item" href="#">April 2019</a> </div>
                         </div>
                     </div>
-                    <!-- ============================================================== -->
-                    <!-- End Bread crumb and right sidebar toggle -->
-                    <!-- ============================================================== -->
-                    <!-- ============================================================== -->
-                    <!-- Start Page Content -->
-                    <!-- ============================================================== -->
-                    <div class="row el-element-overlay">
-                        <div class="col-md-12">
-                            <h4 class="card-title">Album</h4>
-                        </div>
-                        <div class="col-lg-3 col-md-6" id="content">
-                            <div class="card">
-                                <div class="el-card-item">
-                                    <div class="el-card-avatar el-overlay-1"> <img src="../assets/images/big/img1.jpg"
-                                                                                   alt="user" />
-                                        <div class="el-overlay">
-                                            <ul class="el-info">
-                                                <li><a class="btn default btn-outline image-popup-vertical-fit"
-                                                       href="../assets/images/big/img1.jpg"><i
-                                                            class="icon-magnifier"></i></a></li>
-                                                <li><a class="btn default btn-outline" href="javascript:void(0);"><i
-                                                            class="icon-link"></i></a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="el-card-content">
-                                  <h3 class="box-title">img1</h3> <a href="#" onclick="ConfirmDelete()"><i class="fas fa-trash-alt"></i> Delete</a>
-                                        <br />
+                </div>
+                <!-- ============================================================== -->
+                <!-- End Bread crumb and right sidebar toggle -->
+                <!-- ============================================================== -->
+                <!-- ============================================================== -->
+                <!-- Start Page Content -->
+                <!-- ============================================================== -->
+                <div class="row el-element-overlay">
+                    <div class="col-md-12">
+                        <h4 class="card-title">Album</h4>
+                    </div>
+                    <div class="col-lg-3 col-md-6" id="content">
+                        <div class="card">
+                            <div class="el-card-item">
+                                <div class="el-card-avatar el-overlay-1"> <img src="../assets/images/big/img1.jpg"
+                                        alt="user" />
+                                    <div class="el-overlay">
+                                        <ul class="el-info">
+                                            <li><a class="btn default btn-outline image-popup-vertical-fit"
+                                                    href="../assets/images/big/img1.jpg"><i
+                                                        class="icon-magnifier"></i></a></li>
+                                            <li><a class="btn default btn-outline" href="javascript:void(0);"><i
+                                                        class="icon-link"></i></a></li>
+                                        </ul>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6" id="cont">
-                            <div class="card">
-                                <div class="el-card-item">
-                                    <div class="el-card-avatar el-overlay-1"> <img src="../assets/images/big/img2.jpg"
-                                                                                   alt="user" />
-                                        <div class="el-overlay">
-                                            <ul class="el-info">
-                                                <li><a class="btn default btn-outline image-popup-vertical-fit"
-                                                       href="../assets/images/users/1.jpg"><i
-                                                            class="icon-magnifier"></i></a></li>
-                                                <li><a class="btn default btn-outline" href="javascript:void(0);"><i
-                                                            class="icon-link"></i></a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="el-card-content">
-                                        <h3 class="box-title">img2</h3> <a href="#" onclick="ConfirmDe()"><i class="fas fa-trash-alt"></i> Delete</a>
-                                        <br />
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-								<script>
-			function ConfirmDe()
-			{
-			  var x = confirm("Are you sure you want to delete?");
-			  if (x){
-            document.getElementById("cont").style.display = 'none';      
-		}
-			  else{
-				return false;
-			      }
-			}
-
-		</script>
-                        <div class="col-lg-3 col-md-6" id="con">
-                            <div class="card">
-                                <div class="el-card-item">
-                                    <div class="el-card-avatar el-overlay-1"> <img src="../assets/images/big/img3.jpg"
-                                                                                   alt="user" />
-                                        <div class="el-overlay">
-                                            <ul class="el-info">
-                                                <li><a class="btn default btn-outline image-popup-vertical-fit"
-                                                       href="../assets/images/users/1.jpg"><i
-                                                            class="icon-magnifier"></i></a></li>
-                                                <li><a class="btn default btn-outline" href="javascript:void(0);"><i
-                                                            class="icon-link"></i></a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="el-card-content" id="img">
-                                <h3 class="box-title">img3</h3> <a href="#" onclick="Confirm()"><i class="fas fa-trash-alt"></i> Delete</a>
-                                        <br />
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-								<script>
-			function Confirm()
-			{
-			  var x = confirm("Are you sure you want to delete?");
-			  if (x){
-            document.getElementById("con").style.display = 'none';      
-		}
-			  else{
-				return false;
-			      }
-			}
-
-		</script>
-                        <div class="col-lg-3 col-md-6" id="co">
-                            <div class="card">
-                                <div class="el-card-item">
-                                    <div class="el-card-avatar el-overlay-1"> <img src="../assets/images/big/img4.jpg"
-                                                                                   alt="user" />
-                                        <div class="el-overlay">
-                                            <ul class="el-info">
-                                                <li><a class="btn default btn-outline image-popup-vertical-fit"
-                                                       href="../assets/images/users/1.jpg"><i
-                                                            class="icon-magnifier"></i></a></li>
-                                                <li><a class="btn default btn-outline" href="javascript:void(0);"><i
-                                                            class="icon-link"></i></a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="el-card-content">
-                                <h3 class="box-title">img4</h3> <a href="#" onclick="Confir()"><i class="fas fa-trash-alt"></i> Delete</a>
-                                        <br />
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-								<script>
-			function Confir()
-			{
-			  var x = confirm("Are you sure you want to delete?");
-			  if (x){
-            document.getElementById("co").style.display = 'none';      
-		}
-			  else{
-				return false;
-			      }
-			}
-
-		</script>
-                        <div class="col-lg-3 col-md-6" id="c">
-                            <div class="card">
-                                <div class="el-card-item">
-                                    <div class="el-card-avatar el-overlay-1"> <img src="../assets/images/big/img3.jpg"
-                                                                                   alt="user" />
-                                        <div class="el-overlay">
-                                            <ul class="el-info">
-                                                <li><a class="btn default btn-outline image-popup-vertical-fit"
-                                                       href="../assets/images/users/1.jpg"><i
-                                                            class="icon-magnifier"></i></a></li>
-                                                <li><a class="btn default btn-outline" href="javascript:void(0);"><i
-                                                            class="icon-link"></i></a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="el-card-content">
-                                        <h3 class="box-title">img5</h3> <a href="#" onclick="Confi()"><i class="fas fa-trash-alt"></i> Delete</a>
-                                        <br />
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-								<script>
-			function Confi()
-			{
-			  var x = confirm("Are you sure you want to delete?");
-			  if (x){
-            document.getElementById("c").style.display = 'none';      
-		}
-			  else{
-				return false;
-			      }
-			}
-
-		</script>
-						
-                        <div class="col-lg-3 col-md-6" id="ml">
-                            <div class="card">
-                                <div class="el-card-item">
-                                    <div class="el-card-avatar el-overlay-1"> <img src="../assets/images/big/img5.jpg"
-                                                                                   alt="user" />
-                                        <div class="el-overlay">
-                                            <ul class="el-info">
-                                                <li><a class="btn default btn-outline image-popup-vertical-fit"
-                                                       href="../assets/images/users/1.jpg"><i
-                                                            class="icon-magnifier"></i></a></li>
-                                                <li><a class="btn default btn-outline" href="javascript:void(0);"><i
-                                                            class="icon-link"></i></a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="el-card-content">
-                                <h3 class="box-title">img6</h3> <a href="#" onclick="Con()"><i class="fas fa-trash-alt"></i> Delete</a>
-                                        <br />
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-								<script>
-			function Con()
-			{
-			  var x = confirm("Are you sure you want to delete?");
-			  if (x){
-            document.getElementById("ml").style.display = 'none';      
-		}
-			  else{
-				return false;
-			      }
-			}
-
-		</script>
-                        <div class="col-lg-3 col-md-6" id="conte">
-                            <div class="card">
-                                <div class="el-card-item">
-                                    <div class="el-card-avatar el-overlay-1"> <img src="../assets/images/big/img6.jpg"
-                                                                                   alt="user" />
-                                        <div class="el-overlay">
-                                            <ul class="el-info">
-                                                <li><a class="btn default btn-outline image-popup-vertical-fit"
-                                                       href="../assets/images/users/1.jpg"><i
-                                                            class="icon-magnifier"></i></a></li>
-                                                <li><a class="btn default btn-outline" href="javascript:void(0);"><i
-                                                            class="icon-link"></i></a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="el-card-content">
-                                <h3 class="box-title">img7</h3> <a href="#" onclick="ConfirmDele()"><i class="fas fa-trash-alt"></i> Delete</a>
-                                        <br />
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6" id="conten">
-                            <div class="card" id="name">
-                                <div class="el-card-item">
-                                    <div class="el-card-avatar el-overlay-1"> <img src="../assets/images/big/img1.jpg" alt="user" />
-                                        <div class="el-overlay">
-                                            <ul class="el-info">
-                                                <li><a class="btn default btn-outline image-popup-vertical-fit"
-                                                       href="../assets/images/users/1.jpg"><i
-                                                            class="icon-magnifier"></i></a></li>
-                                                <li><a class="btn default btn-outline" href="javascript:void(0);"><i
-                                                            class="icon-link"></i></a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="el-card-content">
-                                <h3 class="box-title">img8</h3> <a href="#" onclick="ConfirmDelet()"><i class="fas fa-trash-alt"></i> Delete</a>
-                                        <br />
-                                    </div>
+                                <div class="el-card-content">
+                                    <h3 class="box-title">img1</h3> <a href="#" onclick="ConfirmDelete()"><i
+                                            class="fas fa-trash-alt"></i> Delete</a>
+                                    <br />
                                 </div>
                             </div>
                         </div>
                     </div>
-                   
-                    <!-- ============================================================== -->
+                    <div class="col-lg-3 col-md-6" id="cont">
+                        <div class="card">
+                            <div class="el-card-item">
+                                <div class="el-card-avatar el-overlay-1"> <img src="../assets/images/big/img2.jpg"
+                                        alt="user" />
+                                    <div class="el-overlay">
+                                        <ul class="el-info">
+                                            <li><a class="btn default btn-outline image-popup-vertical-fit"
+                                                    href="../assets/images/users/1.jpg"><i
+                                                        class="icon-magnifier"></i></a></li>
+                                            <li><a class="btn default btn-outline" href="javascript:void(0);"><i
+                                                        class="icon-link"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="el-card-content">
+                                    <h3 class="box-title">img2</h3> <a href="#" onclick="ConfirmDe()"><i
+                                            class="fas fa-trash-alt"></i> Delete</a>
+                                    <br />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <script>
+                        function ConfirmDe() {
+                            var x = confirm("Are you sure you want to delete?");
+                            if (x) {
+                                document.getElementById("cont").style.display = 'none';
+                            }
+                            else {
+                                return false;
+                            }
+                        }
+
+                    </script>
+                    <div class="col-lg-3 col-md-6" id="con">
+                        <div class="card">
+                            <div class="el-card-item">
+                                <div class="el-card-avatar el-overlay-1"> <img src="../assets/images/big/img3.jpg"
+                                        alt="user" />
+                                    <div class="el-overlay">
+                                        <ul class="el-info">
+                                            <li><a class="btn default btn-outline image-popup-vertical-fit"
+                                                    href="../assets/images/users/1.jpg"><i
+                                                        class="icon-magnifier"></i></a></li>
+                                            <li><a class="btn default btn-outline" href="javascript:void(0);"><i
+                                                        class="icon-link"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="el-card-content" id="img">
+                                    <h3 class="box-title">img3</h3> <a href="#" onclick="Confirm()"><i
+                                            class="fas fa-trash-alt"></i> Delete</a>
+                                    <br />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <script>
+                        function Confirm() {
+                            var x = confirm("Are you sure you want to delete?");
+                            if (x) {
+                                document.getElementById("con").style.display = 'none';
+                            }
+                            else {
+                                return false;
+                            }
+                        }
+
+                    </script>
+                    <div class="col-lg-3 col-md-6" id="co">
+                        <div class="card">
+                            <div class="el-card-item">
+                                <div class="el-card-avatar el-overlay-1"> <img src="../assets/images/big/img4.jpg"
+                                        alt="user" />
+                                    <div class="el-overlay">
+                                        <ul class="el-info">
+                                            <li><a class="btn default btn-outline image-popup-vertical-fit"
+                                                    href="../assets/images/users/1.jpg"><i
+                                                        class="icon-magnifier"></i></a></li>
+                                            <li><a class="btn default btn-outline" href="javascript:void(0);"><i
+                                                        class="icon-link"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="el-card-content">
+                                    <h3 class="box-title">img4</h3> <a href="#" onclick="Confir()"><i
+                                            class="fas fa-trash-alt"></i> Delete</a>
+                                    <br />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <script>
+                        function Confir() {
+                            var x = confirm("Are you sure you want to delete?");
+                            if (x) {
+                                document.getElementById("co").style.display = 'none';
+                            }
+                            else {
+                                return false;
+                            }
+                        }
+
+                    </script>
+                    <div class="col-lg-3 col-md-6" id="c">
+                        <div class="card">
+                            <div class="el-card-item">
+                                <div class="el-card-avatar el-overlay-1"> <img src="../assets/images/big/img3.jpg"
+                                        alt="user" />
+                                    <div class="el-overlay">
+                                        <ul class="el-info">
+                                            <li><a class="btn default btn-outline image-popup-vertical-fit"
+                                                    href="../assets/images/users/1.jpg"><i
+                                                        class="icon-magnifier"></i></a></li>
+                                            <li><a class="btn default btn-outline" href="javascript:void(0);"><i
+                                                        class="icon-link"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="el-card-content">
+                                    <h3 class="box-title">img5</h3> <a href="#" onclick="Confi()"><i
+                                            class="fas fa-trash-alt"></i> Delete</a>
+                                    <br />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <script>
+                        function Confi() {
+                            var x = confirm("Are you sure you want to delete?");
+                            if (x) {
+                                document.getElementById("c").style.display = 'none';
+                            }
+                            else {
+                                return false;
+                            }
+                        }
+
+                    </script>
+
+                    <div class="col-lg-3 col-md-6" id="ml">
+                        <div class="card">
+                            <div class="el-card-item">
+                                <div class="el-card-avatar el-overlay-1"> <img src="../assets/images/big/img5.jpg"
+                                        alt="user" />
+                                    <div class="el-overlay">
+                                        <ul class="el-info">
+                                            <li><a class="btn default btn-outline image-popup-vertical-fit"
+                                                    href="../assets/images/users/1.jpg"><i
+                                                        class="icon-magnifier"></i></a></li>
+                                            <li><a class="btn default btn-outline" href="javascript:void(0);"><i
+                                                        class="icon-link"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="el-card-content">
+                                    <h3 class="box-title">img6</h3> <a href="#" onclick="Con()"><i
+                                            class="fas fa-trash-alt"></i> Delete</a>
+                                    <br />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <script>
+                        function Con() {
+                            var x = confirm("Are you sure you want to delete?");
+                            if (x) {
+                                document.getElementById("ml").style.display = 'none';
+                            }
+                            else {
+                                return false;
+                            }
+                        }
+
+                    </script>
+                    <div class="col-lg-3 col-md-6" id="conte">
+                        <div class="card">
+                            <div class="el-card-item">
+                                <div class="el-card-avatar el-overlay-1"> <img src="../assets/images/big/img6.jpg"
+                                        alt="user" />
+                                    <div class="el-overlay">
+                                        <ul class="el-info">
+                                            <li><a class="btn default btn-outline image-popup-vertical-fit"
+                                                    href="../assets/images/users/1.jpg"><i
+                                                        class="icon-magnifier"></i></a></li>
+                                            <li><a class="btn default btn-outline" href="javascript:void(0);"><i
+                                                        class="icon-link"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="el-card-content">
+                                    <h3 class="box-title">img7</h3> <a href="#" onclick="ConfirmDele()"><i
+                                            class="fas fa-trash-alt"></i> Delete</a>
+                                    <br />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6" id="conten">
+                        <div class="card" id="name">
+                            <div class="el-card-item">
+                                <div class="el-card-avatar el-overlay-1"> <img src="../assets/images/big/img1.jpg"
+                                        alt="user" />
+                                    <div class="el-overlay">
+                                        <ul class="el-info">
+                                            <li><a class="btn default btn-outline image-popup-vertical-fit"
+                                                    href="../assets/images/users/1.jpg"><i
+                                                        class="icon-magnifier"></i></a></li>
+                                            <li><a class="btn default btn-outline" href="javascript:void(0);"><i
+                                                        class="icon-link"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="el-card-content">
+                                    <h3 class="box-title">img8</h3> <a href="#" onclick="ConfirmDelet()"><i
+                                            class="fas fa-trash-alt"></i> Delete</a>
+                                    <br />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <!-- ============================================================== -->
-                <!-- End Container fluid  -->
-                <!-- ============================================================== -->
-                <!-- ============================================================== -->
-                <!-- footer -->
-                <!-- ============================================================== -->
-                <footer class="footer"> © 2019 Monster Admin by wrappixel.com </footer>
-                <!-- ============================================================== -->
-                <!-- End footer -->
+
                 <!-- ============================================================== -->
             </div>
             <!-- ============================================================== -->
-            <!-- End Page wrapper  -->
+            <!-- End Container fluid  -->
+            <!-- ============================================================== -->
+            <!-- ============================================================== -->
+            <!-- footer -->
+            <!-- ============================================================== -->
+            <footer class="footer"> © 2019 Monster Admin by wrappixel.com </footer>
+            <!-- ============================================================== -->
+            <!-- End footer -->
             <!-- ============================================================== -->
         </div>
         <!-- ============================================================== -->
-        <!-- End Wrapper -->
+        <!-- End Page wrapper  -->
         <!-- ============================================================== -->
-        <!-- ============================================================== -->
-        <!-- All Jquery -->
-        <!-- ============================================================== -->
-        <script data-cfasync="false"
+    </div>
+    <!-- ============================================================== -->
+    <!-- End Wrapper -->
+    <!-- ============================================================== -->
+    <!-- ============================================================== -->
+    <!-- All Jquery -->
+    <!-- ============================================================== -->
+    <script data-cfasync="false"
         src="../../../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
-        <script src="../assets/plugins/jquery/jquery.min.js"></script>
-        <!-- Bootstrap tether Core JavaScript -->
-        <script src="../assets/plugins/bootstrap/js/popper.min.js"></script>
-        <script src="../assets/plugins/bootstrap/js/bootstrap.min.js"></script>
-        <!-- slimscrollbar scrollbar JavaScript -->
-        <script src="js/jquery.slimscroll.js"></script>
-        <!--Wave Effects -->
-        <script src="js/waves.js"></script>
-        <!--Menu sidebar -->
-        <script src="js/sidebarmenu.js"></script>
-        <!--stickey kit -->
-        <script src="../assets/plugins/sticky-kit-master/dist/sticky-kit.min.js"></script>
-        <!--Custom JavaScript -->
-        <script src="js/custom.min.js"></script>
-        <!-- Magnific popup JavaScript -->
-        <script src="../assets/plugins/Magnific-Popup-master/dist/jquery.magnific-popup.min.js"></script>
-        <script src="../assets/plugins/Magnific-Popup-master/dist/jquery.magnific-popup-init.js"></script>
-        <!-- ============================================================== -->
-        <!-- Style switcher -->
-        <!-- ============================================================== -->
-        <script src="../assets/plugins/styleswitcher/jQuery.style.switcher.js"></script>
-		<script>
-			function ConfirmDelete()
-			{
-			  var x = confirm("Are you sure you want to delete?");
-			  if (x){
-            document.getElementById("content").style.display = 'none';      
-		}
-			  else{
-				return false;
-			      }
-			}
+    <script src="../assets/plugins/jquery/jquery.min.js"></script>
+    <!-- Bootstrap tether Core JavaScript -->
+    <script src="../assets/plugins/bootstrap/js/popper.min.js"></script>
+    <script src="../assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <!-- slimscrollbar scrollbar JavaScript -->
+    <script src="js/jquery.slimscroll.js"></script>
+    <!--Wave Effects -->
+    <script src="js/waves.js"></script>
+    <!--Menu sidebar -->
+    <script src="js/sidebarmenu.js"></script>
+    <!--stickey kit -->
+    <script src="../assets/plugins/sticky-kit-master/dist/sticky-kit.min.js"></script>
+    <!--Custom JavaScript -->
+    <script src="js/custom.min.js"></script>
+    <!-- Magnific popup JavaScript -->
+    <script src="../assets/plugins/Magnific-Popup-master/dist/jquery.magnific-popup.min.js"></script>
+    <script src="../assets/plugins/Magnific-Popup-master/dist/jquery.magnific-popup-init.js"></script>
+    <!-- ============================================================== -->
+    <!-- Style switcher -->
+    <!-- ============================================================== -->
+    <script src="../assets/plugins/styleswitcher/jQuery.style.switcher.js"></script>
+    <script>
+        function ConfirmDelete() {
+            var x = confirm("Are you sure you want to delete?");
+            if (x) {
+                document.getElementById("content").style.display = 'none';
+            }
+            else {
+                return false;
+            }
+        }
 
-		</script>
-				<script>
-			function ConfirmDelet()
-			{
-			  var x = confirm("Are you sure you want to delete?");
-			  if (x){
-            document.getElementById("conten").style.display = 'none';      
-		}
-			  else{
-				return false;
-			      }
-			}
-			
-						function ConfirmDele()
-			{
-			  var x = confirm("Are you sure you want to delete?");
-			  if (x){
-            document.getElementById("conte").style.display = 'none';      
-		}
-			  else{
-				return false;
-			      }
-			}
+    </script>
+    <script>
+        function ConfirmDelet() {
+            var x = confirm("Are you sure you want to delete?");
+            if (x) {
+                document.getElementById("conten").style.display = 'none';
+            }
+            else {
+                return false;
+            }
+        }
 
-		</script>
-    </body>
+        function ConfirmDele() {
+            var x = confirm("Are you sure you want to delete?");
+            if (x) {
+                document.getElementById("conte").style.display = 'none';
+            }
+            else {
+                return false;
+            }
+        }
+
+    </script>
+</body>
 
 
-    <!-- Mirrored from www.wrappixel.com/demos/admin-templates/monster-admin/main/pages-gallery.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 11 Feb 2019 11:37:03 GMT -->
+<!-- Mirrored from www.wrappixel.com/demos/admin-templates/monster-admin/main/pages-gallery.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 11 Feb 2019 11:37:03 GMT -->
 
 </html>

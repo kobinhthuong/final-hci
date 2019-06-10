@@ -11,6 +11,8 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css'
         integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 </head>
 
 <body>
@@ -46,27 +48,25 @@
     </header>
 
     <div class="container">
-        <!-- Main content -->
+        <!--Breadcrumb-->
         <div class="row">
-            <div class="row">
-                <div class="col-md">
-                    <img id="cover" src="../images/space1.png" alt="space">
-                </div>
-            </div>
-
-            <div class="col-md-8">
-                <!--Breadcrumb-->
+            <div class="col-12">
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
                         <li class="breadcrumb-item"><a href="category.html">Technology</a></li>
                         <li class="breadcrumb-item" aria-current="page">3 Greatest Technologies of Twenty-first Century
                         </li>
                         <!-- <li class="breadcrumb-item active" aria-current="page">Library</li> -->
                     </ol>
                 </nav>
-                <!--End Breadcrumb--->
+            </div>
+        </div>
+        <!--End Breadcrumb--->
 
+        <!-- Main content -->
+        <div class="row wrapper">
+            <div class="col-md-8">
                 <div class="col-md">
                     <h1 class="entry-title">3 Greatest Technologies of Twenty-first Century</h1>
                     <p class="single-post-summary">Here ten incredible technologies that are defining what twenty-first
@@ -84,7 +84,7 @@
                     <div class="content">
                         <p>If the twentieth century was the dawn of spaceflight, then the twenty-first is its full,
                             bright
-                            morningWe have probes and robots exploring every corner of our solar system;
+                            morning. We have probes and robots exploring every corner of our solar system;
                             we have orbiting telescopes mapping the entire galaxy as well as near-Earth objects
                             and we have a permanent outpost in space, the International Space Station
                             Plus, the successful rendezvous between SpaceX's Falcon 9 rocket and the ISS brought us
@@ -181,7 +181,7 @@
 
             <!-- Popular posts -->
             <div class="col-md-4">
-                <h3>Popular Post</h3>
+                <h4 style="padding-left: 18px">Popular Post</h4>
                 <ul class="list-group list-group-flush">
                     <div class="row">
                         <div class="col-6 col-md-12">
@@ -229,6 +229,32 @@
                             </li>
                         </div>
                     </div>
+
+                    <div class="rol-12">
+                        <!-- Labels / tags -->
+                        <div class="w3-card w3-margin">
+                            <div class="w3-container w3-padding">
+                                <h4>Tags</h4>
+                            </div>
+                            <div class="w3-container w3-white">
+                                <p><span class="w3-tag w3-black w3-margin-bottom">Mobile</span> <span
+                                        class="w3-tag w3-light-grey w3-small w3-margin-bottom">New York</span> <span
+                                        class="w3-tag w3-light-grey w3-small w3-margin-bottom">London</span>
+                                    <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Technology</span> <span
+                                        class="w3-tag w3-light-grey w3-small w3-margin-bottom">Program</span> <span
+                                        class="w3-tag w3-light-grey w3-small w3-margin-bottom">Apple</span>
+                                    <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Ideas</span> <span
+                                        class="w3-tag w3-light-grey w3-small w3-margin-bottom">Samsung</span> <span
+                                        class="w3-tag w3-light-grey w3-small w3-margin-bottom">Toshiba</span>
+                                    <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">News</span> <span
+                                        class="w3-tag w3-light-grey w3-small w3-margin-bottom">Tokyo</span> <span
+                                        class="w3-tag w3-light-grey w3-small w3-margin-bottom">Vietnam</span>
+                                    <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Bugs</span> <span
+                                        class="w3-tag w3-light-grey w3-small w3-margin-bottom">Games</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </ul>
             </div>
         </div>
@@ -237,14 +263,13 @@
         <!-- More posts from the same category -->
         <div class="same-category">
             <div class="title">
-                <small><a href="category.html"><i class="fas fa-angle-double-right"></i> More from
-                        Technology</a></small>
+                <h6><a href="category.html"><i class="fas fa-angle-double-right"></i> More from Technology</a></h6>
             </div>
             <div class="row">
                 <div class="col-6 col-md">
                     <a href="#"><img src="../images/category1.jpeg"></a>
                     <div class="title">
-                        <div class="post-title"><a href="#">Bringing a Classic into the Digital Age with Helvetica
+                        <div class="more-post"><a href="#">Bringing a Classic into the Digital Age with Helvetica
                                 Now</a></div>
                         <p class="summary"><small>Optimized for screens and design flexibility, an old favorite gets
                                 a rehaul</small></p>
@@ -253,7 +278,7 @@
                 <div class="col-6 col-md">
                     <a href="#"><img src="https://cdn-images-1.medium.com/max/800/1*dxoArLWrCKqhapxyUnlvPQ.jpeg"></a>
                     <div class="title">
-                        <div class="post-title"><a href="#">The Huawei Disaster Reveals Google’s Iron Grip on
+                        <div class="more-post"><a href="#">The Huawei Disaster Reveals Google’s Iron Grip on
                                 Android</a></div>
                         <p class="summary"><small>Open source isn’t as open as you think</small></p>
                     </div>
@@ -261,7 +286,7 @@
                 <div class="col-6 col-md">
                     <a href="#"><img src="../images/category2.jpeg"></a>
                     <div class="title">
-                        <div class="post-title"><a href="#">What Really Happens to AirPods When They Die</a></div>
+                        <div class="more-post"><a href="#">What Really Happens to AirPods When They Die</a></div>
                         <p class="summary"><small>Apple finally opens up about their complicated afterlife</small>
                         </p>
                     </div>
@@ -269,7 +294,7 @@
                 <div class="col-6 col-md">
                     <a href="#"><img src="../images/category1.jpeg"></a>
                     <div class="title">
-                        <div class="post-title"><a href="#">Bringing a Classic into the Digital Age with Helvetica
+                        <div class="more-post"><a href="#">Bringing a Classic into the Digital Age with Helvetica
                                 Now</a></div>
                         <p class="summary"><small>Optimized for screens and design flexibility, an old favorite gets
                                 a rehaul</small></p>
