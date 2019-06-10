@@ -252,11 +252,27 @@ Most Android manufacturers — including Huawei — are what’s known a
                                     <div class="card-body">
                                         <div class="row">
                                             <div class="col">
+                                                    <button type="button" class="btn btn-light">Save draft</button>
                                             </div>
                                             <div class="col">
                                                 <button type="button" class="btn btn-light">Preview changes</button>
                                             </div>
-                                        </div><br>
+                                        </div>
+                                        <div class="row">
+                                                <div class="col">
+                                                    <p>Visibility</p>
+                                                </div>
+                                                <div class="col">
+                                                    <select class="custom-select" id="inputGroupSelect01"
+                                                        style="width: 200px">
+                                                        <option selected>Choose...</option>
+                                                        <option value="1">Public</option>
+                                                        <option value="2">Private</option>
+                                                        <option value="3">Only me</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col"></div>
+                                            </div><br>
                                         <div class="custom-control custom-switch">
                                             <input type="checkbox" class="custom-control-input" id="customSwitch1">
 
@@ -270,17 +286,79 @@ Most Android manufacturers — including Huawei — are what’s known a
                                                 <a href="#" class="text-danger">Move to trash</a>
                                             </div>
                                             <div class="col">
-                                                <a href="#" class="btn btn-primary">Update</a>
-                                            </div>
+                                                    <a href="#" class="btn btn-primary" onclick="Confirm()"
+                                                        id="update">Update</a>
+                                                </div>
                                         </div>
                                     </div>
                                 </div>
+                                <script type="text/javascript">
+                                    function Confirm() {
+                                        var x = confirm("Do you really want to publish this post?");
+                                        if (x) {
+                                            window.location.href = 'new-manage-post.html';
+                                            alert('Post successfully!');
+                                        }
+                                        else {
+                                            return false;
+                                        }
+                                    }
+                                </script>
                                 <div class="card">
                                     <div class="card-header">
                                         Featured Image
                                     </div>
                                     <div class="card-body">
-                                        <a href="#" class="text-info">Set featured image</a>
+                                        <button class="float-left btn btn-sm btn-rounded btn-success"
+                                            data-toggle="modal" data-target="#myModal">Set featured image</button>
+                                        <!-- ============================================================== -->
+                                        <!-- To do list widgets -->
+                                        <!-- ============================================================== -->
+                                        <div class="to-do-widget mt-3">
+                                            <!-- .modal for add task -->
+                                            <div class="modal fade" id="myModal" tabindex="-1" role="dialog"
+                                                aria-hidden="true">
+                                                <div class="modal-dialog" role="document">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <h4 class="modal-title">Set featured image</h4>
+                                                            <button type="button" class="close" data-dismiss="modal"
+                                                                aria-label="Close">
+                                                                <span aria-hidden="true">&times;</span>
+                                                            </button>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                            <form>
+                                                                <div class="form-group">
+                                                                    <label>Choose from image library</label>
+                                                                    <input type="text" class="form-control"
+                                                                        placeholder="Enter Name">
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <label>Upload new image</label>
+                                                                    <div class="custom-file">
+                                                                        <input type="file" class="custom-file-input"
+                                                                            id="inputGroupFile01"
+                                                                            aria-describedby="inputGroupFileAddon01">
+                                                                        <label class="custom-file-label"
+                                                                            for="inputGroupFile01">Choose
+                                                                            file</label>
+                                                                    </div>
+                                                                </div>
+                                                            </form>
+                                                        </div>
+                                                        <div class="modal-footer">
+                                                            <button type="button" class="btn btn-secondary"
+                                                                data-dismiss="modal">Close</button>
+                                                            <button type="button" class="btn btn-success"
+                                                                data-dismiss="modal">Submit</button>
+                                                        </div>
+                                                    </div>
+                                                    <!-- /.modal-content -->
+                                                </div>
+                                                <!-- /.modal-dialog -->
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="card">
@@ -300,11 +378,6 @@ Most Android manufacturers — including Huawei — are what’s known a
                                     <div class="card-body">
                                         <input type="checkbox" name="News" value="News" checked> News<br>
                                         <input type="checkbox" name="none" value="none"> Uncategorized<br>
-                                    </div>
-                                    <div class="card-footer text-muted">
-                                        <a href="#"><button type="button" class="btn btn-primary"><i
-                                                    class="glyphicon glyphicon-plus"></i></i> Add
-                                                new category</button></a>
                                     </div>
                                 </div><br>
                             </div>
