@@ -1,335 +1,326 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <!-- Tell the browser to be responsive to screen width -->
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="">
-        <meta name="author" content="">
-        <!-- Favicon icon -->
-        <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/favicon.png">
-        <title>Editor: Add Category</title>
-        <!-- Bootstrap Core CSS -->
-        <link href="../assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-        <!-- Custom CSS -->
-        <link href="css/style.css" rel="stylesheet">
-        <!-- You can change the theme colors from here -->
-        <link href="css/colors/blue.css" id="theme" rel="stylesheet">
-        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-        <!--[if lt IE 9]>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/favicon.png">
+    <title>Editor: Add Category</title>
+    <!-- Bootstrap Core CSS -->
+    <link href="../assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="css/style.css" rel="stylesheet">
+    <!-- You can change the theme colors from here -->
+    <link href="css/colors/blue.css" id="theme" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-    </head>
+</head>
 
-    <body class="fix-header card-no-border">
-        <!-- ============================================================== -->
-        <!-- Preloader - style you can find in spinners.css -->
-        <!-- ============================================================== -->
-        <div class="preloader">
-            <svg class="circular" viewBox="25 25 50 50">
+<body class="fix-header card-no-border">
+    <!-- ============================================================== -->
+    <!-- Preloader - style you can find in spinners.css -->
+    <!-- ============================================================== -->
+    <div class="preloader">
+        <svg class="circular" viewBox="25 25 50 50">
             <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10" /> </svg>
-        </div>
+    </div>
+    <!-- ============================================================== -->
+    <!-- Main wrapper - style you can find in pages.scss -->
+    <!-- ============================================================== -->
+    <div id="main-wrapper">
         <!-- ============================================================== -->
-        <!-- Main wrapper - style you can find in pages.scss -->
+        <!-- Topbar header - style you can find in pages.scss -->
         <!-- ============================================================== -->
-        <div id="main-wrapper">
-            <!-- ============================================================== -->
-            <!-- Topbar header - style you can find in pages.scss -->
-            <!-- ============================================================== -->
-            <header class="topbar">
-                <nav class="navbar top-navbar navbar-expand-md navbar-light">
+        <header class="topbar">
+            <nav class="navbar top-navbar navbar-expand-md navbar-light">
+                <!-- ============================================================== -->
+                <!-- Logo -->
+                <!-- ============================================================== -->
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="non-admin.html">
+                        <!-- Logo icon -->
+                        <b>
+                            <!--You can put here icon as well // <i class="wi wi-sunset"></i> //-->
+                            <!-- Dark Logo icon -->
+                            <img src="../assets/images/logo-icon.png" alt="homepage" class="dark-logo" />
+                            <!-- Light Logo icon -->
+                            <img src="../assets/images/logo-light-icon.png" alt="homepage" class="light-logo" />
+                        </b>
+                        <!--End Logo icon -->
+                        <!-- Logo text -->
+                        <span>
+                            <!-- dark Logo text -->
+                            <img src="../assets/images/logo-text.png" alt="homepage" class="dark-logo" />
+                            <!-- Light Logo text -->
+                            <img src="../assets/images/logo-light-text.png" class="light-logo" alt="homepage" /></span>
+                    </a>
+                </div>
+                <!-- ============================================================== -->
+                <!-- End Logo -->
+                <!-- ============================================================== -->
+                <div class="navbar-collapse">
                     <!-- ============================================================== -->
-                    <!-- Logo -->
+                    <!-- toggle and nav items -->
                     <!-- ============================================================== -->
-                    <div class="navbar-header">
-                        <a class="navbar-brand" href="non-admin.html">
-                            <!-- Logo icon -->
-                            <b>
-                                <!--You can put here icon as well // <i class="wi wi-sunset"></i> //-->
-                                <!-- Dark Logo icon -->
-                                <img src="../assets/images/logo-icon.png" alt="homepage" class="dark-logo" />
-                                <!-- Light Logo icon -->
-                                <img src="../assets/images/logo-light-icon.png" alt="homepage" class="light-logo" />
-                            </b>
-                            <!--End Logo icon -->
-                            <!-- Logo text -->
-                            <span>
-                                <!-- dark Logo text -->
-                                <img src="../assets/images/logo-text.png" alt="homepage" class="dark-logo" />
-                                <!-- Light Logo text -->
-                                <img src="../assets/images/logo-light-text.png" class="light-logo" alt="homepage" /></span>
-                        </a>
-                    </div>
+                    <ul class="navbar-nav mr-auto mt-md-0 ">
+                        <!-- This is  -->
+                        <li class="nav-item"> <a
+                                class="nav-link nav-toggler hidden-md-up text-muted waves-effect waves-dark"
+                                href="javascript:void(0)"><i class="ti-menu"></i></a> </li>
+                        <li class="nav-item"> <a
+                                class="nav-link sidebartoggler hidden-sm-down text-muted waves-effect waves-dark"
+                                href="javascript:void(0)"><i class="icon-arrow-left-circle"></i></a> </li>
+                    </ul>
                     <!-- ============================================================== -->
-                    <!-- End Logo -->
+                    <!-- User profile and search -->
                     <!-- ============================================================== -->
-                    <div class="navbar-collapse">
-                        <!-- ============================================================== -->
-                        <!-- toggle and nav items -->
-                        <!-- ============================================================== -->
-                        <ul class="navbar-nav mr-auto mt-md-0 ">
-                            <!-- This is  -->
-                            <li class="nav-item"> <a
-                                    class="nav-link nav-toggler hidden-md-up text-muted waves-effect waves-dark"
-                                    href="javascript:void(0)"><i class="ti-menu"></i></a> </li>
-                            <li class="nav-item"> <a
-                                    class="nav-link sidebartoggler hidden-sm-down text-muted waves-effect waves-dark"
-                                    href="javascript:void(0)"><i class="icon-arrow-left-circle"></i></a> </li>
-                        </ul>
-                        <!-- ============================================================== -->
-                        <!-- User profile and search -->
-                        <!-- ============================================================== -->
-                        <ul class="navbar-nav my-lg-0">
-                            <li class="nav-item hidden-sm-down">
-                                <form class="app-search">
-                                    <input type="text" class="form-control" placeholder="Search for..."> <a
-                                        class="srh-btn"><i class="ti-search"></i></a> </form>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle text-muted waves-effect waves-dark" href="#"
-                                   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img
-                                        src="../assets/images/users/1.jpg" alt="user" class="profile-pic" /></a>
-                                <div class="dropdown-menu dropdown-menu-right animated flipInY">
-                                    <ul class="dropdown-user">
-                                        <li>
-                                            <div class="dw-user-box">
-                                                <div class="u-img"><img src="../assets/images/users/1.jpg" alt="user"></div>
-                                                <div class="u-text">
-                                                    <h4>Steave Jobs</h4>
-                                                    <p class="text-muted"><a
-                                                            href="https://www.wrappixel.com/cdn-cgi/l/email-protection"
-                                                            class="__cf_email__"
-                                                            data-cfemail="c9bfa8bbbca789aea4a8a0a5e7aaa6a4">[editor@gmail.com]</a>
-                                                    </p><a href="profile.html"
-                                                           class="btn btn-rounded btn-danger btn-sm">View Profile</a>
-                                                </div>
+                    <ul class="navbar-nav my-lg-0">
+                        <li class="nav-item hidden-sm-down">
+                            <form class="app-search">
+                                <input type="text" class="form-control" placeholder="Search for..."> <a
+                                    class="srh-btn"><i class="ti-search"></i></a> </form>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-muted waves-effect waves-dark" href="#"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img
+                                    src="../assets/images/users/1.jpg" alt="user" class="profile-pic" /></a>
+                            <div class="dropdown-menu dropdown-menu-right animated flipInY">
+                                <ul class="dropdown-user">
+                                    <li>
+                                        <div class="dw-user-box">
+                                            <div class="u-img"><img src="../assets/images/users/1.jpg" alt="user"></div>
+                                            <div class="u-text">
+                                                <h4>editor1</h4>
                                             </div>
-                                        </li>
-                                        <li role="separator" class="divider"></li>
-                                        <li><a href="#"><i class="fa fa-power-off"></i> Logout</a></li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle text-muted waves-effect waves-dark" href="#"
-                                   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i
-                                        class="flag-icon flag-icon-us"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                </nav>
-            </header>
-            <!-- ============================================================== -->
-            <!-- End Topbar header -->
-            <!-- ============================================================== -->
-            <!-- ============================================================== -->
-            <!-- Left Sidebar - style you can find in sidebar.scss  -->
-            <!-- ============================================================== -->
-            <aside class="left-sidebar">
-                <!-- Sidebar scroll-->
-                <div class="scroll-sidebar">
-                    <!-- User profile -->
-
-                    <!-- End User profile text-->
-                    <!-- Sidebar navigation-->
-                    <nav class="sidebar-nav">
-                               <ul id="sidebarnav">
-                            <li>
-                                <a href="non-admin.html" aria-expanded="false"><i
-                                        class="mdi mdi-gauge"></i><span class="hide-menu">Dashboard</a>
-                            </li>
-                            <li>
-                                <a href="non-admin-post.html" aria-expanded="false"><i
-                                        class="mdi mdi-file-document-box"></i><span class="hide-menu">Post</span></a>
-                            </li>
-                            <li>
-                                <a href="limited-access.html" aria-expanded="false"><i
-                                        class="mdi mdi-account"></i><span class="hide-menu">User</span></a>
-                            </li>
-                            <li>
-                                <a href="limited-access.html" aria-expanded="false"><i
-                                        class="mdi mdi-account-settings-variant"></i><span class="hide-menu"> Role</span></a>
-                            </li>
-                            <li>
-                                <a class="has-arrow" href="#" aria-expanded="false"><i
-                                        class="mdi mdi-folder-multiple-image"></i><span class="hide-menu">Media</span></a>
-                                <ul aria-expanded="false" class="collapse">
-                                    <li><a href="non-admin-media.html"><i class="mdi mdi-file"></i>File</a></li>
-                                    <li><a href="non-admin-media.html"><i class="mdi mdi-image"></i>Image</a></li>
+                                        </div>
+                                    </li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="login.html"><i class="fa fa-power-off"></i> Logout</a></li>
                                 </ul>
-                            </li>
-                            <li>
-                                <a href="non-admin-category.html" aria-expanded="false"><i
-                                        class="mdi mdi-tag-multiple"></i><span class="hide-menu"> Category</span></a>
-                            </li>
-                        </ul>
-                    </nav>
-                    <!-- End Sidebar navigation -->
-                </div>
-                <!-- End Sidebar scroll-->
-                <!-- Bottom points-->
-                <div class="sidebar-footer">
-                    <!-- item-->
-                    <a href="#" class="link" data-toggle="tooltip" title="Settings"><i class="ti-settings"></i></a>
-                    <!-- item-->
-                    <a href="#" class="link" data-toggle="tooltip" title="Email"><i class="mdi mdi-gmail"></i></a>
-                    <!-- item-->
-                    <a href="#" class="link" data-toggle="tooltip" title="Logout"><i class="mdi mdi-power"></i></a>
-                </div>
-                <!-- End Bottom points-->
-            </aside>
-            <!-- ============================================================== -->
-            <!-- End Left Sidebar - style you can find in sidebar.scss  -->
-            <!-- ============================================================== -->
-            <!-- ============================================================== -->
-            <!-- Page wrapper  -->
-            <!-- ============================================================== -->
-            <div class="page-wrapper">
-                <!-- ============================================================== -->
-                <!-- Container fluid  -->
-                <!-- ============================================================== -->
-                <div class="container-fluid">
-                    <!-- ============================================================== -->
-                    <!-- Bread crumb and right sidebar toggle -->
-                    <!-- ============================================================== -->
-                    <div class="row page-titles">
-                        <div class="col-md-6 col-8 align-self-center">
-                            <h3 class="text-themecolor m-b-0 m-t-0">Create category</h3>
-                            <ol class="breadcrumb">
-                                <li class="breadcrumb-item"><a href="non-admin.html">Home</a></li>
-                                <li class="breadcrumb-item"><a href="non-admin-category.html">Category</a></li>
-                                <li class="breadcrumb-item active">Create category</li>
-                            </ol>
-                        </div>
-                        <div class="col-md-6 col-4 align-self-center">
-                            <div class="dropdown float-right mr-2 hidden-sm-down">
-                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
-                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> January 2019
-                                </button>
-                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton"> <a class="dropdown-item"
-                                                                                                    href="#">February 2019</a> <a class="dropdown-item" href="#">March 2019</a> <a
-                                                                                                    class="dropdown-item" href="#">April 2019</a> </div>
                             </div>
-                        </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <!-- ============================================================== -->
+        <!-- End Topbar header -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- Left Sidebar - style you can find in sidebar.scss  -->
+        <!-- ============================================================== -->
+        <aside class="left-sidebar">
+            <!-- Sidebar scroll-->
+            <div class="scroll-sidebar">
+                <!-- User profile -->
+
+                <!-- End User profile text-->
+                <!-- Sidebar navigation-->
+                <nav class="sidebar-nav">
+                    <ul id="sidebarnav">
+                        <li>
+                            <a href="non-admin.html" aria-expanded="false"><i class="mdi mdi-gauge"></i><span
+                                    class="hide-menu">Dashboard</a>
+                        </li>
+                        <li>
+                            <a href="non-admin-post.html" aria-expanded="false"><i
+                                    class="mdi mdi-file-document-box"></i><span class="hide-menu">Post</span></a>
+                        </li>
+                        <li>
+                            <a href="limited-access.html" aria-expanded="false"><i class="mdi mdi-account"></i><span
+                                    class="hide-menu">User</span></a>
+                        </li>
+                        <li>
+                            <a href="limited-access.html" aria-expanded="false"><i
+                                    class="mdi mdi-account-settings-variant"></i><span class="hide-menu">
+                                    Role</span></a>
+                        </li>
+                        <li>
+                            <a class="has-arrow" href="#" aria-expanded="false"><i
+                                    class="mdi mdi-folder-multiple-image"></i><span class="hide-menu">Media</span></a>
+                            <ul aria-expanded="false" class="collapse">
+                                <li><a href="non-admin-media.html"><i class="mdi mdi-file"></i>File</a></li>
+                                <li><a href="non-admin-media.html"><i class="mdi mdi-image"></i>Image</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="non-admin-category.html" aria-expanded="false"><i
+                                    class="mdi mdi-tag-multiple"></i><span class="hide-menu"> Category</span></a>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- End Sidebar navigation -->
+            </div>
+            <!-- End Sidebar scroll-->
+            <!-- Bottom points-->
+            <div class="sidebar-footer">
+                <!-- item-->
+                <a href="#" class="link" data-toggle="tooltip" title="Settings"><i class="ti-settings"></i></a>
+                <!-- item-->
+                <a href="#" class="link" data-toggle="tooltip" title="Email"><i class="mdi mdi-gmail"></i></a>
+                <!-- item-->
+                <a href="#" class="link" data-toggle="tooltip" title="Logout"><i class="mdi mdi-power"></i></a>
+            </div>
+            <!-- End Bottom points-->
+        </aside>
+        <!-- ============================================================== -->
+        <!-- End Left Sidebar - style you can find in sidebar.scss  -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- Page wrapper  -->
+        <!-- ============================================================== -->
+        <div class="page-wrapper">
+            <!-- ============================================================== -->
+            <!-- Container fluid  -->
+            <!-- ============================================================== -->
+            <div class="container-fluid">
+                <!-- ============================================================== -->
+                <!-- Bread crumb and right sidebar toggle -->
+                <!-- ============================================================== -->
+                <div class="row page-titles">
+                    <div class="col-md-6 col-8 align-self-center">
+                        <h3 class="text-themecolor m-b-0 m-t-0">Create category</h3>
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="non-admin.html">Home</a></li>
+                            <li class="breadcrumb-item"><a href="non-admin-category.html">Category</a></li>
+                            <li class="breadcrumb-item active">Create category</li>
+                        </ol>
                     </div>
-                </div>
-              
-                <!-- ============================================================== -->
-                <div class="row">
-                    <div class="col-12">
-                        <div class="card">
-                            <div class="card-body">
-                                <form class="needs-validation" action="non-admin-category.html"novalidate>
-                                    <div class="form-row">
-                                        <div class="col-md-6 mb-6">
-                                            <label for="validationCustom01">Category's name</label>
-                                            <input type="text" class="form-control" id="validationCustom01"
-                                                   placeholder="Enter name" required>
-                                            <div class="valid-feedback">
-                                                Looks good!
-                                            </div>
-                                            <div class="invalid-feedback">Category's name must be filled out</div>
-                                        </div>
-                                        <div class="col-md-6 mb-6">
-                                            <label>Select parent</label>
-                                            <div class="form-group">
-                                                <select class="custom-select">
-                                                    <option value="">No parent</option>
-                                                    <option value="1">Technology</option>
-                                                    <option value="2">Design</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                        <div class="col-12">
-                                            <label>Description (optional)</label>
-                                            <div class="form-group">
-                                                <textarea class="form-control" id="exampleTextarea" rows="2"
-                                                          placeholder="Describe the category"></textarea>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <button class="btn btn-primary" type="submit">Add</button>
-                                </form>
-								<script>
-								     var a = document.getElementsById('validationCustom01').value;
-                                     if(a!='')
-									 {window.location.href('non-admin-category.html');}else{
-									 alert("enter data");}
-								</script>
-                                <script data-cfasync="false"
-                                src="../../../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
-                                <script>
-                                    // Example starter JavaScript for disabling form submissions if there are invalid fields
-                                    (function () {
-                                        'use strict';
-                                        window.addEventListener('load', function () {
-                                            // Fetch all the forms we want to apply custom Bootstrap validation styles to
-                                            var forms = document.getElementsByClassName('needs-validation');
-                                            // Loop over them and prevent submission
-                                            var validation = Array.prototype.filter.call(forms, function (form) {
-                                                form.addEventListener('submit', function (event) {
-                                                    if (form.checkValidity() === false) {
-                                                        event.preventDefault();
-                                                        event.stopPropagation();
-                                                    }
-                                                    form.classList.add('was-validated');
-                                                }, false);
-                                            });
-                                        }, false);
-                                    })();
-                                </script>
-                                <script>
-                                    var a = document.getElementsById("validationCustom01").value;
-                                    if (a != '') {
-                                        window.location.href = 'manage-category.html';
-                                    } else {
-                                        alert('lack 0f information!');
-                                    }
-                                </script>
-                                <script>
-                                    // Example starter JavaScript for disabling form submissions if there are invalid fields
-                                    (function () {
-                                        'use strict';
-                                        window.addEventListener('load', function () {
-                                            // Fetch all the forms we want to apply custom Bootstrap validation styles to
-                                            var forms = document.getElementsByClassName('needs-validation');
-                                            // Loop over them and prevent submission
-                                            var validation = Array.prototype.filter.call(forms, function (form) {
-                                                form.addEventListener('submit', function (event) {
-                                                    if (form.checkValidity() === false) {
-                                                        event.preventDefault();
-                                                        event.stopPropagation();
-                                                    }
-                                                    form.classList.add('was-validated');
-                                                }, false);
-                                            });
-                                        }, false);
-                                    })();
-                                </script>
-                            </div>
+                    <div class="col-md-6 col-4 align-self-center">
+                        <div class="dropdown float-right mr-2 hidden-sm-down">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> January 2019
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton"> <a class="dropdown-item"
+                                    href="#">February 2019</a> <a class="dropdown-item" href="#">March 2019</a> <a
+                                    class="dropdown-item" href="#">April 2019</a> </div>
                         </div>
                     </div>
                 </div>
             </div>
+
             <!-- ============================================================== -->
-            <!-- End Container fluid  -->
-            <!-- ============================================================== -->
-            <!-- ============================================================== -->
-            <!-- footer -->
-            <!-- ============================================================== -->
-            <footer class="footer">
-                © 2019 Monster Admin by wrappixel.com
-            </footer>
-            <!-- ============================================================== -->
-            <!-- End footer -->
-            <!-- ============================================================== -->
+            <div class="row">
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <form class="needs-validation" action="non-admin-category.html" novalidate>
+                                <div class="form-row">
+                                    <div class="col-md-6 mb-6">
+                                        <label for="validationCustom01">Category's name</label>
+                                        <input type="text" class="form-control" id="validationCustom01"
+                                            placeholder="Enter name" required>
+                                        <div class="valid-feedback">
+                                            Looks good!
+                                        </div>
+                                        <div class="invalid-feedback">Category's name must be filled out</div>
+                                    </div>
+                                    <div class="col-md-6 mb-6">
+                                        <label>Select parent</label>
+                                        <div class="form-group">
+                                            <select class="custom-select">
+                                                <option value="">No parent</option>
+                                                <option value="1">Technology</option>
+                                                <option value="2">Design</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <label>Description (optional)</label>
+                                        <div class="form-group">
+                                            <textarea class="form-control" id="exampleTextarea" rows="2"
+                                                placeholder="Describe the category"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="btn btn-primary" type="submit">Add</button>
+                            </form>
+                            <script>
+                                var a = document.getElementsById('validationCustom01').value;
+                                if (a != '') { window.location.href('non-admin-category.html'); } else {
+                                    alert("enter data");
+                                }
+                            </script>
+                            <script data-cfasync="false"
+                                src="../../../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+                            <script>
+                                // Example starter JavaScript for disabling form submissions if there are invalid fields
+                                (function () {
+                                    'use strict';
+                                    window.addEventListener('load', function () {
+                                        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                                        var forms = document.getElementsByClassName('needs-validation');
+                                        // Loop over them and prevent submission
+                                        var validation = Array.prototype.filter.call(forms, function (form) {
+                                            form.addEventListener('submit', function (event) {
+                                                if (form.checkValidity() === false) {
+                                                    event.preventDefault();
+                                                    event.stopPropagation();
+                                                }
+                                                form.classList.add('was-validated');
+                                            }, false);
+                                        });
+                                    }, false);
+                                })();
+                            </script>
+                            <script>
+                                var a = document.getElementsById("validationCustom01").value;
+                                if (a != '') {
+                                    window.location.href = 'manage-category.html';
+                                } else {
+                                    alert('lack 0f information!');
+                                }
+                            </script>
+                            <script>
+                                // Example starter JavaScript for disabling form submissions if there are invalid fields
+                                (function () {
+                                    'use strict';
+                                    window.addEventListener('load', function () {
+                                        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                                        var forms = document.getElementsByClassName('needs-validation');
+                                        // Loop over them and prevent submission
+                                        var validation = Array.prototype.filter.call(forms, function (form) {
+                                            form.addEventListener('submit', function (event) {
+                                                if (form.checkValidity() === false) {
+                                                    event.preventDefault();
+                                                    event.stopPropagation();
+                                                }
+                                                form.classList.add('was-validated');
+                                            }, false);
+                                        });
+                                    }, false);
+                                })();
+                            </script>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <!-- ============================================================== -->
-        <!-- End Page wrapper  -->
+        <!-- End Container fluid  -->
         <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- footer -->
+        <!-- ============================================================== -->
+        <footer class="footer">
+            © 2019 Monster Admin by wrappixel.com
+        </footer>
+        <!-- ============================================================== -->
+        <!-- End footer -->
+        <!-- ============================================================== -->
+    </div>
+    <!-- ============================================================== -->
+    <!-- End Page wrapper  -->
+    <!-- ============================================================== -->
     </div>
     <!-- ============================================================== -->
     <!-- End Wrapper -->
@@ -360,24 +351,24 @@
     <!-- ============================================================== -->
     <script src="../assets/plugins/styleswitcher/jQuery.style.switcher.js"></script>
     <script>
-                                    // Example starter JavaScript for disabling form submissions if there are invalid fields
-                                    (function () {
-                                        'use strict';
-                                        window.addEventListener('load', function () {
-                                            // Fetch all the forms we want to apply custom Bootstrap validation styles to
-                                            var forms = document.getElementsByClassName('needs-validation');
-                                            // Loop over them and prevent submission
-                                            var validation = Array.prototype.filter.call(forms, function (form) {
-                                                form.addEventListener('submit', function (event) {
-                                                    if (form.checkValidity() === false) {
-                                                        event.preventDefault();
-                                                        event.stopPropagation();
-                                                    }
-                                                    form.classList.add('was-validated');
-                                                }, false);
-                                            });
-                                        }, false);
-                                    })();
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+        (function () {
+            'use strict';
+            window.addEventListener('load', function () {
+                // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                var forms = document.getElementsByClassName('needs-validation');
+                // Loop over them and prevent submission
+                var validation = Array.prototype.filter.call(forms, function (form) {
+                    form.addEventListener('submit', function (event) {
+                        if (form.checkValidity() === false) {
+                            event.preventDefault();
+                            event.stopPropagation();
+                        }
+                        form.classList.add('was-validated');
+                    }, false);
+                });
+            }, false);
+        })();
     </script>
 </body>
 

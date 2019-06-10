@@ -78,10 +78,24 @@ hr {
     font-weight: bold;
     padding: 5px;
 }
+.more-post {
+    font-family: Georgia;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* css for category.html*/
+#slider {
+    height: 400px;
+}
 
 /* css for single-post.html */
+.wrapper {
+    margin-top: 40px;
+}
 .single-post-summary {
-    font-size: 18px;
+    font-style: italic;
+    font-size: 16px;
     color: grey;
 }
 .content {
@@ -106,7 +120,9 @@ hr {
     height: auto;
 }
 #cover {
-    
     padding: 10px;
     height: 500px;
+}
+.entry-title {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }

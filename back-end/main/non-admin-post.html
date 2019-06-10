@@ -1,455 +1,443 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <!-- Tell the browser to be responsive to screen width -->
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="">
-        <meta name="author" content="">
-        <!-- Favicon icon -->
-        <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/favicon.png">
-        <title>Editor: Post</title>
-        <!-- Bootstrap Core CSS -->
-        <link href="../assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="../assets/plugins/datatables/media/css/dataTables.bootstrap4.css">
-        <!-- Custom CSS -->
-        <link href="css/style.css" rel="stylesheet">
-        <!-- You can change the theme colors from here -->
-        <link href="css/colors/blue.css" id="theme" rel="stylesheet">
-        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-        <!--[if lt IE 9]>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/favicon.png">
+    <title>Editor: Post</title>
+    <!-- Bootstrap Core CSS -->
+    <link href="../assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../assets/plugins/datatables/media/css/dataTables.bootstrap4.css">
+    <!-- Custom CSS -->
+    <link href="css/style.css" rel="stylesheet">
+    <!-- You can change the theme colors from here -->
+    <link href="css/colors/blue.css" id="theme" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-    </head>
+</head>
 
-    <body class="fix-header card-no-border">
-        <!-- ============================================================== -->
-        <!-- Preloader - style you can find in spinners.css -->
-        <!-- ============================================================== -->
-        <div class="preloader">
-            <svg class="circular" viewBox="25 25 50 50">
+<body class="fix-header card-no-border">
+    <!-- ============================================================== -->
+    <!-- Preloader - style you can find in spinners.css -->
+    <!-- ============================================================== -->
+    <div class="preloader">
+        <svg class="circular" viewBox="25 25 50 50">
             <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10" /> </svg>
-        </div>
+    </div>
+    <!-- ============================================================== -->
+    <!-- Main wrapper - style you can find in pages.scss -->
+    <!-- ============================================================== -->
+    <div id="main-wrapper">
         <!-- ============================================================== -->
-        <!-- Main wrapper - style you can find in pages.scss -->
+        <!-- Topbar header - style you can find in pages.scss -->
         <!-- ============================================================== -->
-        <div id="main-wrapper">
-            <!-- ============================================================== -->
-            <!-- Topbar header - style you can find in pages.scss -->
-            <!-- ============================================================== -->
-            <header class="topbar">
-                <nav class="navbar top-navbar navbar-expand-md navbar-light">
+        <header class="topbar">
+            <nav class="navbar top-navbar navbar-expand-md navbar-light">
+                <!-- ============================================================== -->
+                <!-- Logo -->
+                <!-- ============================================================== -->
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="non-admin.html">
+                        <!-- Logo icon --><b>
+                            <!--You can put here icon as well // <i class="wi wi-sunset"></i> //-->
+                            <!-- Dark Logo icon -->
+                            <img src="../assets/images/logo-icon.png" alt="homepage" class="dark-logo" />
+                            <!-- Light Logo icon -->
+                            <img src="../assets/images/logo-light-icon.png" alt="homepage" class="light-logo" />
+                        </b>
+                        <!--End Logo icon -->
+                        <!-- Logo text --><span>
+                            <!-- dark Logo text -->
+                            <img src="../assets/images/logo-text.png" alt="homepage" class="dark-logo" />
+                            <!-- Light Logo text -->
+                            <img src="../assets/images/logo-light-text.png" class="light-logo" alt="homepage" /></span>
+                    </a>
+                </div>
+                <!-- ============================================================== -->
+                <!-- End Logo -->
+                <!-- ============================================================== -->
+                <div class="navbar-collapse">
                     <!-- ============================================================== -->
-                    <!-- Logo -->
+                    <!-- toggle and nav items -->
                     <!-- ============================================================== -->
-                    <div class="navbar-header">
-                        <a class="navbar-brand" href="non-admin.html">
-                            <!-- Logo icon --><b>
-                                <!--You can put here icon as well // <i class="wi wi-sunset"></i> //-->
-                                <!-- Dark Logo icon -->
-                                <img src="../assets/images/logo-icon.png" alt="homepage" class="dark-logo" />
-                                <!-- Light Logo icon -->
-                                <img src="../assets/images/logo-light-icon.png" alt="homepage" class="light-logo" />
-                            </b>
-                            <!--End Logo icon -->
-                            <!-- Logo text --><span>
-                                <!-- dark Logo text -->
-                                <img src="../assets/images/logo-text.png" alt="homepage" class="dark-logo" />
-                                <!-- Light Logo text -->
-                                <img src="../assets/images/logo-light-text.png" class="light-logo" alt="homepage" /></span>
-                        </a>
-                    </div>
+                    <ul class="navbar-nav mr-auto mt-md-0 ">
+                        <!-- This is  -->
+                        <li class="nav-item"> <a
+                                class="nav-link nav-toggler hidden-md-up text-muted waves-effect waves-dark"
+                                href="javascript:void(0)"><i class="ti-menu"></i></a> </li>
+                        <li class="nav-item"> <a
+                                class="nav-link sidebartoggler hidden-sm-down text-muted waves-effect waves-dark"
+                                href="javascript:void(0)"><i class="icon-arrow-left-circle"></i></a> </li>
+                    </ul>
                     <!-- ============================================================== -->
-                    <!-- End Logo -->
+                    <!-- User profile and search -->
                     <!-- ============================================================== -->
-                    <div class="navbar-collapse">
-                        <!-- ============================================================== -->
-                        <!-- toggle and nav items -->
-                        <!-- ============================================================== -->
-                        <ul class="navbar-nav mr-auto mt-md-0 ">
-                            <!-- This is  -->
-                            <li class="nav-item"> <a
-                                    class="nav-link nav-toggler hidden-md-up text-muted waves-effect waves-dark"
-                                    href="javascript:void(0)"><i class="ti-menu"></i></a> </li>
-                            <li class="nav-item"> <a
-                                    class="nav-link sidebartoggler hidden-sm-down text-muted waves-effect waves-dark"
-                                    href="javascript:void(0)"><i class="icon-arrow-left-circle"></i></a> </li>
-                        </ul>
-                        <!-- ============================================================== -->
-                        <!-- User profile and search -->
-                        <!-- ============================================================== -->
-                        <ul class="navbar-nav my-lg-0">
-                            <li class="nav-item hidden-sm-down">
-                                <form class="app-search">
-                                    <input type="text" class="form-control" placeholder="Search for..."> <a
-                                        class="srh-btn"><i class="ti-search"></i></a> </form>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle text-muted waves-effect waves-dark" href="#"
-                                   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img
-                                        src="../assets/images/users/1.jpg" alt="user" class="profile-pic" /></a>
-                                <div class="dropdown-menu dropdown-menu-right animated flipInY">
-                                    <ul class="dropdown-user">
-                                        <li>
-                                            <div class="dw-user-box">
-                                                <div class="u-img"><img src="../assets/images/users/1.jpg" alt="user"></div>
-                                                <div class="u-text">
-                                                    <h4>Steave Jobs</h4>
-                                                    <p class="text-muted"><a
-                                                            href="https://www.wrappixel.com/cdn-cgi/l/email-protection"
-                                                            class="__cf_email__"
-                                                            data-cfemail="ed9b8c9f9883ad8a808c8481c38e8280">[editor@gmail.com]</a>
-                                                    </p><a href="profile.html"
-                                                           class="btn btn-rounded btn-danger btn-sm">View Profile</a>
-                                                </div>
+                    <ul class="navbar-nav my-lg-0">
+                        <li class="nav-item hidden-sm-down">
+                            <form class="app-search">
+                                <input type="text" class="form-control" placeholder="Search for..."> <a
+                                    class="srh-btn"><i class="ti-search"></i></a> </form>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-muted waves-effect waves-dark" href="#"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img
+                                    src="../assets/images/users/1.jpg" alt="user" class="profile-pic" /></a>
+                            <div class="dropdown-menu dropdown-menu-right animated flipInY">
+                                <ul class="dropdown-user">
+                                    <li>
+                                        <div class="dw-user-box">
+                                            <div class="u-img"><img src="../assets/images/users/1.jpg" alt="user"></div>
+                                            <div class="u-text">
+                                                <h4>editor1</h4>
                                             </div>
-                                        </li>
-                                        <li role="separator" class="divider"></li>
-                                        <li><a href="#"><i class="fa fa-power-off"></i> Logout</a></li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle text-muted waves-effect waves-dark" href="#"
-                                   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i
-                                        class="flag-icon flag-icon-us"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                </nav>
-            </header>
-            <!-- ============================================================== -->
-            <!-- End Topbar header -->
-            <!-- ============================================================== -->
-            <!-- ============================================================== -->
-            <!-- Left Sidebar - style you can find in sidebar.scss  -->
-            <!-- ============================================================== -->
-            <aside class="left-sidebar">
-                <!-- Sidebar scroll-->
-                <div class="scroll-sidebar">
-                    <!-- User profile -->
-
-                    <!-- End User profile text-->
-                    <!-- Sidebar navigation-->
-                    <nav class="sidebar-nav">
-                        <ul id="sidebarnav">
-                            <li>
-                                <a href="non-admin.html" aria-expanded="false"><i
-                                        class="mdi mdi-gauge"></i><span class="hide-menu">Dashboard</a>
-                            </li>
-                            <li>
-                                <a href="non-admin-post.html" aria-expanded="false"><i
-                                        class="mdi mdi-file-document-box"></i><span class="hide-menu">Post</span></a>
-                            </li>
-                            <li>
-                                <a href="limited-access.html" aria-expanded="false"><i
-                                        class="mdi mdi-account"></i><span class="hide-menu">User</span></a>
-                            </li>
-                            <li>
-                                <a href="limited-access.html" aria-expanded="false"><i
-                                        class="mdi mdi-account-settings-variant"></i><span class="hide-menu">Role</span></a>
-                            </li>
-                            <li>
-                                <a class="has-arrow" href="#" aria-expanded="false"><i
-                                        class="mdi mdi-folder-multiple-image"></i><span class="hide-menu">Media</span></a>
-                                <ul aria-expanded="false" class="collapse">
-                                    <li><a href="non-admin-media.html"><i class="mdi mdi-file"></i>File</a></li>
-                                    <li><a href="non-admin-media.html"><i class="mdi mdi-image"></i>Image</a></li>
+                                        </div>
+                                    </li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="login.html"><i class="fa fa-power-off"></i> Logout</a></li>
                                 </ul>
-                            </li>
-                            <li>
-                                <a href="non-admin-category.html" aria-expanded="false"><i
-                                        class="mdi mdi-tag-multiple"></i><span class="hide-menu">Category</span></a>
-                            </li>
-                        </ul>
-                    </nav>
-                    <!-- End Sidebar navigation -->
-                </div>
-                <!-- End Sidebar scroll-->
-                <!-- Bottom points-->
-                <div class="sidebar-footer">
-                    <!-- item-->
-                    <a href="#" class="link" data-toggle="tooltip" title="Settings"><i class="ti-settings"></i></a>
-                    <!-- item-->
-                    <a href="#" class="link" data-toggle="tooltip" title="Email"><i class="mdi mdi-gmail"></i></a>
-                    <!-- item-->
-                    <a href="#" class="link" data-toggle="tooltip" title="Logout"><i class="mdi mdi-power"></i></a>
-                </div>
-                <!-- End Bottom points-->
-            </aside>
-            <!-- ============================================================== -->
-            <!-- End Left Sidebar - style you can find in sidebar.scss  -->
-            <!-- ============================================================== -->
-            <!-- ============================================================== -->
-            <!-- Page wrapper  -->
-            <!-- ============================================================== -->
-            <div class="page-wrapper">
-                <!-- ============================================================== -->
-                <!-- Container fluid  -->
-                <!-- ============================================================== -->
-                <div class="container-fluid">
-                    <!-- ============================================================== -->
-                    <!-- Bread crumb and right sidebar toggle -->
-                    <!-- ============================================================== -->
-                    <div class="row page-titles">
-                        <div class="col-md-6 col-8 align-self-center">
-                            <h3 class="text-themecolor mb-0 mt-0">Manage Posts</h3>
-                            <ol class="breadcrumb">
-                                <li class="breadcrumb-item"><a href="non-admin.html">Home</a></li>
-                                <li class="breadcrumb-item active">Post table</li>
-                            </ol>
-                        </div>
-                        <div class="col-md-6 col-4 align-self-center">
-                            <button onclick="window.location.href = 'non-adminCreatePost.html'" class="btn float-right hidden-sm-down btn-success"><i class="mdi mdi-plus-circle"></i>
-                                Create</button>
-                            <div class="dropdown float-right mr-2 hidden-sm-down">
-                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
-                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> January 2019
-                                </button>
-                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton"> <a class="dropdown-item"
-                                                                                                    href="#">February 2019</a> <a class="dropdown-item" href="#">March 2019</a> <a
-                                                                                                    class="dropdown-item" href="#">April 2019</a> </div>
                             </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <!-- ============================================================== -->
+        <!-- End Topbar header -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- Left Sidebar - style you can find in sidebar.scss  -->
+        <!-- ============================================================== -->
+        <aside class="left-sidebar">
+            <!-- Sidebar scroll-->
+            <div class="scroll-sidebar">
+                <!-- User profile -->
+
+                <!-- End User profile text-->
+                <!-- Sidebar navigation-->
+                <nav class="sidebar-nav">
+                    <ul id="sidebarnav">
+                        <li>
+                            <a href="non-admin.html" aria-expanded="false"><i class="mdi mdi-gauge"></i><span
+                                    class="hide-menu">Dashboard</a>
+                        </li>
+                        <li>
+                            <a href="non-admin-post.html" aria-expanded="false"><i
+                                    class="mdi mdi-file-document-box"></i><span class="hide-menu">Post</span></a>
+                        </li>
+                        <li>
+                            <a href="limited-access.html" aria-expanded="false"><i class="mdi mdi-account"></i><span
+                                    class="hide-menu">User</span></a>
+                        </li>
+                        <li>
+                            <a href="limited-access.html" aria-expanded="false"><i
+                                    class="mdi mdi-account-settings-variant"></i><span class="hide-menu">Role</span></a>
+                        </li>
+                        <li>
+                            <a class="has-arrow" href="#" aria-expanded="false"><i
+                                    class="mdi mdi-folder-multiple-image"></i><span class="hide-menu">Media</span></a>
+                            <ul aria-expanded="false" class="collapse">
+                                <li><a href="non-admin-media.html"><i class="mdi mdi-file"></i>File</a></li>
+                                <li><a href="non-admin-media.html"><i class="mdi mdi-image"></i>Image</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="non-admin-category.html" aria-expanded="false"><i
+                                    class="mdi mdi-tag-multiple"></i><span class="hide-menu">Category</span></a>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- End Sidebar navigation -->
+            </div>
+            <!-- End Sidebar scroll-->
+            <!-- Bottom points-->
+            <div class="sidebar-footer">
+                <!-- item-->
+                <a href="#" class="link" data-toggle="tooltip" title="Settings"><i class="ti-settings"></i></a>
+                <!-- item-->
+                <a href="#" class="link" data-toggle="tooltip" title="Email"><i class="mdi mdi-gmail"></i></a>
+                <!-- item-->
+                <a href="#" class="link" data-toggle="tooltip" title="Logout"><i class="mdi mdi-power"></i></a>
+            </div>
+            <!-- End Bottom points-->
+        </aside>
+        <!-- ============================================================== -->
+        <!-- End Left Sidebar - style you can find in sidebar.scss  -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- Page wrapper  -->
+        <!-- ============================================================== -->
+        <div class="page-wrapper">
+            <!-- ============================================================== -->
+            <!-- Container fluid  -->
+            <!-- ============================================================== -->
+            <div class="container-fluid">
+                <!-- ============================================================== -->
+                <!-- Bread crumb and right sidebar toggle -->
+                <!-- ============================================================== -->
+                <div class="row page-titles">
+                    <div class="col-md-6 col-8 align-self-center">
+                        <h3 class="text-themecolor mb-0 mt-0">Manage Posts</h3>
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="non-admin.html">Home</a></li>
+                            <li class="breadcrumb-item active">Post table</li>
+                        </ol>
+                    </div>
+                    <div class="col-md-6 col-4 align-self-center">
+                        <button onclick="window.location.href = 'non-adminCreatePost.html'"
+                            class="btn float-right hidden-sm-down btn-success"><i class="mdi mdi-plus-circle"></i>
+                            Create</button>
+                        <div class="dropdown float-right mr-2 hidden-sm-down">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> January 2019
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton"> <a class="dropdown-item"
+                                    href="#">February 2019</a> <a class="dropdown-item" href="#">March 2019</a> <a
+                                    class="dropdown-item" href="#">April 2019</a> </div>
                         </div>
                     </div>
-                    <!-- ============================================================== -->
-                    <!-- End Bread crumb and right sidebar toggle -->
-                    <!-- ============================================================== -->
-                    <!-- ============================================================== -->
-                    <!-- Start Page Content -->
-                    <!-- ============================================================== -->
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="card">
-                                <div class="card-body">
-                                    <h4 class="card-title">Manage Posts</h4>
-                                    <!-- <h6 class="card-subtitle">Export data to Copy, CSV, Excel, PDF & Print</h6> -->
-                                    <div class="table-responsive m-t-40">
-                                        <table class="display nowrap table table-hover table-striped">
-                                            <thead>
-                                                <tr>
-                                                    <th>ID</th>
-                                                    <th>Title</th>
-                                                    <th>Category</th>
-                                                    <th>Author</th>
-                                                    <th>Date</th>
-                                                    <th colspan="2">Action</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr id="row1">
-                                                    <td>1</td>
-                                                    <td>Huawei Disaster Reveals Google' s Iron Grip on Android</td>
-                                                    <td>Technology</td>
-                                                    <td>Admin1</td>
-                                                    <td>May 24,2019</td>
-                                                    <td><i class="fas fa-edit"></i> Edit</td>
-                                                    <td><i class="fas fa-trash-alt"></i> Delete</td>
-                                                </tr>
+                </div>
+                <!-- ============================================================== -->
+                <!-- End Bread crumb and right sidebar toggle -->
+                <!-- ============================================================== -->
+                <!-- ============================================================== -->
+                <!-- Start Page Content -->
+                <!-- ============================================================== -->
+                <div class="row">
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">Manage Posts</h4>
+                                <!-- <h6 class="card-subtitle">Export data to Copy, CSV, Excel, PDF & Print</h6> -->
+                                <div class="table-responsive m-t-40">
+                                    <table class="display nowrap table table-hover table-striped">
+                                        <thead>
+                                            <tr>
+                                                <th>ID</th>
+                                                <th>Title</th>
+                                                <th>Category</th>
+                                                <th>Author</th>
+                                                <th>Date</th>
+                                                <th colspan="2">Action</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr id="row1">
+                                                <td>1</td>
+                                                <td>Huawei Disaster Reveals Google' s Iron Grip on Android</td>
+                                                <td>Technology</td>
+                                                <td>admin1</td>
+                                                <td>May 24,2019</td>
+                                                <td><i class="fas fa-edit"></i> Edit</td>
+                                                <td><i class="fas fa-trash-alt"></i> Delete</td>
+                                            </tr>
 
-                                                <tr id="row2">
-                                                    <td>2</td>
-                                                    <td>Huawei Disaster Reveals Google' s Iron Grip on Android</td>
-                                                    <td>Technology</td>
-                                                    <td>Admin2</td>
-                                                    <td>May 24,2019</td>
-                                                    <td><i class="fas fa-edit"></i> Edit</td>
-                                                    <td><i class="fas fa-trash-alt"></i> Delete</td>
-                                                </tr>
+                                            <tr id="row2">
+                                                <td>2</td>
+                                                <td>Huawei Disaster Reveals Google' s Iron Grip on Android</td>
+                                                <td>Technology</td>
+                                                <td>admin2</td>
+                                                <td>May 24,2019</td>
+                                                <td><i class="fas fa-edit"></i> Edit</td>
+                                                <td><i class="fas fa-trash-alt"></i> Delete</td>
+                                            </tr>
 
-                                                <tr id="row3">
-                                                    <td>3</td>
-                                                    <td>What Really Happens to AirPods When They Die</td>
-                                                    <td>Design</td>
-                                                    <td>Editor</td>
-                                                    <td>May 28, 2019</td>
-                                                    <td>
-                                                        <a href="non-adminEdit-post.html"><i class="fas fa-edit"></i> Edit</a>
-                                                    </td>
-                                                    <td>
-                                                        <a href="#" onclick="delete_row('3')"><i
-                                                                class="fas fa-trash-alt"></i> Delete</a>
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
+                                            <tr id="row3">
+                                                <td>3</td>
+                                                <td>What Really Happens to AirPods When They Die</td>
+                                                <td>Design</td>
+                                                <td>editor1</td>
+                                                <td>May 28, 2019</td>
+                                                <td>
+                                                    <a href="non-adminEdit-post.html"><i class="fas fa-edit"></i>
+                                                        Edit</a>
+                                                </td>
+                                                <td>
+                                                    <a href="#" onclick="delete_row('3')"><i
+                                                            class="fas fa-trash-alt"></i> Delete</a>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
                                 </div>
                             </div>
                         </div>
                     </div>
-
                 </div>
-				<script>
-						function edit_row(no)
-					{
-					 document.getElementById("edit_button"+no).style.display="none";
-					 document.getElementById("save_button"+no).style.display="block";
-						
-					 var title=document.getElementById("title_row"+no);
-					 var category=document.getElementById("category_row"+no);
-					 var author=document.getElementById("author_row"+no);
-					 var date=document.getElementById("date_row"+no);
-						
-					 var title_data=title.innerHTML;
-					 var category_data=category.innerHTML;
-					 var author_data=author.innerHTML;
-					 var date_data=date.innerHTML;
-						
-					 title.innerHTML="<input type='text' id='title_text"+no+"' value='"+title_data+"'>";
-					 category.innerHTML="<input type='text' id='category_text"+no+"' value='"+category_data+"'>";
-					 author.innerHTML="<input type='text' id='author_text"+no+"' value='"+author_data+"'>";
-					 date.innerHTML="<input type='text' id='date_text"+no+"' value='"+date_data+"'>";
-					}
 
-					function save_row(no)
-					{
-					 var title_val=document.getElementById("title_text"+no).value;
-					 var category_val=document.getElementById("category_text"+no).value;
-					 var author_val=document.getElementById("author_text"+no).value;
-					 var date_val=document.getElementById("date_text"+no).value;
-
-					 document.getElementById("title_row"+no).innerHTML=title_val;
-					 document.getElementById("category_row"+no).innerHTML=category_val;
-					 document.getElementById("author_row"+no).innerHTML=author_val;
-					 document.getElementById("date_row"+no).innerHTML=date_val;
-
-					 document.getElementById("edit_button"+no).style.display="block";
-					 document.getElementById("save_button"+no).style.display="none";
-					}
-
-					function delete_row(no)
-					{
-						 if (confirm('Are you sure to delete this record ?')) {
-						
-							document.getElementById("row"+no+"").outerHTML="";
-							
-						}
-					}
-
-					function add_row()
-					{
-					 var new_title=document.getElementById("new_title").value;
-					 var new_category=document.getElementById("new_category").value;
-					 var new_author=document.getElementById("new_author").value;
-					 var new_date=document.getElementById("new_date").value;
-						
-					 var table=document.getElementById("data_table");
-					 var table_len=(table.rows.length)-1;
-					 var row = table.insertRow(table_len).outerHTML="<tr id='row"+table_len+"'><td id='title_row"+table_len+"'>"+new_title+"</td><td id='category_row"+table_len+"'>"+new_category+"</td><td id='author_row"+table_len+"'>"+new_author+"</td><td id='date_row"+table_len+"'>"+new_date+"</td><td><input type='button' id='edit_button"+table_len+"' value='Edit' class='edit' onclick='edit_row("+table_len+")'> <input type='button' id='save_button"+table_len+"' value='Save' class='save' onclick='save_row("+table_len+")'> <input type='button' value='Delete' class='delete' onclick='delete_row("+table_len+")'></td></tr>";
-
-					 document.getElementById("new_title").value="";
-					 document.getElementById("new_category").value="";
-					 document.getElementById("new_author").value="";
-					 document.getElementById("new_date").value="";
-					}
-				</script>
-                <!-- ============================================================== -->
-                <!-- End Container fluid  -->
-                <!-- ============================================================== -->
-                <!-- ============================================================== -->
-                <!-- footer -->
-                <!-- ============================================================== -->
-                <footer class="footer"> © 2019 Monster Admin by wrappixel.com </footer>
-                <!-- ============================================================== -->
-                <!-- End footer -->
-                <!-- ============================================================== -->
             </div>
+            <script>
+                function edit_row(no) {
+                    document.getElementById("edit_button" + no).style.display = "none";
+                    document.getElementById("save_button" + no).style.display = "block";
+
+                    var title = document.getElementById("title_row" + no);
+                    var category = document.getElementById("category_row" + no);
+                    var author = document.getElementById("author_row" + no);
+                    var date = document.getElementById("date_row" + no);
+
+                    var title_data = title.innerHTML;
+                    var category_data = category.innerHTML;
+                    var author_data = author.innerHTML;
+                    var date_data = date.innerHTML;
+
+                    title.innerHTML = "<input type='text' id='title_text" + no + "' value='" + title_data + "'>";
+                    category.innerHTML = "<input type='text' id='category_text" + no + "' value='" + category_data + "'>";
+                    author.innerHTML = "<input type='text' id='author_text" + no + "' value='" + author_data + "'>";
+                    date.innerHTML = "<input type='text' id='date_text" + no + "' value='" + date_data + "'>";
+                }
+
+                function save_row(no) {
+                    var title_val = document.getElementById("title_text" + no).value;
+                    var category_val = document.getElementById("category_text" + no).value;
+                    var author_val = document.getElementById("author_text" + no).value;
+                    var date_val = document.getElementById("date_text" + no).value;
+
+                    document.getElementById("title_row" + no).innerHTML = title_val;
+                    document.getElementById("category_row" + no).innerHTML = category_val;
+                    document.getElementById("author_row" + no).innerHTML = author_val;
+                    document.getElementById("date_row" + no).innerHTML = date_val;
+
+                    document.getElementById("edit_button" + no).style.display = "block";
+                    document.getElementById("save_button" + no).style.display = "none";
+                }
+
+                function delete_row(no) {
+                    if (confirm('Are you sure to delete this record ?')) {
+
+                        document.getElementById("row" + no + "").outerHTML = "";
+
+                    }
+                }
+
+                function add_row() {
+                    var new_title = document.getElementById("new_title").value;
+                    var new_category = document.getElementById("new_category").value;
+                    var new_author = document.getElementById("new_author").value;
+                    var new_date = document.getElementById("new_date").value;
+
+                    var table = document.getElementById("data_table");
+                    var table_len = (table.rows.length) - 1;
+                    var row = table.insertRow(table_len).outerHTML = "<tr id='row" + table_len + "'><td id='title_row" + table_len + "'>" + new_title + "</td><td id='category_row" + table_len + "'>" + new_category + "</td><td id='author_row" + table_len + "'>" + new_author + "</td><td id='date_row" + table_len + "'>" + new_date + "</td><td><input type='button' id='edit_button" + table_len + "' value='Edit' class='edit' onclick='edit_row(" + table_len + ")'> <input type='button' id='save_button" + table_len + "' value='Save' class='save' onclick='save_row(" + table_len + ")'> <input type='button' value='Delete' class='delete' onclick='delete_row(" + table_len + ")'></td></tr>";
+
+                    document.getElementById("new_title").value = "";
+                    document.getElementById("new_category").value = "";
+                    document.getElementById("new_author").value = "";
+                    document.getElementById("new_date").value = "";
+                }
+            </script>
             <!-- ============================================================== -->
-            <!-- End Page wrapper  -->
+            <!-- End Container fluid  -->
+            <!-- ============================================================== -->
+            <!-- ============================================================== -->
+            <!-- footer -->
+            <!-- ============================================================== -->
+            <footer class="footer"> © 2019 Monster Admin by wrappixel.com </footer>
+            <!-- ============================================================== -->
+            <!-- End footer -->
             <!-- ============================================================== -->
         </div>
         <!-- ============================================================== -->
-        <!-- End Wrapper -->
+        <!-- End Page wrapper  -->
         <!-- ============================================================== -->
-        <!-- ============================================================== -->
-        <!-- All Jquery -->
-        <!-- ============================================================== -->
-        <script data-cfasync="false"
+    </div>
+    <!-- ============================================================== -->
+    <!-- End Wrapper -->
+    <!-- ============================================================== -->
+    <!-- ============================================================== -->
+    <!-- All Jquery -->
+    <!-- ============================================================== -->
+    <script data-cfasync="false"
         src="../../../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
-        <script src="../assets/plugins/jquery/jquery.min.js"></script>
-        <!-- Bootstrap tether Core JavaScript -->
-        <script src="../assets/plugins/bootstrap/js/popper.min.js"></script>
-        <script src="../assets/plugins/bootstrap/js/bootstrap.min.js"></script>
-        <!-- slimscrollbar scrollbar JavaScript -->
-        <script src="js/jquery.slimscroll.js"></script>
-        <!--Wave Effects -->
-        <script src="js/waves.js"></script>
-        <!--Menu sidebar -->
-        <script src="js/sidebarmenu.js"></script>
-        <!--stickey kit -->
-        <script src="../assets/plugins/sticky-kit-master/dist/sticky-kit.min.js"></script>
-        <!--Custom JavaScript -->
-        <script src="js/custom.min.js"></script>
-        <!-- This is data table -->
-        <script src="../assets/plugins/datatables/datatables.min.js"></script>
-        <!-- start - This is for export functionality only -->
-        <script src="../../../../../cdn.datatables.net/buttons/1.2.2/js/dataTables.buttons.min.js"></script>
-        <script src="../../../../../cdn.datatables.net/buttons/1.2.2/js/buttons.flash.min.js"></script>
-        <script src="../../../../../cdnjs.cloudflare.com/ajax/libs/jszip/2.5.0/jszip.min.js"></script>
-        <script src="../../../../../cdn.rawgit.com/bpampuch/pdfmake/0.1.18/build/pdfmake.min.js"></script>
-        <script src="../../../../../cdn.rawgit.com/bpampuch/pdfmake/0.1.18/build/vfs_fonts.js"></script>
-        <script src="../../../../../cdn.datatables.net/buttons/1.2.2/js/buttons.html5.min.js"></script>
-        <script src="../../../../../cdn.datatables.net/buttons/1.2.2/js/buttons.print.min.js"></script>
-        <!-- end - This is for export functionality only -->
-        <script>
-                                $(function () {
-                                    $('#myTable').DataTable();
-                                    $(document).ready(function () {
-                                        var table = $('#example').DataTable({
-                                            "columnDefs": [{
-                                                    "visible": false,
-                                                    "targets": 2
-                                                }],
-                                            "order": [
-                                                [2, 'asc']
-                                            ],
-                                            "displayLength": 25,
-                                            "drawCallback": function (settings) {
-                                                var api = this.api();
-                                                var rows = api.rows({
-                                                    page: 'current'
-                                                }).nodes();
-                                                var last = null;
-                                                api.column(2, {
-                                                    page: 'current'
-                                                }).data().each(function (group, i) {
-                                                    if (last !== group) {
-                                                        $(rows).eq(i).before('<tr class="group"><td colspan="5">' + group + '</td></tr>');
-                                                        last = group;
-                                                    }
-                                                });
-                                            }
-                                        });
-                                        // Order by the grouping
-                                        $('#example tbody').on('click', 'tr.group', function () {
-                                            var currentOrder = table.order()[0];
-                                            if (currentOrder[0] === 2 && currentOrder[1] === 'asc') {
-                                                table.order([2, 'desc']).draw();
-                                            } else {
-                                                table.order([2, 'asc']).draw();
-                                            }
-                                        });
-                                    });
-                                });
-                                $('#example23').DataTable({
-                                    dom: 'Bfrtip',
-                                    buttons: [
-                                        'copy', 'csv', 'excel', 'pdf', 'print'
-                                    ]
-                                });
-                                $('.buttons-copy, .buttons-csv, .buttons-print, .buttons-pdf, .buttons-excel').addClass('btn btn-primary mr-1');
-        </script>
-        <!-- ============================================================== -->
-        <!-- Style switcher -->
-        <!-- ============================================================== -->
-        <script src="../assets/plugins/styleswitcher/jQuery.style.switcher.js"></script>
-    </body>
+    <script src="../assets/plugins/jquery/jquery.min.js"></script>
+    <!-- Bootstrap tether Core JavaScript -->
+    <script src="../assets/plugins/bootstrap/js/popper.min.js"></script>
+    <script src="../assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <!-- slimscrollbar scrollbar JavaScript -->
+    <script src="js/jquery.slimscroll.js"></script>
+    <!--Wave Effects -->
+    <script src="js/waves.js"></script>
+    <!--Menu sidebar -->
+    <script src="js/sidebarmenu.js"></script>
+    <!--stickey kit -->
+    <script src="../assets/plugins/sticky-kit-master/dist/sticky-kit.min.js"></script>
+    <!--Custom JavaScript -->
+    <script src="js/custom.min.js"></script>
+    <!-- This is data table -->
+    <script src="../assets/plugins/datatables/datatables.min.js"></script>
+    <!-- start - This is for export functionality only -->
+    <script src="../../../../../cdn.datatables.net/buttons/1.2.2/js/dataTables.buttons.min.js"></script>
+    <script src="../../../../../cdn.datatables.net/buttons/1.2.2/js/buttons.flash.min.js"></script>
+    <script src="../../../../../cdnjs.cloudflare.com/ajax/libs/jszip/2.5.0/jszip.min.js"></script>
+    <script src="../../../../../cdn.rawgit.com/bpampuch/pdfmake/0.1.18/build/pdfmake.min.js"></script>
+    <script src="../../../../../cdn.rawgit.com/bpampuch/pdfmake/0.1.18/build/vfs_fonts.js"></script>
+    <script src="../../../../../cdn.datatables.net/buttons/1.2.2/js/buttons.html5.min.js"></script>
+    <script src="../../../../../cdn.datatables.net/buttons/1.2.2/js/buttons.print.min.js"></script>
+    <!-- end - This is for export functionality only -->
+    <script>
+        $(function () {
+            $('#myTable').DataTable();
+            $(document).ready(function () {
+                var table = $('#example').DataTable({
+                    "columnDefs": [{
+                        "visible": false,
+                        "targets": 2
+                    }],
+                    "order": [
+                        [2, 'asc']
+                    ],
+                    "displayLength": 25,
+                    "drawCallback": function (settings) {
+                        var api = this.api();
+                        var rows = api.rows({
+                            page: 'current'
+                        }).nodes();
+                        var last = null;
+                        api.column(2, {
+                            page: 'current'
+                        }).data().each(function (group, i) {
+                            if (last !== group) {
+                                $(rows).eq(i).before('<tr class="group"><td colspan="5">' + group + '</td></tr>');
+                                last = group;
+                            }
+                        });
+                    }
+                });
+                // Order by the grouping
+                $('#example tbody').on('click', 'tr.group', function () {
+                    var currentOrder = table.order()[0];
+                    if (currentOrder[0] === 2 && currentOrder[1] === 'asc') {
+                        table.order([2, 'desc']).draw();
+                    } else {
+                        table.order([2, 'asc']).draw();
+                    }
+                });
+            });
+        });
+        $('#example23').DataTable({
+            dom: 'Bfrtip',
+            buttons: [
+                'copy', 'csv', 'excel', 'pdf', 'print'
+            ]
+        });
+        $('.buttons-copy, .buttons-csv, .buttons-print, .buttons-pdf, .buttons-excel').addClass('btn btn-primary mr-1');
+    </script>
+    <!-- ============================================================== -->
+    <!-- Style switcher -->
+    <!-- ============================================================== -->
+    <script src="../assets/plugins/styleswitcher/jQuery.style.switcher.js"></script>
+</body>
 
 
-    <!-- Mirrored from www.wrappixel.com/demos/admin-templates/monster-admin/main/table-data-table.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 11 Feb 2019 11:36:48 GMT -->
+<!-- Mirrored from www.wrappixel.com/demos/admin-templates/monster-admin/main/table-data-table.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 11 Feb 2019 11:36:48 GMT -->
 
 </html>
