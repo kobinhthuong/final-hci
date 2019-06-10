@@ -1,754 +1,623 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!-- Tell the browser to be responsive to screen width -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <!-- Favicon icon -->
+        <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/favicon.png">
+        <title>Non-admin: Homepage</title>
+        <!-- Bootstrap Core CSS -->
+        <link href="../assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <!-- chartist CSS -->
+        <link href="../assets/plugins/chartist-js/dist/chartist.min.css" rel="stylesheet">
+        <link href="../assets/plugins/chartist-js/dist/chartist-init.css" rel="stylesheet">
+        <link href="../assets/plugins/chartist-plugin-tooltip-master/dist/chartist-plugin-tooltip.css" rel="stylesheet">
+        <link href="../assets/plugins/css-chart/css-chart.css" rel="stylesheet">
+        <!-- toast CSS -->
+        <link href="../assets/plugins/toast-master/css/jquery.toast.css" rel="stylesheet">
+        <!-- Custom CSS -->
+        <link href="css/style.css" rel="stylesheet">
+        <!-- You can change the theme colors from here -->
+        <link href="css/colors/blue.css" id="theme" rel="stylesheet">
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+        <script>
+            (function (i, s, o, g, r, a, m) {
+                i['GoogleAnalyticsObject'] = r;
+                i[r] = i[r] || function () {
+                    (i[r].q = i[r].q || []).push(arguments)
+                }, i[r].l = 1 * new Date();
+                a = s.createElement(o), m = s.getElementsByTagName(o)[0];
+                a.async = 1;
+                a.src = g;
+                m.parentNode.insertBefore(a, m)
+            })(window, document, 'script', '../../../../../www.google-analytics.com/analytics.js', 'ga');
+            ga('create', 'UA-85622565-1', 'auto');
+            ga('send', 'pageview');
+        </script>
+    </head>
 
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <!-- Tell the browser to be responsive to screen width -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <!-- Favicon icon -->
-    <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/favicon.png">
-    <title>Non-admin: Homepage</title>
-    <!-- Bootstrap Core CSS -->
-    <link href="../assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <!-- chartist CSS -->
-    <link href="../assets/plugins/chartist-js/dist/chartist.min.css" rel="stylesheet">
-    <link href="../assets/plugins/chartist-js/dist/chartist-init.css" rel="stylesheet">
-    <link href="../assets/plugins/chartist-plugin-tooltip-master/dist/chartist-plugin-tooltip.css" rel="stylesheet">
-    <link href="../assets/plugins/css-chart/css-chart.css" rel="stylesheet">
-    <!-- toast CSS -->
-    <link href="../assets/plugins/toast-master/css/jquery.toast.css" rel="stylesheet">
-    <!-- Custom CSS -->
-    <link href="css/style.css" rel="stylesheet">
-    <!-- You can change the theme colors from here -->
-    <link href="css/colors/blue.css" id="theme" rel="stylesheet">
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-    <script>
-        (function (i, s, o, g, r, a, m) {
-            i['GoogleAnalyticsObject'] = r;
-            i[r] = i[r] || function () {
-                (i[r].q = i[r].q || []).push(arguments)
-            }, i[r].l = 1 * new Date();
-            a = s.createElement(o), m = s.getElementsByTagName(o)[0];
-            a.async = 1;
-            a.src = g;
-            m.parentNode.insertBefore(a, m)
-        })(window, document, 'script', '../../../../../www.google-analytics.com/analytics.js', 'ga');
-        ga('create', 'UA-85622565-1', 'auto');
-        ga('send', 'pageview');
-    </script>
-</head>
-
-<body class="fix-header fix-sidebar card-no-border">
-    <!-- ============================================================== -->
-    <!-- Preloader - style you can find in spinners.css -->
-    <!-- ============================================================== -->
-    <div class="preloader">
-        <svg class="circular" viewBox="25 25 50 50">
+    <body class="fix-header fix-sidebar card-no-border">
+        <!-- ============================================================== -->
+        <!-- Preloader - style you can find in spinners.css -->
+        <!-- ============================================================== -->
+        <div class="preloader">
+            <svg class="circular" viewBox="25 25 50 50">
             <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10" /> </svg>
-    </div>
-    <!-- ============================================================== -->
-    <!-- Main wrapper - style you can find in pages.scss -->
-    <!-- ============================================================== -->
-    <div id="main-wrapper">
+        </div>
         <!-- ============================================================== -->
-        <!-- Topbar header - style you can find in pages.scss -->
+        <!-- Main wrapper - style you can find in pages.scss -->
         <!-- ============================================================== -->
-        <header class="topbar">
-            <nav class="navbar top-navbar navbar-expand-md navbar-light">
-                <!-- ============================================================== -->
-                <!-- Logo -->
-                <!-- ============================================================== -->
-                <div class="navbar-header">
-                    <a class="navbar-brand" href="non-admin.html">
-                        <!-- Logo icon -->
-                        <b>
-                            <!--You can put here icon as well // <i class="wi wi-sunset"></i> //-->
-                            <!-- Dark Logo icon -->
-                            <img src="../assets/images/logo-icon.png" alt="homepage" class="dark-logo" />
-                            <!-- Light Logo icon -->
-                            <img src="../assets/images/logo-light-icon.png" alt="homepage" class="light-logo" />
-                        </b>
-                        <!--End Logo icon -->
-                        <!-- Logo text -->
-                        <span>
-                            <!-- dark Logo text -->
-                            <img src="../assets/images/logo-text.png" alt="homepage" class="dark-logo" />
-                            <!-- Light Logo text -->
-                            <img src="../assets/images/logo-light-text.png" class="light-logo" alt="homepage" /></span>
-                    </a>
-                </div>
-                <!-- ============================================================== -->
-                <!-- End Logo -->
-                <!-- ============================================================== -->
-                <div class="navbar-collapse">
-                    <!-- ============================================================== -->
-                    <!-- toggle and nav items -->
-                    <!-- ============================================================== -->
-                    <ul class="navbar-nav mr-auto mt-md-0 ">
-                        <!-- This is  -->
-                        <li class="nav-item"> <a
-                                class="nav-link nav-toggler hidden-md-up text-muted waves-effect waves-dark"
-                                href="javascript:void(0)"><i class="ti-menu"></i></a> </li>
-                        <li class="nav-item"> <a
-                                class="nav-link sidebartoggler hidden-sm-down text-muted waves-effect waves-dark"
-                                href="javascript:void(0)"><i class="icon-arrow-left-circle"></i></a> </li>
-                        <!-- ============================================================== -->
-                        <li class="nav-item dropdown mega-dropdown"> <a
-                                class="nav-link dropdown-toggle text-muted waves-effect waves-dark" href="#"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i
-                                    class="mdi mdi-view-grid"></i></a>
-                            <div class="dropdown-menu animated bounceInDown">
-                                <ul class="mega-dropdown-menu row">
-                                    <li class="col-lg-3 col-xlg-2 mb-4">
-                                        <h4 class="mb-3">CAROUSEL</h4>
-                                        <!-- CAROUSEL -->
-                                        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-                                            <div class="carousel-inner" role="listbox">
-                                                <div class="carousel-item active">
-                                                    <div class="container"> <img class="d-block img-fluid"
-                                                            src="../assets/images/big/img1.jpg" alt="First slide"></div>
-                                                </div>
-                                                <div class="carousel-item">
-                                                    <div class="container"><img class="d-block img-fluid"
-                                                            src="../assets/images/big/img2.jpg" alt="Second slide">
-                                                    </div>
-                                                </div>
-                                                <div class="carousel-item">
-                                                    <div class="container"><img class="d-block img-fluid"
-                                                            src="../assets/images/big/img3.jpg" alt="Third slide"></div>
-                                                </div>
-                                            </div>
-                                            <a class="carousel-control-prev" href="#carouselExampleControls"
-                                                role="button" data-slide="prev"> <span
-                                                    class="carousel-control-prev-icon" aria-hidden="true"></span> <span
-                                                    class="sr-only">Previous</span> </a>
-                                            <a class="carousel-control-next" href="#carouselExampleControls"
-                                                role="button" data-slide="next"> <span
-                                                    class="carousel-control-next-icon" aria-hidden="true"></span> <span
-                                                    class="sr-only">Next</span> </a>
-                                        </div>
-                                        <!-- End CAROUSEL -->
-                                    </li>
-                                    <li class="col-lg-3 mb-4">
-                                        <h4 class="mb-3">ACCORDION</h4>
-                                        <!-- Accordian -->
-                                        <div id="accordion" class="nav-accordion" role="tablist"
-                                            aria-multiselectable="true">
-                                            <div class="card">
-                                                <div class="card-header" role="tab" id="headingOne">
-                                                    <h5 class="mb-0">
-                                                        <a data-toggle="collapse" data-parent="#accordion"
-                                                            href="#collapseOne" aria-expanded="true"
-                                                            aria-controls="collapseOne">
-                                                            Collapsible Group Item #1
-                                                        </a>
-                                                    </h5>
-                                                </div>
-                                                <div id="collapseOne" class="collapse show" role="tabpanel"
-                                                    aria-labelledby="headingOne">
-                                                    <div class="card-body"> Anim pariatur cliche reprehenderit, enim
-                                                        eiusmod high. </div>
-                                                </div>
-                                            </div>
-                                            <div class="card">
-                                                <div class="card-header" role="tab" id="headingTwo">
-                                                    <h5 class="mb-0">
-                                                        <a class="collapsed" data-toggle="collapse"
-                                                            data-parent="#accordion" href="#collapseTwo"
-                                                            aria-expanded="false" aria-controls="collapseTwo">
-                                                            Collapsible Group Item #2
-                                                        </a>
-                                                    </h5>
-                                                </div>
-                                                <div id="collapseTwo" class="collapse" role="tabpanel"
-                                                    aria-labelledby="headingTwo">
-                                                    <div class="card-body"> Anim pariatur cliche reprehenderit, enim
-                                                        eiusmod high life accusamus terry richardson ad squid. </div>
-                                                </div>
-                                            </div>
-                                            <div class="card">
-                                                <div class="card-header" role="tab" id="headingThree">
-                                                    <h5 class="mb-0">
-                                                        <a class="collapsed" data-toggle="collapse"
-                                                            data-parent="#accordion" href="#collapseThree"
-                                                            aria-expanded="false" aria-controls="collapseThree">
-                                                            Collapsible Group Item #3
-                                                        </a>
-                                                    </h5>
-                                                </div>
-                                                <div id="collapseThree" class="collapse" role="tabpanel"
-                                                    aria-labelledby="headingThree">
-                                                    <div class="card-body"> Anim pariatur cliche reprehenderit, enim
-                                                        eiusmod high life accusamus terry richardson ad squid. </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li class="col-lg-3  mb-4">
-                                        <h4 class="mb-3">CONTACT US</h4>
-                                        <!-- Contact -->
-                                        <form>
-                                            <div class="form-group">
-                                                <input type="text" class="form-control" id="exampleInputname1"
-                                                    placeholder="Enter Name"> </div>
-                                            <div class="form-group">
-                                                <input type="email" class="form-control" placeholder="Enter email">
-                                            </div>
-                                            <div class="form-group">
-                                                <textarea class="form-control" id="exampleTextarea" rows="3"
-                                                    placeholder="Message"></textarea>
-                                            </div>
-                                            <button type="submit" class="btn btn-info">Submit</button>
-                                        </form>
-                                    </li>
-                                    <li class="col-lg-3 col-xlg-4 mb-4">
-                                        <h4 class="mb-3">List style</h4>
-                                        <!-- List style -->
-                                        <ul class="list-style-none">
-                                            <li><a href="javascript:void(0)"><i class="fa fa-check text-success"></i>
-                                                    You can give link</a></li>
-                                            <li><a href="javascript:void(0)"><i class="fa fa-check text-success"></i>
-                                                    Give link</a></li>
-                                            <li><a href="javascript:void(0)"><i class="fa fa-check text-success"></i>
-                                                    Another Give link</a></li>
-                                            <li><a href="javascript:void(0)"><i class="fa fa-check text-success"></i>
-                                                    Forth link</a></li>
-                                            <li><a href="javascript:void(0)"><i class="fa fa-check text-success"></i>
-                                                    Another fifth link</a></li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-                        <!-- ============================================================== -->
-                        <!-- End Messages -->
-                        <!-- ============================================================== -->
-                    </ul>
-                    <!-- ============================================================== -->
-                    <!-- User profile and search -->
-                    <!-- ============================================================== -->
-                    <ul class="navbar-nav my-lg-0">
-                        <li class="nav-item hidden-sm-down">
-                            <form class="app-search">
-                                <input type="text" class="form-control" placeholder="Search for..."> <a
-                                    class="srh-btn"><i class="ti-search"></i></a> </form>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle text-muted waves-effect waves-dark" href="#"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img
-                                    src="../assets/images/users/1.jpg" alt="user" class="profile-pic" /></a>
-                            <div class="dropdown-menu dropdown-menu-right animated flipInY">
-                                <ul class="dropdown-user">
-                                    <li>
-                                        <div class="dw-user-box">
-                                            <div class="u-img"><img src="../assets/images/users/1.jpg" alt="user"></div>
-                                            <div class="u-text">
-                                                <h4>Steave Jobs</h4>
-                                                <p class="text-muted"><a
-                                                        href="https://www.wrappixel.com/cdn-cgi/l/email-protection"
-                                                        class="__cf_email__"
-                                                        data-cfemail="8afcebf8ffe4caede7ebe3e6a4e9e5e7">[editor@gmail.com]</a>
-                                                </p><a href="profile.html"
-                                                    class="btn btn-rounded btn-danger btn-sm">View Profile</a>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li role="separator" class="divider"></li>
-                                    <li><a href="#"><i class="fa fa-power-off"></i> Logout</a></li>
-                                </ul>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        </header>
-        <!-- ============================================================== -->
-        <!-- End Topbar header -->
-        <!-- ============================================================== -->
-        <!-- ============================================================== -->
-        <!-- Left Sidebar - style you can find in sidebar.scss  -->
-        <!-- ============================================================== -->
-        <aside class="left-sidebar">
-            <!-- Sidebar scroll-->
-            <div class="scroll-sidebar">
-                <!-- User profile -->
-
-                <!-- End User profile text-->
-                <!-- Sidebar navigation-->
-                <nav class="sidebar-nav">
-                    <ul id="sidebarnav">
-                        <li>
-                            <a href="non-admin.html" aria-expanded="false"><i class="mdi mdi-gauge"></i><span
-                                    class="hide-menu">Dashboard</a>
-                        </li>
-                        <li>
-                            <a href="non-admin-post.html" aria-expanded="false"><i
-                                    class="mdi mdi-file-document-box"></i><span class="hide-menu">Post</span></a>
-                        </li>
-                        <li>
-                            <a href="limited-access.html" aria-expanded="false"><i class="mdi mdi-account"></i><span
-                                    class="hide-menu">User</span></a>
-                        </li>
-                        <li>
-                            <a href="limited-access.html" aria-expanded="false"><i
-                                    class="mdi mdi-account-settings-variant"></i><span class="hide-menu">Role</span></a>
-                        </li>
-                        <li>
-                            <a class="has-arrow" href="#" aria-expanded="false"><i
-                                    class="mdi mdi-folder-multiple-image"></i><span class="hide-menu">Media</span></a>
-                            <ul aria-expanded="false" class="collapse">
-                                <li><a href="non-admin-media.html"><i class="mdi mdi-file"></i> File</a></li>
-                                <li><a href="non-admin-media.html"><i class="mdi mdi-image"></i> Image</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="non-admin-category.html" aria-expanded="false"><i
-                                    class="mdi mdi-tag-multiple"></i><span class="hide-menu"> Category</span></a>
-                        </li>
-                    </ul>
-                </nav>
-                <!-- End Sidebar navigation -->
-            </div>
-            <!-- End Sidebar scroll-->
-            <!-- Bottom points-->
-            <div class="sidebar-footer">
-                <!-- item-->
-                <a href="#" class="link" data-toggle="tooltip" title="Settings"><i class="ti-settings"></i></a>
-                <!-- item-->
-                <a href="#" class="link" data-toggle="tooltip" title="Email"><i class="mdi mdi-gmail"></i></a>
-                <!-- item-->
-                <a href="#" class="link" data-toggle="tooltip" title="Logout"><i class="mdi mdi-power"></i></a>
-            </div>
-            <!-- End Bottom points-->
-        </aside>
-        <!-- ============================================================== -->
-        <!-- End Left Sidebar - style you can find in sidebar.scss  -->
-        <!-- ============================================================== -->
-        <!-- ============================================================== -->
-        <!-- Page wrapper  -->
-        <!-- ============================================================== -->
-        <div class="page-wrapper">
+        <div id="main-wrapper">
             <!-- ============================================================== -->
-            <!-- Container fluid  -->
+            <!-- Topbar header - style you can find in pages.scss -->
             <!-- ============================================================== -->
-            <div class="container-fluid">
-                <!-- ============================================================== -->
-                <!-- Bread crumb and right sidebar toggle -->
-                <!-- ============================================================== -->
-                <div class="row page-titles">
-                    <div class="col-md-6 col-8 align-self-center">
-                        <!-- <h6><i><i class="fas fa-exclamation-triangle"></i> You are on editor role, there may be some actions limited.</i></h6> -->
-                        <h3 class="text-themecolor mb-0 mt-0">Dashboard</h3>
-                        <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="non-admin.html">Home</a></li>
-                            <li class="breadcrumb-item active">Dashboard</li>
-                        </ol>
+            <header class="topbar">
+                <nav class="navbar top-navbar navbar-expand-md navbar-light">
+                    <!-- ============================================================== -->
+                    <!-- Logo -->
+                    <!-- ============================================================== -->
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="non-admin.html">
+                            <!-- Logo icon -->
+                            <b>
+                                <!--You can put here icon as well // <i class="wi wi-sunset"></i> //-->
+                                <!-- Dark Logo icon -->
+                                <img src="../assets/images/logo-icon.png" alt="homepage" class="dark-logo" />
+                                <!-- Light Logo icon -->
+                                <img src="../assets/images/logo-light-icon.png" alt="homepage" class="light-logo" />
+                            </b>
+                            <!--End Logo icon -->
+                            <!-- Logo text -->
+                            <span>
+                                <!-- dark Logo text -->
+                                <img src="../assets/images/logo-text.png" alt="homepage" class="dark-logo" />
+                                <!-- Light Logo text -->
+                                <img src="../assets/images/logo-light-text.png" class="light-logo" alt="homepage" /></span>
+                        </a>
                     </div>
-                    <div class="col-md-6 col-4 align-self-center">
-                        <div class="dropdown float-right mr-2 hidden-sm-down">
-                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> January 2019
-                            </button>
-                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton"> <a class="dropdown-item"
-                                    href="#">February 2019</a> <a class="dropdown-item" href="#">March 2019</a> <a
-                                    class="dropdown-item" href="#">April 2019</a> </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- ============================================================== -->
-                <!-- End Bread crumb and right sidebar toggle -->
-                <!-- ============================================================== -->
-                <!-- ============================================================== -->
-                <!-- Start Page Content -->
-                <!-- ============================================================== -->
-                <!-- Row -->
-                <div class="row">
-                </div>
-                <!-- Row -->
-                <!-- Row -->
-                <div class="row">
-                    <!-- Column -->
-                    <div class="col-lg-12">
-                        <div class="card">
-                            <div class="card-body">
-                                <div class="row">
-                                    <div class="col-12">
-                                        <div class="d-flex flex-wrap">
-                                            <div>
-                                                <h3>Statistics</h3>
-                                                <h6 class="card-subtitle">June 2019</h6>
-                                            </div>
-                                            <div class="ml-auto ">
-                                                <ul class="list-inline">
-                                                    <li>
-                                                        <h6 class="text-muted"><i
-                                                                class="fa fa-circle mr-1 text-success"></i>Views
-                                                        </h6>
-                                                    </li>
-                                                    <li>
-                                                        <h6 class="text-muted"><i
-                                                                class="fa fa-circle mr-1 text-info"></i>Subscribe</h6>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-12">
-                                        <div class="total-revenue4" style="height: 350px;"></div>
-                                    </div>
-                                    <div class="col-lg-3 col-md-6 mb-4 mt-3 text-center">
-                                        <h1 class="mb-0 font-light">$54578</h1>
-                                        <h6 class="text-muted">Total</h6>
-                                    </div>
-                                    <div class="col-lg-3 col-md-6 mb-4 mt-3 text-center">
-                                        <h1 class="mb-0 font-light">$43451</h1>
-                                        <h6 class="text-muted">Net</h6>
-                                    </div>
-                                    <div class="col-lg-3 col-md-6 mb-4 mt-3 text-center">
-                                        <h1 class="mb-0 font-light">$44578</h1>
-                                        <h6 class="text-muted">Views</h6>
-                                    </div>
-                                    <div class="col-lg-3 col-md-6 mb-4 mt-3 text-center">
-                                        <h1 class="mb-0 font-light">$12578</h1>
-                                        <h6 class="text-muted">Subscribe</h6>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Row -->
-                <!-- Row -->
-                <div class="row">
-                    <!-- Column -->
-                    <div class="col-12">
-                        <h3>Most views in week</h3>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="card">
-                            <img class="card-img-top img-responsive" src="../assets/images/big/img1.jpg" alt="Card">
-                            <div class="card-body">
-                                <ul class="list-inline font-14">
-                                    <li class="pl-0">30 May 2019</li>
-                                    <li>3 Comment</li>
-                                </ul>
-                                <h3 class="font-normal">Huawei Disaster Reveals Google' s Iron Grip on Android</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Column -->
-                    <!-- Column -->
-                    <div class="col-lg-4">
-                        <div class="card">
-                            <img class="card-img-top img-responsive" src="../assets/images/big/img2.jpg" alt="Card">
-                            <div class="card-body">
-                                <ul class="list-inline font-14">
-                                    <li class="pl-0">29 May 2019</li>
-                                    <li>3 Comment</li>
-                                </ul>
-                                <h3 class="font-normal">What Really Happens to AirPods When They Die</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Column -->
-                    <!-- Column -->
-                    <div class="col-lg-4">
-                        <div class="card">
-                            <img class="card-img-top img-responsive" src="../assets/images/big/img4.jpg" alt="Card">
-                            <div class="card-body">
-                                <ul class="list-inline font-14">
-                                    <li class="pl-0">28 May 2019</li>
-                                    <li>3 Comment</li>
-                                </ul>
-                                <h3 class="font-normal">Featured Hydroflora Pots Garden &amp; Outdoors</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Column -->
-                </div>
-                <!-- Row -->
-                <!-- Row -->
-                <div class="row">
-                    <div class="col-lg-6">
-                        <div class="card">
-                            <div class="card-body">
-                                <h4 class="card-title">Recent Posts</h4>
-                            </div>
+                    <!-- ============================================================== -->
+                    <!-- End Logo -->
+                    <!-- ============================================================== -->
+                    <div class="navbar-collapse">
+                        <!-- ============================================================== -->
+                        <!-- toggle and nav items -->
+                        <!-- ============================================================== -->
+                        <ul class="navbar-nav mr-auto mt-md-0 ">
+                            <!-- This is  -->
+                            <li class="nav-item"> <a
+                                    class="nav-link nav-toggler hidden-md-up text-muted waves-effect waves-dark"
+                                    href="javascript:void(0)"><i class="ti-menu"></i></a> </li>
+                            <li class="nav-item"> <a
+                                    class="nav-link sidebartoggler hidden-sm-down text-muted waves-effect waves-dark"
+                                    href="javascript:void(0)"><i class="icon-arrow-left-circle"></i></a> </li>
                             <!-- ============================================================== -->
-                            <!-- Comment widgets -->
-                            <!-- ============================================================== -->
-                            <div class="comment-widgets">
-                                <!-- Comment Row -->
-                                <div class="d-flex flex-row comment-row">
-                                    <div class="p-2"><img src="../assets/images/big/img4.jpg" alt="user" width="100">
-                                    </div>
-                                    <div class="comment-text w-100">
-                                        <h5>Huawei Disaster Reveals Google' s Iron Grip on Android</h5>
-                                        <p class="mb-1">Open source isn’t as open as you think</p>
-                                        <div class="comment-footer">
-                                            <span class="text-muted float-right">June 11, 2019</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Comment Row -->
-                                <div class="d-flex flex-row comment-row">
-                                    <div class="p-2"><img src="../assets/images/big/img5.jpg" alt="user" width="100">
-                                    </div>
-                                    <div class="comment-text active w-100">
-                                        <h5>The Dawn of the Reliance Economy</h5>
-                                        <p class="mb-1">Your attention was never the endgame</p>
-                                        <div class="comment-footer ">
-                                            <span class="text-muted float-right">June 10, 2019</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Comment Row -->
-                                <div class="d-flex flex-row comment-row">
-                                    <div class="p-2"><img src="../assets/images/big/img6.jpg" alt="user" width="100">
-                                    </div>
-                                    <div class="comment-text w-100">
-                                        <h5>Regulators Just Put a Target on Apple’s Back</h5>
-                                        <p class="mb-1">Forget WWDC: The company now faces major scrutiny along with
-                                            other tech giants</p>
-                                        <div class="comment-footer">
-                                            <span class="text-muted float-right">June 09, 2019</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Comment Row -->
-                                <div class="d-flex flex-row comment-row">
-                                    <div class="p-2"><img src="../assets/images/big/img1.jpg" alt="user" width="100">
-                                    </div>
-                                    <div class="comment-text w-100">
-                                        <h5>To Trust Apple Sign-In, You Need to Trust Apple</h5>
-                                        <p class="mb-1">Experts agree that it’s not perfect, but it’s almost certainly
-                                            better than what you’re using</p>
-                                        <div class="comment-footer">
-                                            <span class="text-muted float-right">June 08, 2019</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="card">
-                            <div class="card-body">
-                                <h4 class="card-title">Recent Activities</h4>
-                                <!-- ============================================================== -->
-                                <!-- To do list widgets -->
-                                <!-- ============================================================== -->
-                                <div class="to-do-widget mt-3">
-                                    <ul class="list-task todo-list list-group mb-0" data-role="tasklist">
-                                        <li class="list-group-item" data-role="task">
-                                            <ul class="assignedto">
-                                                <h4>admin1 published a post in Technology</h4>
-                                                <p class="mb-1">June 10, 2019</p>
-                                            </ul>
+                        </ul>
+                        <!-- ============================================================== -->
+                        <!-- User profile and search -->
+                        <!-- ============================================================== -->
+                        <ul class="navbar-nav my-lg-0">
+                            <li class="nav-item hidden-sm-down">
+                                <form class="app-search">
+                                    <input type="text" class="form-control" placeholder="Search for..."> <a
+                                        class="srh-btn"><i class="ti-search"></i></a> </form>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle text-muted waves-effect waves-dark" href="#"
+                                   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img
+                                        src="../assets/images/users/1.jpg" alt="user" class="profile-pic" /></a>
+                                <div class="dropdown-menu dropdown-menu-right animated flipInY">
+                                    <ul class="dropdown-user">
+                                        <li>
+                                            <div class="dw-user-box">
+                                                <div class="u-img"><img src="../assets/images/users/1.jpg" alt="user"></div>
+                                                <div class="u-text">
+                                                    <h4>Steave Jobs</h4>
+                                                    <p class="text-muted"><a
+                                                            href="https://www.wrappixel.com/cdn-cgi/l/email-protection"
+                                                            class="__cf_email__"
+                                                            data-cfemail="8afcebf8ffe4caede7ebe3e6a4e9e5e7">[editor@gmail.com]</a>
+                                                    </p><a href="profile.html"
+                                                           class="btn btn-rounded btn-danger btn-sm">View Profile</a>
+                                                </div>
+                                            </div>
                                         </li>
-                                        <li class="list-group-item" data-role="task">
-                                            <ul class="assignedto">
-                                                <h4>admin1 published a post in Design</h4>
-                                                <p class="mb-1">June 09, 2019</p>
-                                            </ul>
-                                        </li>
-                                        <li class="list-group-item" data-role="task">
-                                            <ul class="assignedto">
-                                                <h4>editor1 published a post in Technology</h4>
-                                                <p class="mb-1">June 08, 2019</p>
-                                            </ul>
-                                        </li>
-                                        <li class="list-group-item" data-role="task">
-                                            <ul class="assignedto">
-                                                <h4>editor1 published a post in Travel</h4>
-                                                <p class="mb-1">June 07, 2019</p>
-                                            </ul>
-                                        </li>
-                                        <li class="list-group-item" data-role="task">
-                                            <ul class="assignedto">
-                                                <h4>admin1 published a post in Travel</h4>
-                                                <p class="mb-1">June 07, 2019</p>
-                                            </ul>
-                                        </li>
-                                        <li class="list-group-item" data-role="task">
-                                            <ul class="assignedto">
-                                                <h4>editor1 published a post in Technology</h4>
-                                                <p class="mb-1">June 06, 2019</p>
-                                            </ul>
-                                        </li>
-                                        <li class="list-group-item" data-role="task">
-                                            <ul class="assignedto">
-                                                <h4>admin1 published a post in Technology</h4>
-                                                <p class="mb-1">June 05, 2019</p>
-                                            </ul>
-                                        </li>
+                                        <li role="separator" class="divider"></li>
+                                        <li><a href="#"><i class="fa fa-power-off"></i> Logout</a></li>
                                     </ul>
                                 </div>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </header>
+            <!-- ============================================================== -->
+            <!-- End Topbar header -->
+            <!-- ============================================================== -->
+            <!-- ============================================================== -->
+            <!-- Left Sidebar - style you can find in sidebar.scss  -->
+            <!-- ============================================================== -->
+            <aside class="left-sidebar">
+                <!-- Sidebar scroll-->
+                <div class="scroll-sidebar">
+                    <!-- User profile -->
+
+                    <!-- End User profile text-->
+                    <!-- Sidebar navigation-->
+                    <nav class="sidebar-nav">
+                        <ul id="sidebarnav">
+                            <li>
+                                <a href="non-admin.html" aria-expanded="false"><i class="mdi mdi-gauge"></i><span
+                                        class="hide-menu">Dashboard</a>
+                            </li>
+                            <li>
+                                <a href="non-admin-post.html" aria-expanded="false"><i
+                                        class="mdi mdi-file-document-box"></i><span class="hide-menu">Post</span></a>
+                            </li>
+                            <li>
+                                <a href="limited-access.html" aria-expanded="false"><i class="mdi mdi-account"></i><span
+                                        class="hide-menu">User</span></a>
+                            </li>
+                            <li>
+                                <a href="limited-access.html" aria-expanded="false"><i
+                                        class="mdi mdi-account-settings-variant"></i><span class="hide-menu">Role</span></a>
+                            </li>
+                            <li>
+                                <a class="has-arrow" href="#" aria-expanded="false"><i
+                                        class="mdi mdi-folder-multiple-image"></i><span class="hide-menu">Media</span></a>
+                                <ul aria-expanded="false" class="collapse">
+                                    <li><a href="non-admin-media.html"><i class="mdi mdi-file"></i>File</a></li>
+                                    <li><a href="non-admin-media.html"><i class="mdi mdi-image"></i>Image</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="non-admin-category.html" aria-expanded="false"><i
+                                        class="mdi mdi-tag-multiple"></i><span class="hide-menu">Category</span></a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <!-- End Sidebar navigation -->
+                </div>
+                <!-- End Sidebar scroll-->
+                <!-- Bottom points-->
+                <div class="sidebar-footer">
+                    <!-- item-->
+                    <a href="#" class="link" data-toggle="tooltip" title="Settings"><i class="ti-settings"></i></a>
+                    <!-- item-->
+                    <a href="#" class="link" data-toggle="tooltip" title="Email"><i class="mdi mdi-gmail"></i></a>
+                    <!-- item-->
+                    <a href="#" class="link" data-toggle="tooltip" title="Logout"><i class="mdi mdi-power"></i></a>
+                </div>
+                <!-- End Bottom points-->
+            </aside>
+            <!-- ============================================================== -->
+            <!-- End Left Sidebar - style you can find in sidebar.scss  -->
+            <!-- ============================================================== -->
+            <!-- ============================================================== -->
+            <!-- Page wrapper  -->
+            <!-- ============================================================== -->
+            <div class="page-wrapper">
+                <!-- ============================================================== -->
+                <!-- Container fluid  -->
+                <!-- ============================================================== -->
+                <div class="container-fluid">
+                    <!-- ============================================================== -->
+                    <!-- Bread crumb and right sidebar toggle -->
+                    <!-- ============================================================== -->
+                    <div class="row page-titles">
+                        <div class="col-md-6 col-8 align-self-center">
+                            <!-- <h6><i><i class="fas fa-exclamation-triangle"></i> You are on editor role, there may be some actions limited.</i></h6> -->
+                            <h3 class="text-themecolor mb-0 mt-0">Dashboard</h3>
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="non-admin.html">Home</a></li>
+                                <li class="breadcrumb-item active">Dashboard</li>
+                            </ol>
+                        </div>
+                        <div class="col-md-6 col-4 align-self-center">
+                            <div class="dropdown float-right mr-2 hidden-sm-down">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> January 2019
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton"> <a class="dropdown-item"
+                                                                                                    href="#">February 2019</a> <a class="dropdown-item" href="#">March 2019</a> <a
+                                                                                                    class="dropdown-item" href="#">April 2019</a> </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <!-- Row -->
-                <!-- ============================================================== -->
-                <!-- End PAge Content -->
-                <!-- ============================================================== -->
-                <!-- ============================================================== -->
-                <!-- Right sidebar -->
-                <!-- ============================================================== -->
-                <!-- .right-sidebar -->
-                <div class="right-sidebar">
-                    <div class="slimscrollright">
-                        <div class="rpanel-title"> Service Panel <span><i class="ti-close right-side-toggle"></i></span>
-                        </div>
-                        <div class="r-panel-body">
-                            <ul id="themecolors" class="mt-3">
-                                <li><b>With Light sidebar</b></li>
-                                <li><a href="javascript:void(0)" data-theme="default" class="default-theme">1</a></li>
-                                <li><a href="javascript:void(0)" data-theme="green" class="green-theme">2</a></li>
-                                <li><a href="javascript:void(0)" data-theme="red" class="red-theme">3</a></li>
-                                <li><a href="javascript:void(0)" data-theme="blue" class="blue-theme working">4</a></li>
-                                <li><a href="javascript:void(0)" data-theme="purple" class="purple-theme">5</a></li>
-                                <li><a href="javascript:void(0)" data-theme="megna" class="megna-theme">6</a></li>
-                                <li class="d-block mt-4"><b>With Dark sidebar</b></li>
-                                <li><a href="javascript:void(0)" data-theme="default-dark"
-                                        class="default-dark-theme">7</a></li>
-                                <li><a href="javascript:void(0)" data-theme="green-dark" class="green-dark-theme">8</a>
-                                </li>
-                                <li><a href="javascript:void(0)" data-theme="red-dark" class="red-dark-theme">9</a></li>
-                                <li><a href="javascript:void(0)" data-theme="blue-dark" class="blue-dark-theme">10</a>
-                                </li>
-                                <li><a href="javascript:void(0)" data-theme="purple-dark"
-                                        class="purple-dark-theme">11</a></li>
-                                <li><a href="javascript:void(0)" data-theme="megna-dark"
-                                        class="megna-dark-theme ">12</a></li>
-                            </ul>
-                            <ul class="mt-3 chatonline">
-                                <li><b>Chat option</b></li>
-                                <li>
-                                    <a href="javascript:void(0)"><img src="../assets/images/users/1.jpg" alt="user-img"
-                                            class="img-circle"> <span>Varun Dhavan <small
-                                                class="text-success">online</small></span></a>
-                                </li>
-                                <li>
-                                    <a href="javascript:void(0)"><img src="../assets/images/users/2.jpg" alt="user-img"
-                                            class="img-circle"> <span>Genelia Deshmukh <small
-                                                class="text-warning">Away</small></span></a>
-                                </li>
-                                <li>
-                                    <a href="javascript:void(0)"><img src="../assets/images/users/3.jpg" alt="user-img"
-                                            class="img-circle"> <span>Ritesh Deshmukh <small
-                                                class="text-danger">Busy</small></span></a>
-                                </li>
-                                <li>
-                                    <a href="javascript:void(0)"><img src="../assets/images/users/4.jpg" alt="user-img"
-                                            class="img-circle"> <span>Arijit Sinh <small
-                                                class="text-muted">Offline</small></span></a>
-                                </li>
-                                <li>
-                                    <a href="javascript:void(0)"><img src="../assets/images/users/5.jpg" alt="user-img"
-                                            class="img-circle"> <span>Govinda Star <small
-                                                class="text-success">online</small></span></a>
-                                </li>
-                                <li>
-                                    <a href="javascript:void(0)"><img src="../assets/images/users/6.jpg" alt="user-img"
-                                            class="img-circle"> <span>John Abraham<small
-                                                class="text-success">online</small></span></a>
-                                </li>
-                                <li>
-                                    <a href="javascript:void(0)"><img src="../assets/images/users/7.jpg" alt="user-img"
-                                            class="img-circle"> <span>Hritik Roshan<small
-                                                class="text-success">online</small></span></a>
-                                </li>
-                                <li>
-                                    <a href="javascript:void(0)"><img src="../assets/images/users/8.jpg" alt="user-img"
-                                            class="img-circle"> <span>Pwandeep rajan <small
-                                                class="text-success">online</small></span></a>
-                                </li>
-                            </ul>
+                    <!-- ============================================================== -->
+                    <!-- End Bread crumb and right sidebar toggle -->
+                    <!-- ============================================================== -->
+                    <!-- ============================================================== -->
+                    <!-- Start Page Content -->
+                    <!-- ============================================================== -->
+                    <!-- Row -->
+                    <div class="row">
+                    </div>
+                    <!-- Row -->
+                    <!-- Row -->
+                    <div class="row">
+                        <!-- Column -->
+                        <div class="col-lg-12">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <div class="d-flex flex-wrap">
+                                                <div>
+                                                    <h3>Statistics</h3>
+                                                    <h6 class="card-subtitle">June 2019</h6>
+                                                </div>
+                                                <div class="ml-auto ">
+                                                    <ul class="list-inline">
+                                                        <li>
+                                                            <h6 class="text-muted"><i
+                                                                    class="fa fa-circle mr-1 text-success"></i>Views
+                                                            </h6>
+                                                        </li>
+                                                        <li>
+                                                            <h6 class="text-muted"><i
+                                                                    class="fa fa-circle mr-1 text-info"></i>Subscribe</h6>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="total-revenue4" style="height: 350px;"></div>
+                                        </div>
+                                        <div class="col-lg-3 col-md-6 mb-4 mt-3 text-center">
+                                            <h1 class="mb-0 font-light">$54578</h1>
+                                            <h6 class="text-muted">Total</h6>
+                                        </div>
+                                        <div class="col-lg-3 col-md-6 mb-4 mt-3 text-center">
+                                            <h1 class="mb-0 font-light">$43451</h1>
+                                            <h6 class="text-muted">Net</h6>
+                                        </div>
+                                        <div class="col-lg-3 col-md-6 mb-4 mt-3 text-center">
+                                            <h1 class="mb-0 font-light">$44578</h1>
+                                            <h6 class="text-muted">Views</h6>
+                                        </div>
+                                        <div class="col-lg-3 col-md-6 mb-4 mt-3 text-center">
+                                            <h1 class="mb-0 font-light">$12578</h1>
+                                            <h6 class="text-muted">Subscribe</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
+                    <!-- Row -->
+                    <!-- Row -->
+                    <div class="row">
+                        <!-- Column -->
+                        <div class="col-12">
+                            <h3>Most views in week</h3>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="card">
+                                <img class="card-img-top img-responsive" src="../assets/images/big/img1.jpg" alt="Card">
+                                <div class="card-body">
+                                    <ul class="list-inline font-14">
+                                        <li class="pl-0">30 May 2019</li>
+                                        <li>3 Comment</li>
+                                    </ul>
+                                    <h3 class="font-normal">Huawei Disaster Reveals Google' s Iron Grip on Android</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Column -->
+                        <!-- Column -->
+                        <div class="col-lg-4">
+                            <div class="card">
+                                <img class="card-img-top img-responsive" src="../assets/images/big/img2.jpg" alt="Card">
+                                <div class="card-body">
+                                    <ul class="list-inline font-14">
+                                        <li class="pl-0">29 May 2019</li>
+                                        <li>3 Comment</li>
+                                    </ul>
+                                    <h3 class="font-normal">What Really Happens to AirPods When They Die</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Column -->
+                        <!-- Column -->
+                        <div class="col-lg-4">
+                            <div class="card">
+                                <img class="card-img-top img-responsive" src="../assets/images/big/img4.jpg" alt="Card">
+                                <div class="card-body">
+                                    <ul class="list-inline font-14">
+                                        <li class="pl-0">28 May 2019</li>
+                                        <li>3 Comment</li>
+                                    </ul>
+                                    <h3 class="font-normal">Featured Hydroflora Pots Garden &amp; Outdoors</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Column -->
+                    </div>
+                    <!-- Row -->
+                    <!-- Row -->
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h4 class="card-title">Recent Posts</h4>
+                                </div>
+                                <!-- ============================================================== -->
+                                <!-- Comment widgets -->
+                                <!-- ============================================================== -->
+                                <div class="comment-widgets">
+                                    <!-- Comment Row -->
+                                    <div class="d-flex flex-row comment-row">
+                                        <div class="p-2"><img src="../assets/images/big/img4.jpg" alt="user" width="100">
+                                        </div>
+                                        <div class="comment-text w-100">
+                                            <h5>Huawei Disaster Reveals Google' s Iron Grip on Android</h5>
+                                            <p class="mb-1">Open source isn’t as open as you think</p>
+                                            <div class="comment-footer">
+                                                <span class="text-muted float-right">June 11, 2019</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Comment Row -->
+                                    <div class="d-flex flex-row comment-row">
+                                        <div class="p-2"><img src="../assets/images/big/img5.jpg" alt="user" width="100">
+                                        </div>
+                                        <div class="comment-text active w-100">
+                                            <h5>The Dawn of the Reliance Economy</h5>
+                                            <p class="mb-1">Your attention was never the endgame</p>
+                                            <div class="comment-footer ">
+                                                <span class="text-muted float-right">June 10, 2019</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Comment Row -->
+                                    <div class="d-flex flex-row comment-row">
+                                        <div class="p-2"><img src="../assets/images/big/img6.jpg" alt="user" width="100">
+                                        </div>
+                                        <div class="comment-text w-100">
+                                            <h5>Regulators Just Put a Target on Apple’s Back</h5>
+                                            <p class="mb-1">Forget WWDC: The company now faces major scrutiny along with
+                                                other tech giants</p>
+                                            <div class="comment-footer">
+                                                <span class="text-muted float-right">June 09, 2019</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Comment Row -->
+                                    <div class="d-flex flex-row comment-row">
+                                        <div class="p-2"><img src="../assets/images/big/img1.jpg" alt="user" width="100">
+                                        </div>
+                                        <div class="comment-text w-100">
+                                            <h5>To Trust Apple Sign-In, You Need to Trust Apple</h5>
+                                            <p class="mb-1">Experts agree that it’s not perfect, but it’s almost certainly
+                                                better than what you’re using</p>
+                                            <div class="comment-footer">
+                                                <span class="text-muted float-right">June 08, 2019</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h4 class="card-title">Recent Activities</h4>
+                                    <!-- ============================================================== -->
+                                    <!-- To do list widgets -->
+                                    <!-- ============================================================== -->
+                                    <div class="to-do-widget mt-3">
+                                        <ul class="list-task todo-list list-group mb-0" data-role="tasklist">
+                                            <li class="list-group-item" data-role="task">
+                                                <ul class="assignedto">
+                                                    <h4>admin1 published a post in Technology</h4>
+                                                    <p class="mb-1">June 10, 2019</p>
+                                                </ul>
+                                            </li>
+                                            <li class="list-group-item" data-role="task">
+                                                <ul class="assignedto">
+                                                    <h4>admin1 published a post in Design</h4>
+                                                    <p class="mb-1">June 09, 2019</p>
+                                                </ul>
+                                            </li>
+                                            <li class="list-group-item" data-role="task">
+                                                <ul class="assignedto">
+                                                    <h4>editor1 published a post in Technology</h4>
+                                                    <p class="mb-1">June 08, 2019</p>
+                                                </ul>
+                                            </li>
+                                            <li class="list-group-item" data-role="task">
+                                                <ul class="assignedto">
+                                                    <h4>editor1 published a post in Travel</h4>
+                                                    <p class="mb-1">June 07, 2019</p>
+                                                </ul>
+                                            </li>
+                                            <li class="list-group-item" data-role="task">
+                                                <ul class="assignedto">
+                                                    <h4>admin1 published a post in Travel</h4>
+                                                    <p class="mb-1">June 07, 2019</p>
+                                                </ul>
+                                            </li>
+                                            <li class="list-group-item" data-role="task">
+                                                <ul class="assignedto">
+                                                    <h4>editor1 published a post in Technology</h4>
+                                                    <p class="mb-1">June 06, 2019</p>
+                                                </ul>
+                                            </li>
+                                            <li class="list-group-item" data-role="task">
+                                                <ul class="assignedto">
+                                                    <h4>admin1 published a post in Technology</h4>
+                                                    <p class="mb-1">June 05, 2019</p>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Row -->
+                    <!-- ============================================================== -->
+                    <!-- End PAge Content -->
+                    <!-- ============================================================== -->
+                    <!-- ============================================================== -->
+                    <!-- Right sidebar -->
+                    <!-- ============================================================== -->
+                    <!-- .right-sidebar -->
+                    <div class="right-sidebar">
+                        <div class="slimscrollright">
+                            <div class="rpanel-title"> Service Panel <span><i class="ti-close right-side-toggle"></i></span>
+                            </div>
+                            <div class="r-panel-body">
+                                <ul id="themecolors" class="mt-3">
+                                    <li><b>With Light sidebar</b></li>
+                                    <li><a href="javascript:void(0)" data-theme="default" class="default-theme">1</a></li>
+                                    <li><a href="javascript:void(0)" data-theme="green" class="green-theme">2</a></li>
+                                    <li><a href="javascript:void(0)" data-theme="red" class="red-theme">3</a></li>
+                                    <li><a href="javascript:void(0)" data-theme="blue" class="blue-theme working">4</a></li>
+                                    <li><a href="javascript:void(0)" data-theme="purple" class="purple-theme">5</a></li>
+                                    <li><a href="javascript:void(0)" data-theme="megna" class="megna-theme">6</a></li>
+                                    <li class="d-block mt-4"><b>With Dark sidebar</b></li>
+                                    <li><a href="javascript:void(0)" data-theme="default-dark"
+                                           class="default-dark-theme">7</a></li>
+                                    <li><a href="javascript:void(0)" data-theme="green-dark" class="green-dark-theme">8</a>
+                                    </li>
+                                    <li><a href="javascript:void(0)" data-theme="red-dark" class="red-dark-theme">9</a></li>
+                                    <li><a href="javascript:void(0)" data-theme="blue-dark" class="blue-dark-theme">10</a>
+                                    </li>
+                                    <li><a href="javascript:void(0)" data-theme="purple-dark"
+                                           class="purple-dark-theme">11</a></li>
+                                    <li><a href="javascript:void(0)" data-theme="megna-dark"
+                                           class="megna-dark-theme ">12</a></li>
+                                </ul>
+                                <ul class="mt-3 chatonline">
+                                    <li><b>Chat option</b></li>
+                                    <li>
+                                        <a href="javascript:void(0)"><img src="../assets/images/users/1.jpg" alt="user-img"
+                                                                          class="img-circle"> <span>Varun Dhavan <small
+                                                    class="text-success">online</small></span></a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)"><img src="../assets/images/users/2.jpg" alt="user-img"
+                                                                          class="img-circle"> <span>Genelia Deshmukh <small
+                                                    class="text-warning">Away</small></span></a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)"><img src="../assets/images/users/3.jpg" alt="user-img"
+                                                                          class="img-circle"> <span>Ritesh Deshmukh <small
+                                                    class="text-danger">Busy</small></span></a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)"><img src="../assets/images/users/4.jpg" alt="user-img"
+                                                                          class="img-circle"> <span>Arijit Sinh <small
+                                                    class="text-muted">Offline</small></span></a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)"><img src="../assets/images/users/5.jpg" alt="user-img"
+                                                                          class="img-circle"> <span>Govinda Star <small
+                                                    class="text-success">online</small></span></a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)"><img src="../assets/images/users/6.jpg" alt="user-img"
+                                                                          class="img-circle"> <span>John Abraham<small
+                                                    class="text-success">online</small></span></a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)"><img src="../assets/images/users/7.jpg" alt="user-img"
+                                                                          class="img-circle"> <span>Hritik Roshan<small
+                                                    class="text-success">online</small></span></a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)"><img src="../assets/images/users/8.jpg" alt="user-img"
+                                                                          class="img-circle"> <span>Pwandeep rajan <small
+                                                    class="text-success">online</small></span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ============================================================== -->
+                    <!-- End Right sidebar -->
+                    <!-- ============================================================== -->
                 </div>
                 <!-- ============================================================== -->
-                <!-- End Right sidebar -->
+                <!-- End Container fluid  -->
+                <!-- ============================================================== -->
+                <!-- ============================================================== -->
+                <!-- footer -->
+                <!-- ============================================================== -->
+                <footer class="footer">
+                    © 2019 Monster Admin by wrappixel.com
+                </footer>
+                <!-- ============================================================== -->
+                <!-- End footer -->
                 <!-- ============================================================== -->
             </div>
             <!-- ============================================================== -->
-            <!-- End Container fluid  -->
-            <!-- ============================================================== -->
-            <!-- ============================================================== -->
-            <!-- footer -->
-            <!-- ============================================================== -->
-            <footer class="footer">
-                © 2019 Monster Admin by wrappixel.com
-            </footer>
-            <!-- ============================================================== -->
-            <!-- End footer -->
+            <!-- End Page wrapper  -->
             <!-- ============================================================== -->
         </div>
         <!-- ============================================================== -->
-        <!-- End Page wrapper  -->
+        <!-- End Wrapper -->
         <!-- ============================================================== -->
-    </div>
-    <!-- ============================================================== -->
-    <!-- End Wrapper -->
-    <!-- ============================================================== -->
-    <!-- ============================================================== -->
-    <!-- All Jquery -->
-    <!-- ============================================================== -->
-    <script data-cfasync="false"
+        <!-- ============================================================== -->
+        <!-- All Jquery -->
+        <!-- ============================================================== -->
+        <script data-cfasync="false"
         src="../../../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
-    <script src="../assets/plugins/jquery/jquery.min.js"></script>
-    <!-- Bootstrap tether Core JavaScript -->
-    <script src="../assets/plugins/bootstrap/js/popper.min.js"></script>
-    <script src="../assets/plugins/bootstrap/js/bootstrap.min.js"></script>
-    <!-- slimscrollbar scrollbar JavaScript -->
-    <script src="js/jquery.slimscroll.js"></script>
-    <!--Wave Effects -->
-    <script src="js/waves.js"></script>
-    <!--Menu sidebar -->
-    <script src="js/sidebarmenu.js"></script>
-    <!--stickey kit -->
-    <script src="../assets/plugins/sticky-kit-master/dist/sticky-kit.min.js"></script>
-    <!--Custom JavaScript -->
-    <script src="js/custom.min.js"></script>
-    <!-- ============================================================== -->
-    <!-- This page plugins -->
-    <!-- ============================================================== -->
-    <!-- chartist chart -->
-    <script src="../assets/plugins/chartist-js/dist/chartist.min.js"></script>
-    <script src="../assets/plugins/chartist-plugin-tooltip-master/dist/chartist-plugin-tooltip.min.js"></script>
-    <!-- Chart JS -->
-    <script src="../assets/plugins/echarts/echarts-all.js"></script>
-    <script src="../assets/plugins/toast-master/js/jquery.toast.js"></script>
-    <!-- Chart JS -->
-    <script src="js/dashboard1.js"></script>
-    <script src="js/toastr.js"></script>
-    <script>
-        $.toast({
-            heading: 'Welcome to Monster admin',
-            text: 'Use the predefined ones, or specify a custom position object.',
-            position: 'top-right',
-            loaderBg: '#ff6849',
-            icon: 'info',
-            hideAfter: 3000,
-            stack: 6
-        });
-    </script>
-    <!-- ============================================================== -->
-    <!-- Style switcher -->
-    <!-- ============================================================== -->
-    <script src="../assets/plugins/styleswitcher/jQuery.style.switcher.js"></script>
-</body>
+        <script src="../assets/plugins/jquery/jquery.min.js"></script>
+        <!-- Bootstrap tether Core JavaScript -->
+        <script src="../assets/plugins/bootstrap/js/popper.min.js"></script>
+        <script src="../assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+        <!-- slimscrollbar scrollbar JavaScript -->
+        <script src="js/jquery.slimscroll.js"></script>
+        <!--Wave Effects -->
+        <script src="js/waves.js"></script>
+        <!--Menu sidebar -->
+        <script src="js/sidebarmenu.js"></script>
+        <!--stickey kit -->
+        <script src="../assets/plugins/sticky-kit-master/dist/sticky-kit.min.js"></script>
+        <!--Custom JavaScript -->
+        <script src="js/custom.min.js"></script>
+        <!-- ============================================================== -->
+        <!-- This page plugins -->
+        <!-- ============================================================== -->
+        <!-- chartist chart -->
+        <script src="../assets/plugins/chartist-js/dist/chartist.min.js"></script>
+        <script src="../assets/plugins/chartist-plugin-tooltip-master/dist/chartist-plugin-tooltip.min.js"></script>
+        <!-- Chart JS -->
+        <script src="../assets/plugins/echarts/echarts-all.js"></script>
+        <script src="../assets/plugins/toast-master/js/jquery.toast.js"></script>
+        <!-- Chart JS -->
+        <script src="js/dashboard1.js"></script>
+        <script src="js/toastr.js"></script>
+        <script>
+            $.toast({
+                heading: 'Welcome to Monster admin',
+                text: 'Use the predefined ones, or specify a custom position object.',
+                position: 'top-right',
+                loaderBg: '#ff6849',
+                icon: 'info',
+                hideAfter: 3000,
+                stack: 6
+            });
+        </script>
+        <!-- ============================================================== -->
+        <!-- Style switcher -->
+        <!-- ============================================================== -->
+        <script src="../assets/plugins/styleswitcher/jQuery.style.switcher.js"></script>
+    </body>
 
 
-<!-- Mirrored from www.wrappixel.com/demos/admin-templates/monster-admin/main/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 11 Feb 2019 11:35:42 GMT -->
+    <!-- Mirrored from www.wrappixel.com/demos/admin-templates/monster-admin/main/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 11 Feb 2019 11:35:42 GMT -->
 
 </html>
