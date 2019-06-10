@@ -62,15 +62,13 @@
     function validateForm(){
     var username = document.getElementById('uname').value;
     var password = document.getElementById('pwd').value;
-    if (username == 'admin' && password == 'admin')
+    if (username == 'editor' && password == 'editor')
 	    { alert("login sucessfull!");
-		window.location.href="new-index.html";
-		} else if (username == 'editor' && password == 'editor'){
 		window.location.href="non-admin.html";
-		alert('login sucessfull!');
 		}else{
 		window.location.href="login.html";
-		alert('invalid username or password!');} 
+		alert('wrong username or password!');
+		}         
 }
 </script>
 </div>
