@@ -65,10 +65,12 @@
     if (username == 'admin' && password == 'admin')
 	    { alert("login sucessfull!");
 		window.location.href="new-index.html";
+		} else if (username == 'editor' && password == 'editor'){
+		window.location.href="non-admin.html";
+		alert('login sucessfull!');
 		}else{
 		window.location.href="login.html";
-		alert('wrong username or password!');
-		}         
+		alert('invalid username or password!');} 
 }
 </script>
 </div>
