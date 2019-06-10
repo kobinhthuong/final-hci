@@ -62,9 +62,9 @@
     function validateForm(){
     var username = document.getElementById('uname').value;
     var password = document.getElementById('pwd').value;
-    if (username == 'admin' && password == 'admin')
+    if (username == 'editor' && password == 'editor')
 	    { alert("login sucessfull!");
-		window.location.href="new-index.html";
+		window.location.href="non-admin.html";
 		}else{
 		window.location.href="login.html";
 		alert('wrong username or password!');
